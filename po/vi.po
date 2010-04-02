@@ -5,10 +5,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: grep 2.6.1\n"
+"Project-Id-Version: grep 2.6.2\n"
 "Report-Msgid-Bugs-To: bug-grep@gnu.org\n"
-"POT-Creation-Date: 2010-03-25 19:19+0100\n"
-"PO-Revision-Date: 2010-03-26 23:02+1030\n"
+"POT-Creation-Date: 2010-03-29 21:18+0200\n"
+"PO-Revision-Date: 2010-03-31 16:00+1030\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -541,47 +541,47 @@ msgstr "đã ghi rõ dữ liệu khớp mà xung đột"
 msgid "invalid matcher %s"
 msgstr "sai khớp %s"
 
-#: src/main.c:1716
+#: src/main.c:1717
 #, c-format
 msgid "In GREP_COLORS=\"%s\", the \"%s\" capacity needs a value (\"=...\"); skipped."
 msgstr "Trong chuỗi « GREP_COLORS=\"%s\" », khả năng \"%s\" cần thiết giá trị (\"=...\"); nên bỏ qua."
 
-#: src/main.c:1720
+#: src/main.c:1721
 #, c-format
 msgid "In GREP_COLORS=\"%s\", the \"%s\" capacity is boolean and cannot take a value (\"=%s\"); skipped."
 msgstr "Trong chuỗi « GREP_COLORS=\"%s\" », khả năng \"%s\" là luận lý thì không chấp nhận giá trị (\"=%s\"); nên bỏ qua."
 
-#: src/main.c:1729
+#: src/main.c:1730
 #, c-format
 msgid "In GREP_COLORS=\"%s\", the \"%s\" capacity %s."
 msgstr "Trong chuỗi « GREP_COLORS=\"%s\" », khả năng \"%s\" %s."
 
-#: src/main.c:1752
+#: src/main.c:1753
 #, c-format
 msgid "Stopped processing of ill-formed GREP_COLORS=\"%s\" at remaining substring \"%s\"."
 msgstr "Đã dừng xử lý chuỗi « GREP_COLORS=\"%s\" » dạng sai ở chuỗi phụ còn lại « %s »."
 
-#: src/main.c:1823
+#: src/main.c:1824
 #, c-format
 msgid "unknown devices method"
 msgstr "không rõ phương pháp thiết bị"
 
-#: src/main.c:1895
+#: src/main.c:1896
 #, c-format
 msgid "unknown directories method"
 msgstr "không rõ phương pháp thư mục"
 
-#: src/main.c:1963
+#: src/main.c:1964
 #, c-format
 msgid "invalid max count"
 msgstr "số đếm tối đa không hợp lệ"
 
-#: src/main.c:2018
+#: src/main.c:2019
 #, c-format
 msgid "unknown binary-files type"
 msgstr "không rõ kiểu tập tin nhị phân (binary-files)"
 
-#: src/main.c:2124
+#: src/main.c:2126
 #, c-format
 msgid ""
 "Copyright (C) %s Free Software Foundation, Inc.\n"
