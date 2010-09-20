@@ -1,6 +1,6 @@
-# Translation of grep to Dutch.
-# This file is distributed under the same license as the grep package.
+# Dutch translations for grep.
 # Copyright (C) 2010 Free Software Foundation, Inc.
+# This file is distributed under the same license as the grep package.
 #
 # Erick Branderhorst <branderh@debian.org>, 1996.
 # Ivo Timmermans <itimmermans@bigfoot.com>, 2000.
@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: grep-2.6.2\n"
 "Report-Msgid-Bugs-To: bug-grep@gnu.org\n"
 "POT-Creation-Date: 2010-03-29 21:18+0200\n"
-"PO-Revision-Date: 2010-03-31 22:51+0200\n"
+"PO-Revision-Date: 2010-04-04 12:18+0200\n"
 "Last-Translator: Benno Schulenberg <benno@vertaalt.nl>\n"
 "Language-Team: Dutch <vertaling@vrijschrift.org>\n"
 "MIME-Version: 1.0\n"
@@ -350,7 +350,7 @@ msgid ""
 "  -x, --line-regexp         force PATTERN to match only whole lines\n"
 "  -z, --null-data           a data line ends in 0 byte, not newline\n"
 msgstr ""
-"  -e, --regexp=PATROON      dit PATROON bij het zoeken gebruiken\n"
+"  -e, --regexp=PATROON      dit PATROON gebruiken bij het zoeken\n"
 "  -f, --file=BESTAND        patronen uit dit BESTAND halen\n"
 "  -i, --ignore-case         verschil tussen hoofd- en kleine letters negeren\n"
 "  -w, --word-regexp         patronen komen alleen overeen met een heel woord\n"
@@ -372,7 +372,7 @@ msgstr ""
 "Diversen:\n"
 "  -s, --no-messages         foutmeldingen onderdrukken\n"
 "  -v, --invert-match        de niet-overeenkomende regels selecteren\n"
-"  -V, --version             versie-informatie tonen en stoppen\n"
+"  -V, --version             programmaversie tonen en stoppen\n"
 "      --help                deze hulptekst tonen en stoppen\n"
 "      --mmap                (genegeerd; herkend voor compatibilteit)\n"
 
@@ -524,7 +524,7 @@ msgstr ""
 #: src/main.c:1479
 #, c-format
 msgid "GNU Grep home page: <%s>\n"
-msgstr "GNU Grep-webpagina: <%s>\n"
+msgstr "Webpagina van GNU grep: <%s>\n"
 
 #: src/main.c:1481
 msgid "General help using GNU software: <http://www.gnu.org/gethelp/>\n"
@@ -533,7 +533,7 @@ msgstr "Algemene hulp bij gebruik van GNU-software: <http://www.gnu.org/gethelp/
 #: src/main.c:1511
 #, c-format
 msgid "%s can only use the %s pattern syntax"
-msgstr "%s kan alleen de patroonsyntax van %s gebruiken"
+msgstr "%s kan alleen de patroonsyntax %s gebruiken"
 
 #: src/main.c:1514
 #, c-format
