@@ -3,80 +3,100 @@
 # This file is distributed under the same license as the grep package.
 #
 # Copyright (C) 2008 Free Software Foundation, Inc.
-# Ji ZhengYu <zhengyuji@gmail.com>, 2009.
+# Ji ZhengYu <zhengyuji@gmail.com>, 2009, 2010
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: grep 2.6.2\n"
+"Project-Id-Version: grep 2.7\n"
 "Report-Msgid-Bugs-To: bug-grep@gnu.org\n"
-"POT-Creation-Date: 2010-03-29 21:18+0200\n"
-"PO-Revision-Date: 2010-04-20 16:36中国标准时间\n"
+"POT-Creation-Date: 2010-09-16 18:30+0200\n"
+"PO-Revision-Date: 2010-09-22 13:38+0800\n"
 "Last-Translator: Ji ZhengYu <zhengyuji@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#: lib/argmatch.c:133
+#, c-format
+msgid "invalid argument %s for %s"
+msgstr "%2$s 的参数 %1$s 无效"
+
+#: lib/argmatch.c:134
+#, c-format
+msgid "ambiguous argument %s for %s"
+msgstr "%2$s 的参数 %1$s 有歧义"
+
+#: lib/argmatch.c:153
+#, c-format
+msgid "Valid arguments are:"
+msgstr "有效参数是:"
+
 #: lib/closeout.c:112
 msgid "write error"
 msgstr "写错误"
 
-#: lib/error.c:153
+#: lib/error.c:181
 msgid "Unknown system error"
 msgstr "未知的系统错误"
 
-#: lib/getopt.c:525 lib/getopt.c:541
+#: lib/getopt.c:527 lib/getopt.c:543
 #, c-format
 msgid "%s: option '%s' is ambiguous\n"
 msgstr "%s: 选项‘%s’有歧义\n"
 
-#: lib/getopt.c:574 lib/getopt.c:578
+#: lib/getopt.c:576 lib/getopt.c:580
 #, c-format
 msgid "%s: option '--%s' doesn't allow an argument\n"
 msgstr "%s: 选项 ‘--%s’不允许带参数\n"
 
-#: lib/getopt.c:587 lib/getopt.c:592
+#: lib/getopt.c:589 lib/getopt.c:594
 #, c-format
 msgid "%s: option '%c%s' doesn't allow an argument\n"
 msgstr "%s: 选项 ‘%c%s’不允许带参数\n"
 
-#: lib/getopt.c:635 lib/getopt.c:654 lib/getopt.c:957 lib/getopt.c:976
+#: lib/getopt.c:637 lib/getopt.c:656
 #, c-format
-msgid "%s: option '%s' requires an argument\n"
-msgstr "%s: 选项 ‘%s’必须带上一个参数\n"
+msgid "%s: option '--%s' requires an argument\n"
+msgstr "%s: 选项 ‘--%s’必须带参数\n"
 
-#: lib/getopt.c:692 lib/getopt.c:695
+#: lib/getopt.c:694 lib/getopt.c:697
 #, c-format
 msgid "%s: unrecognized option '--%s'\n"
 msgstr "%s: 未知选项 ‘--%s’\n"
 
-#: lib/getopt.c:703 lib/getopt.c:706
+#: lib/getopt.c:705 lib/getopt.c:708
 #, c-format
 msgid "%s: unrecognized option '%c%s'\n"
 msgstr "%s: 未知选项 ‘%c%s’\n"
 
-#: lib/getopt.c:755 lib/getopt.c:758
+#: lib/getopt.c:757 lib/getopt.c:760
 #, c-format
 msgid "%s: invalid option -- '%c'\n"
 msgstr "%s: 无效选项 -- %c\n"
 
-#: lib/getopt.c:808 lib/getopt.c:825 lib/getopt.c:1028 lib/getopt.c:1046
+#: lib/getopt.c:810 lib/getopt.c:827 lib/getopt.c:1035 lib/getopt.c:1053
 #, c-format
 msgid "%s: option requires an argument -- '%c'\n"
 msgstr "%s: 选项必须带有一个参数 -- %c\n"
 
-#: lib/getopt.c:878 lib/getopt.c:894
+#: lib/getopt.c:883 lib/getopt.c:899
 #, c-format
 msgid "%s: option '-W %s' is ambiguous\n"
 msgstr "%s: 选项 ‘-W %s’有歧义\n"
 
-#: lib/getopt.c:918 lib/getopt.c:936
+#: lib/getopt.c:923 lib/getopt.c:941
 #, c-format
 msgid "%s: option '-W %s' doesn't allow an argument\n"
 msgstr "%s: 选项 ‘-W %s’不允许带参数\n"
 
-#: lib/obstack.c:423 lib/obstack.c:425 lib/xalloc-die.c:34 src/dfasearch.c:153
-#: src/kwset.c:178 src/kwset.c:186 src/kwset.c:409 src/pcresearch.c:147
+#: lib/getopt.c:962 lib/getopt.c:980
+#, c-format
+msgid "%s: option '-W %s' requires an argument\n"
+msgstr "%s: 选项 ‘-W %s’必须带参数\n"
+
+#: lib/obstack.c:423 lib/obstack.c:425 lib/xalloc-die.c:34 src/dfasearch.c:167
+#: src/kwset.c:178 src/kwset.c:186 src/kwset.c:409 src/pcresearch.c:149
 #, c-format
 msgid "memory exhausted"
 msgstr "内存耗尽"
@@ -178,7 +198,178 @@ msgstr ") 或 \\) 不匹配"
 
 #: lib/regcomp.c:703
 msgid "No previous regular expression"
-msgstr "上一次没有正则表达式"
+msgstr "没有之前的正则表达式"
+
+#: lib/version-etc.c:74
+#, c-format
+msgid "Packaged by %s (%s)\n"
+msgstr "由 %s (%s) 打包\n"
+
+#: lib/version-etc.c:77
+#, c-format
+msgid "Packaged by %s\n"
+msgstr "由 %s 打包\n"
+
+#. TRANSLATORS: Translate "(C)" to the copyright symbol
+#. (C-in-a-circle), if this symbol is available in the user's
+#. locale.  Otherwise, do not translate "(C)"; leave it as-is.
+#: lib/version-etc.c:84
+msgid "(C)"
+msgstr "(C)"
+
+#: lib/version-etc.c:86
+msgid ""
+"\n"
+"License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.\n"
+"This is free software: you are free to change and redistribute it.\n"
+"There is NO WARRANTY, to the extent permitted by law.\n"
+"\n"
+msgstr ""
+"\n"
+"GPLv3+ 许可证: GNU 通用公共许可证第三版或更高版本 <http://gnu.org/licenses/gpl.html>。\n"
+"这是自由软件: 您可自由更改并重新分发它。\n"
+"在法律所允许的范围内,不附带任何担保条款。\n"
+"\n"
+
+#. TRANSLATORS: %s denotes an author name.
+#: lib/version-etc.c:102
+#, c-format
+msgid "Written by %s.\n"
+msgstr "作者 %s。\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#: lib/version-etc.c:106
+#, c-format
+msgid "Written by %s and %s.\n"
+msgstr "作者 %s 和 %s。\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#: lib/version-etc.c:110
+#, c-format
+msgid "Written by %s, %s, and %s.\n"
+msgstr "作者 %s, %s 及 %s。\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:117
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"and %s.\n"
+msgstr ""
+"作者 %s, %s, %s,\n"
+"及 %s。\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:124
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, and %s.\n"
+msgstr ""
+"作者 %s, %s, %s,\n"
+"%s, 及 %s。\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:131
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, and %s.\n"
+msgstr ""
+"作者 %s, %s, %s,\n"
+"%s, %s, 及 %s。\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:139
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, and %s.\n"
+msgstr ""
+"作者 %s, %s, %s,\n"
+"%s, %s, %s, 及 %s。\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:147
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"and %s.\n"
+msgstr ""
+"作者 %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"及 %s。\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:156
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s, and %s.\n"
+msgstr ""
+"作者 %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s, 及 %s。\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:167
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s, %s, and others.\n"
+msgstr ""
+"作者 %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s, %s, 以及其他人。\n"
+
+#. TRANSLATORS: The placeholder indicates the bug-reporting address
+#. for this package.  Please add _another line_ saying
+#. "Report translation bugs to <...>\n" with the address for translation
+#. bugs (typically your translation team's web or email address).
+#: lib/version-etc.c:245 src/main.c:1474
+#, c-format
+msgid ""
+"\n"
+"Report bugs to: %s\n"
+msgstr ""
+"\n"
+"请将错误报告给: %s\n"
+
+#: lib/version-etc.c:247
+#, c-format
+msgid "Report %s bugs to: %s\n"
+msgstr "请将 %s 错误报告给: %s\n"
+
+#: lib/version-etc.c:251
+#, c-format
+msgid "%s home page: <%s>\n"
+msgstr "%s 主页: <%s>\n"
+
+#: lib/version-etc.c:253
+#, c-format
+msgid "%s home page: <http://www.gnu.org/software/%s/>\n"
+msgstr "%s 主页: <http://www.gnu.org/software/%s/>\n"
+
+#: lib/version-etc.c:256 src/main.c:1477
+msgid "General help using GNU software: <http://www.gnu.org/gethelp/>\n"
+msgstr "GNU 软件的通用帮助: <http://www.gnu.org/gethelp/>\n"
 
 #: lib/xstrtol-error.c:63
 #, c-format
@@ -195,37 +386,41 @@ msgstr "%s%s 参数‘%s’的后缀无效"
 msgid "%s%s argument `%s' too large"
 msgstr "%s%s 参数‘%s’过多"
 
-#: src/dfa.c:501 src/dfa.c:504 src/dfa.c:522 src/dfa.c:535 src/dfa.c:547
-#: src/dfa.c:613 src/dfa.c:622 src/dfa.c:625 src/dfa.c:630 src/dfa.c:644
-#: src/dfa.c:696
+#: src/dfa.c:791 src/dfa.c:794 src/dfa.c:814 src/dfa.c:827 src/dfa.c:839
+#: src/dfa.c:905 src/dfa.c:914 src/dfa.c:917 src/dfa.c:922 src/dfa.c:936
+#: src/dfa.c:989
 msgid "unbalanced ["
 msgstr "有未匹配的 ["
 
-#: src/dfa.c:574
+#: src/dfa.c:850
 msgid "invalid character class"
 msgstr "无效的字符类名"
 
-#: src/dfa.c:805
+#: src/dfa.c:1035
+msgid "character class syntax is [[:space:]], not [:space:]"
+msgstr "字符类的语法是 [[:space:]],而非 [:space:]"
+
+#: src/dfa.c:1103
 msgid "unfinished \\ escape"
 msgstr "未做好 \\ 转义"
 
-#: src/dfa.c:938 src/dfa.c:944 src/dfa.c:954 src/dfa.c:962 src/dfa.c:977
+#: src/dfa.c:1236 src/dfa.c:1242 src/dfa.c:1252 src/dfa.c:1260 src/dfa.c:1275
 msgid "unfinished repeat count"
 msgstr "未定义重复次数"
 
-#: src/dfa.c:951 src/dfa.c:968 src/dfa.c:976 src/dfa.c:980
+#: src/dfa.c:1249 src/dfa.c:1266 src/dfa.c:1274 src/dfa.c:1278
 msgid "malformed repeat count"
 msgstr "重复次数定义地不完整"
 
-#: src/dfa.c:1257
+#: src/dfa.c:1623
 msgid "unbalanced ("
 msgstr "有未匹配的 ("
 
-#: src/dfa.c:1388
+#: src/dfa.c:1756
 msgid "no syntax specified"
 msgstr "未指定语法"
 
-#: src/dfa.c:1396
+#: src/dfa.c:1764
 msgid "unbalanced )"
 msgstr "有未匹配的 )"
 
@@ -245,11 +440,11 @@ msgstr "PATTERN 是一组由断行符分隔的定长字符串。\n"
 msgid "Invocation as `fgrep' is deprecated; use `grep -F' instead.\n"
 msgstr "‘fgrep’已不再使用了；请用 ‘grep -F’代替。\n"
 
-#: src/grep.c:35
+#: src/grep.c:32
 msgid "PATTERN is, by default, a basic regular expression (BRE).\n"
 msgstr "默认的 PATTERN 是一个基本正则表达式(缩写为 BRE)。\n"
 
-#: src/grep.c:37
+#: src/grep.c:34
 msgid ""
 "`egrep' means `grep -E'.  `fgrep' means `grep -F'.\n"
 "Direct invocation as either `egrep' or `fgrep' is deprecated.\n"
@@ -257,59 +452,68 @@ msgstr ""
 "‘egrep’即‘grep -E’。‘fgrep’即‘grep -F’。\n"
 "直接使用‘egrep’或是‘fgrep’均已不可行了。\n"
 
-#: src/main.c:398
+#. This is a proper name. See the gettext manual, section Names.
+#: src/main.c:59
+msgid "Mike Haertel"
+msgstr "Mike Haertel"
+
+#: src/main.c:60
+msgid "others, see <http://git.sv.gnu.org/cgit/grep.git/tree/AUTHORS>"
+msgstr "其余作者请参看 <http://git.sv.gnu.org/cgit/grep.git/tree/AUTHORS>"
+
+#: src/main.c:418
 msgid "invalid context length argument"
 msgstr "无效的文本长度参数"
 
-#: src/main.c:453
+#: src/main.c:473
 #, c-format
 msgid "lseek failed"
 msgstr "lseek 失败"
 
-#: src/main.c:600
+#: src/main.c:620
 #, c-format
 msgid "input is too large to count"
 msgstr "输入太多无法计数"
 
-#: src/main.c:866
+#: src/main.c:862
 #, c-format
 msgid "writing output"
 msgstr "正在写输出"
 
-#: src/main.c:1189
+#: src/main.c:1185
 #, c-format
 msgid "Binary file %s matches\n"
 msgstr "匹配到二进制文件 %s\n"
 
-#: src/main.c:1203
+#: src/main.c:1199
 msgid "(standard input)"
 msgstr "(标准输入)"
 
-#: src/main.c:1334
+#: src/main.c:1330
 #, c-format
-msgid "warning: %s: %s\n"
-msgstr "警告: %s: %s\n"
+msgid "warning: %s: %s"
+msgstr "警告: %s: %s"
 
-#: src/main.c:1335
+#: src/main.c:1331
 msgid "recursive directory loop"
 msgstr "嵌套目录循环"
 
-#: src/main.c:1383 src/main.c:1390
+#: src/main.c:1379 src/main.c:1386
 #, c-format
 msgid "Usage: %s [OPTION]... PATTERN [FILE]...\n"
 msgstr "用法: %s [选项]... PATTERN [FILE]...\n"
 
-#: src/main.c:1385
+#: src/main.c:1381
 #, c-format
 msgid "Try `%s --help' for more information.\n"
 msgstr "试用‘%s --help’来获得更多信息。\n"
 
-#: src/main.c:1391
+#: src/main.c:1387
 #, c-format
 msgid "Search for PATTERN in each FILE or standard input.\n"
 msgstr "在每个 FILE 或是标准输入中查找 PATTERN。\n"
 
-#: src/main.c:1394
+#: src/main.c:1390
 #, c-format
 msgid ""
 "Example: %s -i 'hello world' menu.h main.c\n"
@@ -320,7 +524,7 @@ msgstr ""
 "\n"
 "正则表达式选择与解释:\n"
 
-#: src/main.c:1399
+#: src/main.c:1395
 #, c-format
 msgid ""
 "  -E, --extended-regexp     PATTERN is an extended regular expression (ERE)\n"
@@ -333,7 +537,7 @@ msgstr ""
 "  -G, --basic-regexp        PATTERN 是一个基本正则表达式(缩写为 BRE)\n"
 "  -P, --perl-regexp         PATTERN 是一个 Perl 正则表达式\n"
 
-#: src/main.c:1405
+#: src/main.c:1401
 #, c-format
 msgid ""
 "  -e, --regexp=PATTERN      use PATTERN for matching\n"
@@ -350,7 +554,7 @@ msgstr ""
 "  -x, --line-regexp         强制 PATTERN 仅完全匹配一行\n"
 "  -z, --null-data           一个 0 字节的数据行，但不是空行\n"
 
-#: src/main.c:1412
+#: src/main.c:1408
 #, c-format
 msgid ""
 "\n"
@@ -369,7 +573,7 @@ msgstr ""
 "      --help                显示此帮助并退出\n"
 "      --mmap                忽略向后兼容性\n"
 
-#: src/main.c:1420
+#: src/main.c:1416
 #, c-format
 msgid ""
 "\n"
@@ -392,7 +596,7 @@ msgstr ""
 "  -h, --no-filename         输出时不显示文件名前缀\n"
 "      --label=LABEL         标准输入将LABEL 打印为文件名\n"
 
-#: src/main.c:1431
+#: src/main.c:1427
 #, c-format
 msgid ""
 "  -o, --only-matching       show only the part of a line matching PATTERN\n"
@@ -407,7 +611,7 @@ msgstr ""
 "                            TYPE 可以是`binary', `text', 或`without-match'\n"
 "  -a, --text                等同于 --binary-files=text\n"
 
-#: src/main.c:1438
+#: src/main.c:1434
 #, c-format
 msgid ""
 "  -I                        equivalent to --binary-files=without-match\n"
@@ -424,7 +628,7 @@ msgstr ""
 "                            ACTION 可以是`read'或`skip'\n"
 "  -R, -r, --recursive       等同于 --directories=recurse\n"
 
-#: src/main.c:1446
+#: src/main.c:1442
 #, c-format
 msgid ""
 "      --include=FILE_PATTERN  search only files that match FILE_PATTERN\n"
@@ -437,7 +641,7 @@ msgstr ""
 "      --exclude-from=FILE   跳过所有除FILE 以外的文件\n"
 "      --exclude-dir=PATTERN  跳过所有匹配PATTERN 的目录。\n"
 
-#: src/main.c:1452
+#: src/main.c:1448
 #, c-format
 msgid ""
 "  -L, --files-without-match  print only names of FILEs containing no match\n"
@@ -452,7 +656,7 @@ msgstr ""
 "  -T, --initial-tab         行首tabs 分隔（如有必要）\n"
 "  -Z, --null                在FILE 文件最后打印空字符\n"
 
-#: src/main.c:1458
+#: src/main.c:1454
 #, c-format
 msgid ""
 "\n"
@@ -467,7 +671,7 @@ msgstr ""
 "  -A, --after-context=NUM   打印以文本结尾的NUM 行\n"
 "  -C, --context=NUM         打印输出文本NUM 行\n"
 
-#: src/main.c:1465
+#: src/main.c:1461
 #, c-format
 msgid ""
 "  -NUM                      same as --context=NUM\n"
@@ -486,7 +690,7 @@ msgstr ""
 "  -u, --unix-byte-offsets   当CR 字符不存在，报告字节偏移(MSDOS 模式)\n"
 "\n"
 
-#: src/main.c:1474
+#: src/main.c:1470
 #, c-format
 msgid ""
 "With no FILE, or when FILE is -, read standard input.  If less than two FILEs\n"
@@ -497,100 +701,72 @@ msgstr ""
 "就要默认使用 -h 参数。如果选中任意一行，那退出状态为 0，否则为 1；\n"
 "如果有错误产生，且未指定 -q 参数，那退出状态为 2。\n"
 
-#: src/main.c:1478
-#, c-format
-msgid ""
-"\n"
-"Report bugs to: %s\n"
-msgstr ""
-"\n"
-"请将错误报告给: %s\n"
-
-#: src/main.c:1479
+#: src/main.c:1475
 #, c-format
 msgid "GNU Grep home page: <%s>\n"
 msgstr "GNU Grep 主页: <%s>\n"
 
-#: src/main.c:1481
-msgid "General help using GNU software: <http://www.gnu.org/gethelp/>\n"
-msgstr "GNU 软件的通用帮助: <http://www.gnu.org/gethelp/>\n"
-
-#: src/main.c:1511
+#: src/main.c:1507
 #, c-format
 msgid "%s can only use the %s pattern syntax"
 msgstr "%s 只能使用 %s 匹配语法"
 
-#: src/main.c:1514
+#: src/main.c:1510
 #, c-format
 msgid "conflicting matchers specified"
 msgstr "指定了互相冲突的比较程序"
 
-#: src/main.c:1528
+#: src/main.c:1524
 #, c-format
 msgid "invalid matcher %s"
 msgstr "无效的比较 %s"
 
-#: src/main.c:1717
+#: src/main.c:1713
 #, c-format
-msgid "In GREP_COLORS=\"%s\", the \"%s\" capacity needs a value (\"=...\"); skipped."
+msgid "in GREP_COLORS=\"%s\", the \"%s\" capacity needs a value (\"=...\"); skipped"
 msgstr "在 GREP_COLORS=\"%s\"中， \"%s\" 需要指定一个值(\"=...\")；已忽略此参数。"
 
-#: src/main.c:1721
+#: src/main.c:1717
 #, c-format
-msgid "In GREP_COLORS=\"%s\", the \"%s\" capacity is boolean and cannot take a value (\"=%s\"); skipped."
+msgid "in GREP_COLORS=\"%s\", the \"%s\" capacity is boolean and cannot take a value (\"=%s\"); skipped"
 msgstr "在 GREP_COLORS=\"%s\"中，\"%s\" 要的是一个 boolean(布尔值) 不是一个数值(\"=%s\")；已忽略此参数。"
 
-#: src/main.c:1730
-#, c-format
-msgid "In GREP_COLORS=\"%s\", the \"%s\" capacity %s."
+#: src/main.c:1726
+#, fuzzy, c-format
+msgid "in GREP_COLORS=\"%s\", the \"%s\" capacity %s"
 msgstr "在 GREP_COLORS=\"%s\"中，\"%s\" 是 %s。"
 
-#: src/main.c:1753
+#: src/main.c:1749
 #, c-format
-msgid "Stopped processing of ill-formed GREP_COLORS=\"%s\" at remaining substring \"%s\"."
-msgstr "在余下的子串 \"%s\" 中停止处理格式有误的 GREP_COLORS=\"%s\"。"
+msgid "stopped processing of ill-formed GREP_COLORS=\"%s\" at remaining substring \"%s\""
+msgstr "在余下的子串 \"%2$s\" 中停止处理格式有误的 GREP_COLORS=\"%1$s\"。"
 
-#: src/main.c:1824
+#: src/main.c:1820
 #, c-format
 msgid "unknown devices method"
 msgstr "未知的设备处理方法"
 
-#: src/main.c:1896
-#, c-format
-msgid "unknown directories method"
-msgstr "未知的目录处理方法"
-
-#: src/main.c:1964
+#: src/main.c:1954
 #, c-format
 msgid "invalid max count"
 msgstr "无效的最大计数"
 
-#: src/main.c:2019
+#: src/main.c:2009
 #, c-format
 msgid "unknown binary-files type"
 msgstr "未知的二进制文件类型"
 
-#: src/main.c:2126
-#, c-format
-msgid ""
-"Copyright (C) %s Free Software Foundation, Inc.\n"
-"License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\n"
-"This is free software: you are free to change and redistribute it.\n"
-"There is NO WARRANTY, to the extent permitted by law.\n"
-msgstr ""
-"Copyright (C) %s Free Software Foundation, Inc.\n"
-"License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\n"
-"This is free software: you are free to change and redistribute it.\n"
-"There is NO WARRANTY, to the extent permitted by law.\n"
-
-#: src/pcresearch.c:40
+#: src/pcresearch.c:42
 msgid "support for the -P option is not compiled into this --disable-perl-regexp binary"
 msgstr "-P 选项的支持未编译入 --disable-perl-regexp binary"
 
-#: src/pcresearch.c:54
+#: src/pcresearch.c:56
 #, c-format
 msgid "the -P option only supports a single pattern"
 msgstr "-P 选项仅支持单一匹配字词"
+
+#~ msgid "unknown directories method"
+#~ msgstr "未知的目录处理方法"
 
 #~ msgid ""
 #~ "\n"

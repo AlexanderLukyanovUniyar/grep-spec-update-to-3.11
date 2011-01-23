@@ -7,76 +7,96 @@
 # Thanks to: Stanislav Brabec <utx@k332.feld.cvut.cz>
 msgid ""
 msgstr ""
-"Project-Id-Version: grep 2.6\n"
+"Project-Id-Version: grep 2.7\n"
 "Report-Msgid-Bugs-To: bug-grep@gnu.org\n"
-"POT-Creation-Date: 2010-03-23 10:58+0100\n"
-"PO-Revision-Date: 2010-03-24 11:43+0100\n"
+"POT-Creation-Date: 2010-09-16 18:30+0200\n"
+"PO-Revision-Date: 2010-09-21 21:10+0200\n"
 "Last-Translator: Petr Pisar <petr.pisar@atlas.cz>\n"
 "Language-Team: Czech <translation-team-cs@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#: lib/argmatch.c:133
+#, c-format
+msgid "invalid argument %s for %s"
+msgstr "neplatný argument %s u %s"
+
+#: lib/argmatch.c:134
+#, c-format
+msgid "ambiguous argument %s for %s"
+msgstr "nejednoznačný argument %s u %s"
+
+#: lib/argmatch.c:153
+#, c-format
+msgid "Valid arguments are:"
+msgstr "Platné argumenty jsou:"
+
 #: lib/closeout.c:112
 msgid "write error"
 msgstr "chyba při zápisu"
 
-#: lib/error.c:153
+#: lib/error.c:181
 msgid "Unknown system error"
 msgstr "Neznámá systémová chyba"
 
-#: lib/getopt.c:525 lib/getopt.c:541
+#: lib/getopt.c:527 lib/getopt.c:543
 #, c-format
 msgid "%s: option '%s' is ambiguous\n"
 msgstr "%s: přepínač „%s“ není jednoznačný\n"
 
-#: lib/getopt.c:574 lib/getopt.c:578
+#: lib/getopt.c:576 lib/getopt.c:580
 #, c-format
 msgid "%s: option '--%s' doesn't allow an argument\n"
 msgstr "%s: přepínač „--%s“ musí být zadán bez argumentu\n"
 
-#: lib/getopt.c:587 lib/getopt.c:592
+#: lib/getopt.c:589 lib/getopt.c:594
 #, c-format
 msgid "%s: option '%c%s' doesn't allow an argument\n"
 msgstr "%s: přepínač „%c%s“ musí být zadán bez argumentu\n"
 
-#: lib/getopt.c:635 lib/getopt.c:654 lib/getopt.c:957 lib/getopt.c:976
+#: lib/getopt.c:637 lib/getopt.c:656
 #, c-format
-msgid "%s: option '%s' requires an argument\n"
-msgstr "%s: přepínač „%s“ vyžaduje argument\n"
+msgid "%s: option '--%s' requires an argument\n"
+msgstr "%s: přepínač „--%s“ vyžaduje argument\n"
 
-#: lib/getopt.c:692 lib/getopt.c:695
+#: lib/getopt.c:694 lib/getopt.c:697
 #, c-format
 msgid "%s: unrecognized option '--%s'\n"
 msgstr "%s: neznámý přepínač „--%s“\n"
 
-#: lib/getopt.c:703 lib/getopt.c:706
+#: lib/getopt.c:705 lib/getopt.c:708
 #, c-format
 msgid "%s: unrecognized option '%c%s'\n"
 msgstr "%s: neznámý přepínač „%c%s“\n"
 
-#: lib/getopt.c:755 lib/getopt.c:758
+#: lib/getopt.c:757 lib/getopt.c:760
 #, c-format
 msgid "%s: invalid option -- '%c'\n"
 msgstr "%s: neznámý přepínač – „%c“\n"
 
-#: lib/getopt.c:808 lib/getopt.c:825 lib/getopt.c:1028 lib/getopt.c:1046
+#: lib/getopt.c:810 lib/getopt.c:827 lib/getopt.c:1035 lib/getopt.c:1053
 #, c-format
 msgid "%s: option requires an argument -- '%c'\n"
 msgstr "%s: přepínač vyžaduje argument – „%c“\n"
 
-#: lib/getopt.c:878 lib/getopt.c:894
+#: lib/getopt.c:883 lib/getopt.c:899
 #, c-format
 msgid "%s: option '-W %s' is ambiguous\n"
 msgstr "%s: přepínač „-W %s“ není jednoznačný\n"
 
-#: lib/getopt.c:918 lib/getopt.c:936
+#: lib/getopt.c:923 lib/getopt.c:941
 #, c-format
 msgid "%s: option '-W %s' doesn't allow an argument\n"
 msgstr "%s: přepínač „-W %s“ musí být zadán bez argumentu\n"
 
-#: lib/obstack.c:423 lib/obstack.c:425 lib/xalloc-die.c:34 src/dfasearch.c:153
-#: src/kwset.c:178 src/kwset.c:186 src/kwset.c:409 src/pcresearch.c:147
+#: lib/getopt.c:962 lib/getopt.c:980
+#, c-format
+msgid "%s: option '-W %s' requires an argument\n"
+msgstr "%s: přepínač „-W %s“ vyžaduje argument\n"
+
+#: lib/obstack.c:423 lib/obstack.c:425 lib/xalloc-die.c:34 src/dfasearch.c:167
+#: src/kwset.c:178 src/kwset.c:186 src/kwset.c:409 src/pcresearch.c:149
 #, c-format
 msgid "memory exhausted"
 msgstr "paměť vyčerpána"
@@ -180,6 +200,178 @@ msgstr "Nepárový ) nebo \\)"
 msgid "No previous regular expression"
 msgstr "Žádný předchozí regulární výraz"
 
+#: lib/version-etc.c:74
+#, c-format
+msgid "Packaged by %s (%s)\n"
+msgstr "Zabaleno kým: %s (%s)\n"
+
+#: lib/version-etc.c:77
+#, c-format
+msgid "Packaged by %s\n"
+msgstr "Zabaleno kým: %s\n"
+
+#. TRANSLATORS: Translate "(C)" to the copyright symbol
+#. (C-in-a-circle), if this symbol is available in the user's
+#. locale.  Otherwise, do not translate "(C)"; leave it as-is.
+#: lib/version-etc.c:84
+msgid "(C)"
+msgstr "©"
+
+#: lib/version-etc.c:86
+msgid ""
+"\n"
+"License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.\n"
+"This is free software: you are free to change and redistribute it.\n"
+"There is NO WARRANTY, to the extent permitted by law.\n"
+"\n"
+msgstr ""
+"\n"
+"Licence GPLv3+: GNU GPL verze 3 nebo novější <http://gnu.org/licenses/gpl.html>.\n"
+"Toto je volné programové vybavení: máte právo jej měnit a dále šířit.\n"
+"Není zde ŽÁDNÁ ZÁRUKA, jak jen zákon dovoluje.\n"
+"\n"
+
+#. TRANSLATORS: %s denotes an author name.
+#: lib/version-etc.c:102
+#, c-format
+msgid "Written by %s.\n"
+msgstr "Napsal(a) %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#: lib/version-etc.c:106
+#, c-format
+msgid "Written by %s and %s.\n"
+msgstr "Napsali(y) %s a %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#: lib/version-etc.c:110
+#, c-format
+msgid "Written by %s, %s, and %s.\n"
+msgstr "Napsali(y) %s, %s a %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:117
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"and %s.\n"
+msgstr ""
+"Napsali(y) %s, %s, %s\n"
+"a %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:124
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, and %s.\n"
+msgstr ""
+"Napsali(y) %s, %s, %s,\n"
+"%s a %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:131
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, and %s.\n"
+msgstr ""
+"Napsali(y) %s, %s, %s,\n"
+"%s, %s a %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:139
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, and %s.\n"
+msgstr ""
+"Napsali(y) %s, %s, %s,\n"
+"%s, %s, %s a %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:147
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"and %s.\n"
+msgstr ""
+"Napsali(y) %s, %s, %s,\n"
+"%s, %s, %s, %s\n"
+"a %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:156
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s, and %s.\n"
+msgstr ""
+"Napsali(y) %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s a %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:167
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s, %s, and others.\n"
+msgstr ""
+"Napsali(y) %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s, %s a další.\n"
+
+#. TRANSLATORS: The placeholder indicates the bug-reporting address
+#. for this package.  Please add _another line_ saying
+#. "Report translation bugs to <...>\n" with the address for translation
+#. bugs (typically your translation team's web or email address).
+#: lib/version-etc.c:245 src/main.c:1474
+#, c-format
+msgid ""
+"\n"
+"Report bugs to: %s\n"
+msgstr ""
+"\n"
+"Chyby v programu oznamujte (anglicky) na adresu: <%s>\n"
+"Připomínky k překladu na adresu: <translation-team-cs@lists.sourceforge.net>\n"
+
+#: lib/version-etc.c:247
+#, c-format
+msgid "Report %s bugs to: %s\n"
+msgstr "Chyby distributora %s oznamujte (anglicky) na adresu: <%s>\n"
+
+#: lib/version-etc.c:251
+#, c-format
+msgid "%s home page: <%s>\n"
+msgstr "Domovská stránka programu %s: <%s>\n"
+
+#: lib/version-etc.c:253
+#, c-format
+msgid "%s home page: <http://www.gnu.org/software/%s/>\n"
+msgstr "Domovská stránka programu %s: <http://www.gnu.org/software/%s/>\n"
+
+#: lib/version-etc.c:256 src/main.c:1477
+msgid "General help using GNU software: <http://www.gnu.org/gethelp/>\n"
+msgstr "Obecná pomoc s používáním GNU softwaru: <http://www.gnu.org/gethelp/>\n"
+
 #: lib/xstrtol-error.c:63
 #, c-format
 msgid "invalid %s%s argument `%s'"
@@ -195,38 +387,42 @@ msgstr "neplatná přípona argumentu „%3$s“ u %1$s%2$s"
 msgid "%s%s argument `%s' too large"
 msgstr "argument „%3$s“ u %1$s%2$s je příliš dlouhý"
 
-#: src/dfa.c:495 src/dfa.c:498 src/dfa.c:516 src/dfa.c:529 src/dfa.c:541
-#: src/dfa.c:607 src/dfa.c:616 src/dfa.c:619 src/dfa.c:624 src/dfa.c:638
-#: src/dfa.c:690
+#: src/dfa.c:791 src/dfa.c:794 src/dfa.c:814 src/dfa.c:827 src/dfa.c:839
+#: src/dfa.c:905 src/dfa.c:914 src/dfa.c:917 src/dfa.c:922 src/dfa.c:936
+#: src/dfa.c:989
 msgid "unbalanced ["
 msgstr "nevyvážená ["
 
-#: src/dfa.c:568
+#: src/dfa.c:850
 msgid "invalid character class"
 msgstr "neplatný třída znaků"
 
-#: src/dfa.c:793
+#: src/dfa.c:1035
+msgid "character class syntax is [[:space:]], not [:space:]"
+msgstr "zápis třídy znaků je [[:space:]], ne [:space:]"
+
+#: src/dfa.c:1103
 msgid "unfinished \\ escape"
 msgstr "neukončená escape sekvence \\"
 
-#: src/dfa.c:926 src/dfa.c:932 src/dfa.c:942 src/dfa.c:950 src/dfa.c:965
+#: src/dfa.c:1236 src/dfa.c:1242 src/dfa.c:1252 src/dfa.c:1260 src/dfa.c:1275
 msgid "unfinished repeat count"
 msgstr "neukončený zápis počtu opakování"
 
-#: src/dfa.c:939 src/dfa.c:956 src/dfa.c:964 src/dfa.c:968
+#: src/dfa.c:1249 src/dfa.c:1266 src/dfa.c:1274 src/dfa.c:1278
 msgid "malformed repeat count"
 msgstr "deformovaný zápis počtu opakování"
 
-#: src/dfa.c:1245
+#: src/dfa.c:1623
 msgid "unbalanced ("
 msgstr "nevyvážená ("
 
 # ? Není zadaná syntaxe
-#: src/dfa.c:1376
+#: src/dfa.c:1756
 msgid "no syntax specified"
 msgstr "syntaxe není určena"
 
-#: src/dfa.c:1384
+#: src/dfa.c:1764
 msgid "unbalanced )"
 msgstr "nevyvážená )"
 
@@ -246,11 +442,11 @@ msgstr "VZOREK představuje množinu řetězců, každý na novém řádku.\n"
 msgid "Invocation as `fgrep' is deprecated; use `grep -F' instead.\n"
 msgstr "Spouštění programu jako „fgrep“ je zastaralé; použijte „grep -F“.\n"
 
-#: src/grep.c:35
+#: src/grep.c:32
 msgid "PATTERN is, by default, a basic regular expression (BRE).\n"
 msgstr "VZOREK představuje základní regulární výraz (BRE), pokud není řečeno jinak.\n"
 
-#: src/grep.c:37
+#: src/grep.c:34
 msgid ""
 "`egrep' means `grep -E'.  `fgrep' means `grep -F'.\n"
 "Direct invocation as either `egrep' or `fgrep' is deprecated.\n"
@@ -258,16 +454,25 @@ msgstr ""
 "„egrep“ znamená „grep -E“. „fgrep“ znamená „grep -F“.\n"
 "Přímé spouštění příkazem „egrep“ nebo „fgrep“ je zastaralé.\n"
 
-#: src/main.c:398
+#. This is a proper name. See the gettext manual, section Names.
+#: src/main.c:59
+msgid "Mike Haertel"
+msgstr "Mike Haertel"
+
+#: src/main.c:60
+msgid "others, see <http://git.sv.gnu.org/cgit/grep.git/tree/AUTHORS>"
+msgstr "další, vizte <http://git.sv.gnu.org/cgit/grep.git/tree/AUTHORS>"
+
+#: src/main.c:418
 msgid "invalid context length argument"
 msgstr "neplatný argument délky kontextu"
 
-#: src/main.c:453
+#: src/main.c:473
 #, c-format
 msgid "lseek failed"
 msgstr "posun v souboru (lseek) se nezdařil"
 
-#: src/main.c:600
+#: src/main.c:620
 #, c-format
 msgid "input is too large to count"
 msgstr "počet vstupních řádků nelze spočítat (je jich hodně)"
@@ -288,8 +493,8 @@ msgstr "(standardní vstup)"
 
 #: src/main.c:1330
 #, c-format
-msgid "warning: %s: %s\n"
-msgstr "varování: %s: %s\n"
+msgid "warning: %s: %s"
+msgstr "varování: %s: %s"
 
 #: src/main.c:1331
 msgid "recursive directory loop"
@@ -509,24 +714,10 @@ msgstr ""
 "Návratový kód je 0 při nalezení vyhovujícího řádku, 1 nevyhovoval-li žádný\n"
 "řádek a nebo 2 v případě nějakého problému.\n"
 
-#: src/main.c:1474
-#, c-format
-msgid ""
-"\n"
-"Report bugs to: %s\n"
-msgstr ""
-"\n"
-"Chyby v programu oznamujte (anglicky) na adresu: <%s>\n"
-"Připomínky (česky) na adresu: <translation-team-cs@lists.sourceforge.net>\n"
-
 #: src/main.c:1475
 #, c-format
 msgid "GNU Grep home page: <%s>\n"
 msgstr "Domovská stránka GNU Grepu: <%s>\n"
-
-#: src/main.c:1477
-msgid "General help using GNU software: <http://www.gnu.org/gethelp/>\n"
-msgstr "Obecná pomoc s používáním GNU softwaru: <http://www.gnu.org/gethelp/>\n"
 
 #: src/main.c:1507
 #, c-format
@@ -543,67 +734,52 @@ msgstr "zadány kolidující vzorky"
 msgid "invalid matcher %s"
 msgstr "neplatný syntaxe vzorku %s"
 
-#: src/main.c:1712
+#: src/main.c:1713
 #, c-format
-msgid "In GREP_COLORS=\"%s\", the \"%s\" capacity needs a value (\"=...\"); skipped."
-msgstr "Schopnost „%2$s“ v GREP_COLORS=\"%1$s\" potřebuje hodnotu („=…“); přeskočena."
+msgid "in GREP_COLORS=\"%s\", the \"%s\" capacity needs a value (\"=...\"); skipped"
+msgstr "Schopnost „%2$s“ v GREP_COLORS=\"%1$s\" potřebuje hodnotu („=…“); přeskočena"
 
-#: src/main.c:1716
+#: src/main.c:1717
 #, c-format
-msgid "In GREP_COLORS=\"%s\", the \"%s\" capacity is boolean and cannot take a value (\"=%s\"); skipped."
-msgstr "Schopnost „%2$s“ v GREP_COLORS=\"%1$s\" je pravdivostního typu a nemůže nést hodnotu („=%3$s“); přeskočena."
+msgid "in GREP_COLORS=\"%s\", the \"%s\" capacity is boolean and cannot take a value (\"=%s\"); skipped"
+msgstr "Schopnost „%2$s“ v GREP_COLORS=\"%1$s\" je pravdivostního typu a nemůže nést hodnotu („=%3$s“); přeskočena"
 
-#: src/main.c:1725
+#: src/main.c:1726
 #, c-format
-msgid "In GREP_COLORS=\"%s\", the \"%s\" capacity %s."
-msgstr "V GREP_COLORS=\"%s\" schopnost „%s“ %s."
+msgid "in GREP_COLORS=\"%s\", the \"%s\" capacity %s"
+msgstr "V GREP_COLORS=\"%s\" schopnost „%s“ %s"
 
-#: src/main.c:1748
+#: src/main.c:1749
 #, c-format
-msgid "Stopped processing of ill-formed GREP_COLORS=\"%s\" at remaining substring \"%s\"."
-msgstr "Zpracování chybně utvořeného GREP_COLORS=\"%s\" zastaveno na zbývajícím podřetězci „%s“."
+msgid "stopped processing of ill-formed GREP_COLORS=\"%s\" at remaining substring \"%s\""
+msgstr "Zpracování chybně utvořeného GREP_COLORS=\"%s\" zastaveno na zbývajícím podřetězci „%s“"
 
-#: src/main.c:1819
+#: src/main.c:1820
 #, c-format
 msgid "unknown devices method"
 msgstr "neznámá metoda obsluhy zařízení"
 
-#: src/main.c:1891
-#, c-format
-msgid "unknown directories method"
-msgstr "neznámá metoda obsluhy adresářů"
-
-#: src/main.c:1959
+#: src/main.c:1954
 #, c-format
 msgid "invalid max count"
 msgstr "neplatný maximální počet"
 
-#: src/main.c:2014
+#: src/main.c:2009
 #, c-format
 msgid "unknown binary-files type"
 msgstr "neznámý typ binárního souboru"
 
-#: src/main.c:2120
-#, c-format
-msgid ""
-"Copyright (C) %s Free Software Foundation, Inc.\n"
-"License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\n"
-"This is free software: you are free to change and redistribute it.\n"
-"There is NO WARRANTY, to the extent permitted by law.\n"
-msgstr ""
-"Copyright © %s Free Software Foundation, Inc.\n"
-"Licence GPLv3+: GNU GPL verze 3 nebo novější <http://gnu.org/licenses/gpl.html>\n"
-"Toto je volné programové vybavení: máte právo jej měnit a dále šířit.\n"
-"Není zde ŽÁDNÁ ZÁRUKA, jak jen zákon dovoluje.\n"
-
-#: src/pcresearch.c:40
+#: src/pcresearch.c:42
 msgid "support for the -P option is not compiled into this --disable-perl-regexp binary"
 msgstr "Volba -P není podporována. Tento program byl přeložen s --disable-perl-regexp."
 
-#: src/pcresearch.c:54
+#: src/pcresearch.c:56
 #, c-format
 msgid "the -P option only supports a single pattern"
 msgstr "přepínač -P lze být použít pouze s jedním vzorkem"
+
+#~ msgid "unknown directories method"
+#~ msgstr "neznámá metoda obsluhy adresářů"
 
 #~ msgid ""
 #~ "\n"
