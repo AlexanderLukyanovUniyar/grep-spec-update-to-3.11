@@ -14,10 +14,10 @@
 # Yasuaki Taniguchi <yasuakit@gmail.com>, 2010, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: GNU grep 2.9\n"
+"Project-Id-Version: GNU grep 2.10\n"
 "Report-Msgid-Bugs-To: bug-grep@gnu.org\n"
-"POT-Creation-Date: 2011-06-21 20:06+0200\n"
-"PO-Revision-Date: 2011-06-23 18:34+0900\n"
+"POT-Creation-Date: 2011-11-16 14:03+0100\n"
+"PO-Revision-Date: 2011-11-19 10:09+0900\n"
 "Last-Translator: Yasuaki Taniguchi <yasuakit@gmail.com>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
@@ -45,7 +45,7 @@ msgstr "有効な引数:"
 msgid "write error"
 msgstr "書き込みエラー"
 
-#: lib/error.c:185
+#: lib/error.c:187
 msgid "Unknown system error"
 msgstr "不明なシステムエラー"
 
@@ -84,28 +84,28 @@ msgstr "%s: オプション '%c%s' を認識できません\n"
 msgid "%s: invalid option -- '%c'\n"
 msgstr "%s: 無効なオプション -- '%c'\n"
 
-#: lib/getopt.c:858 lib/getopt.c:875 lib/getopt.c:1083 lib/getopt.c:1101
+#: lib/getopt.c:861 lib/getopt.c:878 lib/getopt.c:1088 lib/getopt.c:1106
 #, c-format
 msgid "%s: option requires an argument -- '%c'\n"
 msgstr "%s: オプションには引数が必要です -- '%c'\n"
 
-#: lib/getopt.c:931 lib/getopt.c:947
+#: lib/getopt.c:934 lib/getopt.c:950
 #, c-format
 msgid "%s: option '-W %s' is ambiguous\n"
 msgstr "%s: オプション '-W %s' は曖昧です\n"
 
-#: lib/getopt.c:971 lib/getopt.c:989
+#: lib/getopt.c:974 lib/getopt.c:992
 #, c-format
 msgid "%s: option '-W %s' doesn't allow an argument\n"
 msgstr "%s: オプション '-W %s' は引数を取ることができません\n"
 
-#: lib/getopt.c:1010 lib/getopt.c:1028
+#: lib/getopt.c:1013 lib/getopt.c:1031
 #, c-format
 msgid "%s: option '-W %s' requires an argument\n"
 msgstr "%s: オプション '-W %s' には引数が必要です\n"
 
-#: lib/obstack.c:421 lib/obstack.c:423 lib/xalloc-die.c:34 src/kwset.c:178
-#: src/kwset.c:186 src/kwset.c:409 src/pcresearch.c:155
+#: lib/obstack.c:413 lib/obstack.c:415 lib/xalloc-die.c:34 src/kwset.c:178
+#: src/kwset.c:186 src/kwset.c:409 src/pcresearch.c:150
 #, c-format
 msgid "memory exhausted"
 msgstr "メモリを使い果たしました"
@@ -352,7 +352,7 @@ msgstr ""
 #. for this package.  Please add _another line_ saying
 #. "Report translation bugs to <...>\n" with the address for translation
 #. bugs (typically your translation team's web or email address).
-#: lib/version-etc.c:245 src/main.c:1474
+#: lib/version-etc.c:245 src/main.c:1496
 #, c-format
 msgid ""
 "\n"
@@ -379,7 +379,7 @@ msgstr "%s のホームページ: <%s>\n"
 msgid "%s home page: <http://www.gnu.org/software/%s/>\n"
 msgstr "%s のホームページ: <http://www.gnu.org/software/%s/>\n"
 
-#: lib/version-etc.c:256 src/main.c:1477
+#: lib/version-etc.c:256 src/main.c:1499
 msgid "General help using GNU software: <http://www.gnu.org/gethelp/>\n"
 msgstr "GNU ソフトウェアを使用する際の一般的なヘルプ: <http://www.gnu.org/gethelp/>\n"
 
@@ -398,41 +398,41 @@ msgstr "引数 `%3$s' に対して無効な接尾辞 %1$s%2$s です"
 msgid "%s%s argument `%s' too large"
 msgstr "引数 `%3$s' に対する %1$s%2$s が大きすぎます"
 
-#: src/dfa.c:799 src/dfa.c:802 src/dfa.c:822 src/dfa.c:835 src/dfa.c:847
-#: src/dfa.c:913 src/dfa.c:922 src/dfa.c:925 src/dfa.c:930 src/dfa.c:944
-#: src/dfa.c:1009
+#: src/dfa.c:813 src/dfa.c:816 src/dfa.c:837 src/dfa.c:848 src/dfa.c:860
+#: src/dfa.c:922 src/dfa.c:931 src/dfa.c:934 src/dfa.c:939 src/dfa.c:953
+#: src/dfa.c:1016
 msgid "unbalanced ["
 msgstr "対応がとれていない [ です"
 
-#: src/dfa.c:858
+#: src/dfa.c:871
 msgid "invalid character class"
 msgstr "無効な文字クラス名です"
 
-#: src/dfa.c:1051
+#: src/dfa.c:1053
 msgid "character class syntax is [[:space:]], not [:space:]"
 msgstr "文字クラスの構文は [[:space:]] です。 [:space:] ではありません"
 
-#: src/dfa.c:1112
+#: src/dfa.c:1108
 msgid "unfinished \\ escape"
 msgstr "\\ エスケープが終了していません"
 
-#: src/dfa.c:1245 src/dfa.c:1251 src/dfa.c:1261 src/dfa.c:1269 src/dfa.c:1284
+#: src/dfa.c:1241 src/dfa.c:1247 src/dfa.c:1257 src/dfa.c:1265 src/dfa.c:1280
 msgid "unfinished repeat count"
 msgstr "繰返し回数が終了していません"
 
-#: src/dfa.c:1258 src/dfa.c:1275 src/dfa.c:1283 src/dfa.c:1287
+#: src/dfa.c:1254 src/dfa.c:1271 src/dfa.c:1279 src/dfa.c:1283
 msgid "malformed repeat count"
 msgstr "不正な形式の繰り返し回数です"
 
-#: src/dfa.c:1676
+#: src/dfa.c:1664
 msgid "unbalanced ("
 msgstr "対応がとれていない ( です"
 
-#: src/dfa.c:1809
+#: src/dfa.c:1793
 msgid "no syntax specified"
 msgstr "構文が指定されていません"
 
-#: src/dfa.c:1817
+#: src/dfa.c:1801
 msgid "unbalanced )"
 msgstr "対応がとれていない ) です"
 
@@ -465,67 +465,72 @@ msgstr ""
 "`egrep' または `fgrep' による直接起動は廃止予定です。\n"
 
 #. This is a proper name. See the gettext manual, section Names.
-#: src/main.c:59
+#: src/main.c:60
 msgid "Mike Haertel"
 msgstr "Mike Haertel"
 
-#: src/main.c:60
+#: src/main.c:61
 msgid "others, see <http://git.sv.gnu.org/cgit/grep.git/tree/AUTHORS>"
 msgstr "その他の方々は <http://git.sv.gnu.org/cgit/grep.git/tree/AUTHORS> を参照してください"
 
-#: src/main.c:418
+#: src/main.c:424
 msgid "invalid context length argument"
 msgstr "一致した前後の行の表示に関する引数が無効です"
 
-#: src/main.c:473
+#: src/main.c:479
 #, c-format
 msgid "lseek failed"
 msgstr "lseek に失敗しました"
 
-#: src/main.c:620
+#: src/main.c:626
 #, c-format
 msgid "input is too large to count"
 msgstr "入力が大きすぎて数えられません"
 
-#: src/main.c:862
+#: src/main.c:868
 #, c-format
 msgid "writing output"
 msgstr "出力の書込み"
 
-#: src/main.c:1185
+#: src/main.c:1191
 #, c-format
 msgid "Binary file %s matches\n"
 msgstr "バイナリファイル %s に一致しました\n"
 
-#: src/main.c:1199
+#: src/main.c:1205
 msgid "(standard input)"
 msgstr "(標準入力)"
 
-#: src/main.c:1330
+#: src/main.c:1232
+#, c-format
+msgid "input file %s is also the output"
+msgstr "入力ファイル %s が出力にもなっています"
+
+#: src/main.c:1352
 #, c-format
 msgid "warning: %s: %s"
 msgstr "警告: %s: %s"
 
-#: src/main.c:1331
+#: src/main.c:1353
 msgid "recursive directory loop"
 msgstr "ディレクトリーが再帰的ループをしています"
 
-#: src/main.c:1379 src/main.c:1386
+#: src/main.c:1401 src/main.c:1408
 #, c-format
 msgid "Usage: %s [OPTION]... PATTERN [FILE]...\n"
 msgstr "使用法: %s [OPTION]... PATTERN [FILE]...\n"
 
-#: src/main.c:1381
+#: src/main.c:1403
 #, c-format
 msgid "Try `%s --help' for more information.\n"
 msgstr "詳しくは`%s --help'を実行してください。\n"
 
-#: src/main.c:1387
+#: src/main.c:1409
 #, c-format
 msgid "Search for PATTERN in each FILE or standard input.\n"
 msgstr "各 FILE または標準入力内の PATTERN を検索します。\n"
 
-#: src/main.c:1390
+#: src/main.c:1412
 #, c-format
 msgid ""
 "Example: %s -i 'hello world' menu.h main.c\n"
@@ -536,7 +541,7 @@ msgstr ""
 "\n"
 "正規表現の選択および解釈:\n"
 
-#: src/main.c:1395
+#: src/main.c:1417
 #, c-format
 msgid ""
 "  -E, --extended-regexp     PATTERN is an extended regular expression (ERE)\n"
@@ -549,7 +554,7 @@ msgstr ""
 "  -G, --basic-regexp        PATTERN を基本正規表現 (BRE) とする\n"
 "  -P, --perl-regexp         PATTERN を Perl 正規表現とする\n"
 
-#: src/main.c:1401
+#: src/main.c:1423
 #, c-format
 msgid ""
 "  -e, --regexp=PATTERN      use PATTERN for matching\n"
@@ -566,7 +571,7 @@ msgstr ""
 "  -x, --line-regexp         強制的に行全体で PATTERN の一致処理を行う\n"
 "  -z, --null-data           データの行末を改行ではなく NULL とする\n"
 
-#: src/main.c:1408
+#: src/main.c:1430
 #, c-format
 msgid ""
 "\n"
@@ -585,7 +590,7 @@ msgstr ""
 "      --help                このヘルプを表示して終了する\n"
 "      --mmap                無視する (後方互換性を保つために存在する)\n"
 
-#: src/main.c:1416
+#: src/main.c:1438
 #, c-format
 msgid ""
 "\n"
@@ -594,9 +599,9 @@ msgid ""
 "  -b, --byte-offset         print the byte offset with output lines\n"
 "  -n, --line-number         print line number with output lines\n"
 "      --line-buffered       flush output on every line\n"
-"  -H, --with-filename       print the filename for each match\n"
-"  -h, --no-filename         suppress the prefixing filename on output\n"
-"      --label=LABEL         print LABEL as filename for standard input\n"
+"  -H, --with-filename       print the file name for each match\n"
+"  -h, --no-filename         suppress the file name prefix on output\n"
+"      --label=LABEL         use LABEL as the standard input file name prefix\n"
 msgstr ""
 "\n"
 "出力の制御:\n"
@@ -604,11 +609,11 @@ msgstr ""
 "  -b, --byte-offset         出力行と併せてバイトオフセットを表示する\n"
 "  -n, --line-number         出力行と併せて行番号を表示する\n"
 "      --line-buffered       行ごとに出力を flush する\n"
-"  -H, --with-filename       一致する毎にファイル名を表示する\n"
+"  -H, --with-filename       一致するごとにファイル名を表示する\n"
 "  -h, --no-filename         出力の先頭にファイル名を付けない\n"
-"      --label=LABEL         標準入力のファイル名として LABEL を使用する\n"
+"      --label=LABEL         標準入力のファイル名の接頭辞として LABEL を使用する\n"
 
-#: src/main.c:1427
+#: src/main.c:1449
 #, c-format
 msgid ""
 "  -o, --only-matching       show only the part of a line matching PATTERN\n"
@@ -623,7 +628,7 @@ msgstr ""
 "                            TYPE は `binary'、`text' または `without-match'\n"
 "  -a, --text                --binary-files=text と等価\n"
 
-#: src/main.c:1434
+#: src/main.c:1456
 #, c-format
 msgid ""
 "  -I                        equivalent to --binary-files=without-match\n"
@@ -640,7 +645,7 @@ msgstr ""
 "                            ACTION は `read' または `skip'\n"
 "  -R, -r, --recursive       --directories=recurse と等価\n"
 
-#: src/main.c:1442
+#: src/main.c:1464
 #, c-format
 msgid ""
 "      --include=FILE_PATTERN  search only files that match FILE_PATTERN\n"
@@ -653,7 +658,7 @@ msgstr ""
 "      --exclude-from=FILE   FILE から読み込んだファイル名のパターンに一致するファイルをスキップする\n"
 "      --exclude-dir=PATTERN  PATTERN に一致したディレクトリをスキップする\n"
 
-#: src/main.c:1448
+#: src/main.c:1470
 #, c-format
 msgid ""
 "  -L, --files-without-match  print only names of FILEs containing no match\n"
@@ -668,7 +673,7 @@ msgstr ""
 "  -T, --initial-tab         タブを使用して整列する (必要な場合)\n"
 "  -Z, --null                FILE の名前を表示した後に値が 0 のバイトを出力する\n"
 
-#: src/main.c:1454
+#: src/main.c:1476
 #, c-format
 msgid ""
 "\n"
@@ -683,7 +688,7 @@ msgstr ""
 "  -A, --after-context=NUM   一致した後の NUM 行を表示する\n"
 "  -C, --context=NUM         一致した前後 NUM 行を表示する\n"
 
-#: src/main.c:1461
+#: src/main.c:1483
 #, c-format
 msgid ""
 "  -NUM                      same as --context=NUM\n"
@@ -702,7 +707,7 @@ msgstr ""
 "  -u, --unix-byte-offsets   CR が無いものとしてオフセットを表示する (MSDOS)\n"
 "\n"
 
-#: src/main.c:1470
+#: src/main.c:1492
 #, c-format
 msgid ""
 "With no FILE, or when FILE is -, read standard input.  If less than two FILEs\n"
@@ -714,57 +719,57 @@ msgstr ""
 "それ以外は 1 です。エラーが発生して -q を指定していない場合の終了コードは 2\n"
 "になります。\n"
 
-#: src/main.c:1475
+#: src/main.c:1497
 #, c-format
 msgid "GNU Grep home page: <%s>\n"
 msgstr "GNU Grep のホームページ: <%s>\n"
 
-#: src/main.c:1507
+#: src/main.c:1529
 #, c-format
 msgid "%s can only use the %s pattern syntax"
 msgstr "%s は %s パターン構文の時のみ使用できます"
 
-#: src/main.c:1510
+#: src/main.c:1532
 #, c-format
 msgid "conflicting matchers specified"
 msgstr "指定した一致処理系が競合しています"
 
-#: src/main.c:1524
+#: src/main.c:1546
 #, c-format
 msgid "invalid matcher %s"
 msgstr "%s は無効な一致処理系です"
 
-#: src/main.c:1710
+#: src/main.c:1732
 #, c-format
 msgid "in GREP_COLORS=\"%s\", the \"%s\" capacity needs a value (\"=...\"); skipped"
 msgstr "GREP_COLORS=\"%s\" において、\"%s\" には値の代入 (\"=...\") が必要です。スキップしました"
 
-#: src/main.c:1714
+#: src/main.c:1736
 #, c-format
 msgid "in GREP_COLORS=\"%s\", the \"%s\" capacity is boolean and cannot take a value (\"=%s\"); skipped"
 msgstr "GREP_COLORS=\"%s\" において、\"%s\" は真偽値であり値を代入 (\"=%s\") することはできません。スキップしました"
 
-#: src/main.c:1723
+#: src/main.c:1745
 #, c-format
 msgid "in GREP_COLORS=\"%s\", the \"%s\" capacity %s"
 msgstr "GREP_COLORS=\"%s\" において \"%s\" は %s です"
 
-#: src/main.c:1746
+#: src/main.c:1768
 #, c-format
 msgid "stopped processing of ill-formed GREP_COLORS=\"%s\" at remaining substring \"%s\""
 msgstr "GREP_COLORS=\"%s\" の形式に誤りがあるため処理を中止しました。残りの部分文字列は \"%s\" です"
 
-#: src/main.c:1818
+#: src/main.c:1840
 #, c-format
 msgid "unknown devices method"
 msgstr "デバイスに対する不明な操作です"
 
-#: src/main.c:1952
+#: src/main.c:1974
 #, c-format
 msgid "invalid max count"
 msgstr "無効な一致回数です"
 
-#: src/main.c:2007
+#: src/main.c:2029
 #, c-format
 msgid "unknown binary-files type"
 msgstr "不明なバイナリファイルの形式です"
@@ -778,7 +783,12 @@ msgstr "このバイナリは --disable-perl-regexp 付きでコンパイルさ�
 msgid "the -P option only supports a single pattern"
 msgstr "-P オプションは単一のパターンしかサポートしません"
 
-#: src/pcresearch.c:159
+#: src/pcresearch.c:110
+#, c-format
+msgid "internal error"
+msgstr "内部エラー"
+
+#: src/pcresearch.c:154
 #, c-format
 msgid "exceeded PCRE's backtracking limit"
 msgstr "PCRE のバックスラッシュ制限を超過しました"
