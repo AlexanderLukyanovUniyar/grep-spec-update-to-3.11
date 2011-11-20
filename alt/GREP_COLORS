@@ -1,0 +1,8 @@
+# Configuration file for the color grep utility
+
+# 'none' shuts colorization off.
+#COLOR none
+
+# Specifies the colors and other attributes used to highlight various parts
+# of the output.  See frep(1) for details.
+#GREP_COLORS ms=01;31:mc=01;31:sl=:cx=:fn=35:ln=32:bn=32:se=36

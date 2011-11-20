@@ -1,0 +1,3 @@
+tar: grep-current:. name=grep-@version@-@release@
+tar: po-current:po name=po-@version@-@release@ base=po
+copy: alt/*
