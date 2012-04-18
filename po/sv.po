@@ -7,10 +7,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: grep 2.9.69-pre1\n"
+"Project-Id-Version: grep 2.10\n"
 "Report-Msgid-Bugs-To: bug-grep@gnu.org\n"
-"POT-Creation-Date: 2011-11-10 10:20+0100\n"
-"PO-Revision-Date: 2011-11-13 11:28+0100\n"
+"POT-Creation-Date: 2011-11-16 14:03+0100\n"
+"PO-Revision-Date: 2011-11-21 08:51+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -97,7 +97,7 @@ msgid "%s: option '-W %s' requires an argument\n"
 msgstr "%s: flaggan \"-W %s\" behöver ett argument\n"
 
 #: lib/obstack.c:413 lib/obstack.c:415 lib/xalloc-die.c:34 src/kwset.c:178
-#: src/kwset.c:186 src/kwset.c:409 src/pcresearch.c:155
+#: src/kwset.c:186 src/kwset.c:409 src/pcresearch.c:150
 #, c-format
 msgid "memory exhausted"
 msgstr "minnet är slut"
@@ -780,7 +780,12 @@ msgstr "stöd för flaggan -P är inte inbyggd i den här binären med --disable
 msgid "the -P option only supports a single pattern"
 msgstr "flaggan -P har endast stöd för ett mönster"
 
-#: src/pcresearch.c:159
+#: src/pcresearch.c:110
+#, c-format
+msgid "internal error"
+msgstr "internt fel"
+
+#: src/pcresearch.c:154
 #, c-format
 msgid "exceeded PCRE's backtracking limit"
 msgstr "översteg gräns för PCRE-bakåtspårning"
