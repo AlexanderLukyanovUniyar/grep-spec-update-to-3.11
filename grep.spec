@@ -1,5 +1,5 @@
 Name: grep
-Version: 2.10
+Version: 2.11
 Release: alt1
 
 Summary: The GNU versions of grep pattern matching utilities
@@ -7,26 +7,29 @@ License: GPLv3+
 Group: File tools
 Url: http://www.gnu.org/software/grep/
 
-# git://git.sv.gnu.org/grep refs/heads/master
-Source0: grep-%version-%release.tar
-# git://git.sv.gnu.org/gnulib refs/heads/master
-Source1: gnulib-%version-%release.tar
-# translationproject.org::tp/latest/grep/
-Source2: po-%version-%release.tar
+%define srcname %name-%version-%release
+# git://git.altlinux.org/people/ldv/packages/grep refs/heads/grep-current
+Source0: %srcname.tar
+# git://git.altlinux.org/people/ldv/packages/grep refs/heads/po-current
+Source1: po-%version-%release.tar
 
 Source3: GREP_COLORS
 Source4: color_grep.sh
 Source5: color_grep.csh
 
-# git://git.altlinux.org/people/ldv/packages/gnulib refs/heads/grep
-#Patch: grep-%version-%release.patch
+# git://git.altlinux.org/people/ldv/packages/grep grep-current..grep-alt
+#Patch: %name-%version-%release.patch
 
 # due to libpcre relocation.
 Requires: libpcre3 >= 0:6.4-alt2
 Provides: pcre-grep, pgrep
 Obsoletes: pcre-grep, pgrep
 
-BuildRequires: gperf libpcre-devel
+BuildRequires: gnulib >= 0.0.7312.7995834
+# due to build from git
+BuildRequires: gperf
+# due to --perl-regexp
+BuildRequires: libpcre-devel
 
 %description
 The GNU versions of commonly used grep utilities.  grep searches through
@@ -35,9 +38,10 @@ and then prints the matching lines.  GNU's grep utilities include grep,
 egrep, fgrep, and pcregrep.
 
 %prep
-%setup -n grep-%version-%release -a1 -a2
+%setup -n %srcname -a1
 
-echo -n %version >.tarball-version
+# Build scripts expect to find the grep version in this file.
+echo -n %version > .tarball-version
 
 # Generate LINGUAS file.
 ls po/*.po | sed 's|.*/||; s|\.po$||' > po/LINGUAS
@@ -45,14 +49,19 @@ ls po/*.po | sed 's|.*/||; s|\.po$||' > po/LINGUAS
 # git and rsync aren't needed for build.
 sed -i '/^\(git\|rsync\)[[:space:]]/d' bootstrap.conf
 
+%build
+./bootstrap --skip-po --gnulib-srcdir=%_datadir/gnulib
+
 # Unset the variable gl_printf_safe to indicate that we do not need
 # a safe handling of non-IEEE-754 'long double' values.
-sed -i 's/gl_printf_safe=yes/gl_printf_safe=/' \
-        gnulib-%version-%release/modules/printf-safe
+sed -i 's/gl_printf_safe=yes/gl_printf_safe=/' m4/gnulib-comp.m4 configure
 
-%build
-./bootstrap --skip-po --gnulib-srcdir=gnulib-%version-%release
-%configure --bindir=/bin --disable-silent-rules --without-included-regex --enable-gcc-warnings
+%configure \
+	--bindir=/bin \
+	--disable-silent-rules \
+	--without-included-regex \
+	--enable-gcc-warnings \
+	#
 %make_build
 
 %install
@@ -82,6 +91,11 @@ install -pm644 %_sourcedir/GREP_COLORS \
 %doc AUTHORS NEWS README THANKS TODO
 
 %changelog
+* Fri Apr 20 2012 Dmitry V. Levin <ldv@altlinux.org> 2.11-alt1
+- Updated to grep v2.11-18-g42f01d2.
+- Updated translations from translationproject.org.
+- Built with gnulib v0.0-7312-g7995834.
+
 * Sun Nov 20 2011 Dmitry V. Levin <ldv@altlinux.org> 2.10-alt1
 - Updated grep to v2.10.
 - Updated gnulib to v0.0-6628-g4f6a7ef.
