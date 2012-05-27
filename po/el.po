@@ -1,197 +1,633 @@
-# Greek messages for GNU grep-2.5g.
+# Greek messages for GNU grep
+# This file is distributed under the same license as the grep package.
 # Copyright (C) 1998, 2002 Free Software Foundation, Inc.
 # Simos Xenitellis <simos@hellug.gr>, 1998, 2002.
+# Savvas Radevic <vicedar@gmail.com>, 2012.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: GNU grep 2.5g\n"
-"POT-Creation-Date: 2002-01-22 14:39+0100\n"
-"PO-Revision-Date: 2002-03-11 12:00+0000\n"
-"Last-Translator: Simos Xenitellis <simos@hellug.gr>\n"
-"Language-Team: Greek <nls@tux.hellug.gr>\n"
+"Project-Id-Version: grep 2.11.11-pre1\n"
+"Report-Msgid-Bugs-To: bug-grep@gnu.org\n"
+"POT-Creation-Date: 2012-04-09 22:09+0200\n"
+"PO-Revision-Date: 2012-05-05 23:23+0100\n"
+"Last-Translator: Savvas Radevic <vicedar@gmail.com>\n"
+"Language-Team: Greek <team@lists.gnome.gr>\n"
+"Language: el\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ISO-8859-7\n"
-"Content-Transfer-Encoding: 8-bit\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Greek\n"
+"X-Poedit-Country: GREECE\n"
 
-# src/dfa.c:147 src/dfa.c:159 src/dfa.c:172
-# src/dfa.c:155 src/dfa.c:167 src/dfa.c:180 src/grep.c:827
-#: src/dfa.c:136 src/dfa.c:147 src/dfa.c:158 src/search.c:689
-msgid "Memory exhausted"
-msgstr "Η μνήμη εξαντλήθηκε"
+#: lib/argmatch.c:133
+#, c-format
+msgid "invalid argument %s for %s"
+msgstr "Ξ¬ΞΊΟ…ΟΞ· ΞµΟ€ΞΉΞ»ΞΏΞ³Ξ® %s Ξ³ΞΉΞ± %s"
 
-# src/dfa.c:652 src/dfa.c:655 src/dfa.c:682 src/dfa.c:686 src/dfa.c:687
-# src/dfa.c:690 src/dfa.c:703 src/dfa.c:704
-# src/dfa.c:660 src/dfa.c:663 src/dfa.c:690 src/dfa.c:694 src/dfa.c:695
-# src/dfa.c:698 src/dfa.c:711 src/dfa.c:712
-#: src/dfa.c:489 src/dfa.c:492 src/dfa.c:510 src/dfa.c:521 src/dfa.c:545 src/dfa.c:604 src/dfa.c:609 src/dfa.c:622 src/dfa.c:623 src/dfa.c:1001 src/dfa.c:1004 src/dfa.c:1028 src/dfa.c:1032 src/dfa.c:1033 src/dfa.c:1036 src/dfa.c:1048 src/dfa.c:1049
-msgid "Unbalanced ["
-msgstr "Μη ισορροπημένο ["
+#: lib/argmatch.c:134
+#, c-format
+msgid "ambiguous argument %s for %s"
+msgstr "Ξ΄ΞΉΟ†ΞΏΟΞΏΟΞΌΞµΞ½Ξ· ΞµΟ€ΞΉΞ»ΞΏΞ³Ξ® %s Ξ³ΞΉΞ± %s"
 
-# src/dfa.c:444
-# src/dfa.c:452
-#: src/dfa.c:741
-msgid "Unfinished \\ escape"
-msgstr "Μη τερματισμένος χαρακτήρας διαφυγής \\"
+#: lib/argmatch.c:153
+msgid "Valid arguments are:"
+msgstr "ΞΞ³ΞΊΟ…ΟΞµΟ‚ ΞµΟ€ΞΉΞ»ΞΏΞ³Ξ­Ο‚ ΞµΞ―Ξ½Ξ±ΞΉ ΞΏΞΉ ΞµΞΎΞ®Ο‚:"
 
-# src/dfa.c:556 src/dfa.c:562 src/dfa.c:573 src/dfa.c:584
-# src/dfa.c:564 src/dfa.c:570 src/dfa.c:581 src/dfa.c:592
-#. Cases:
-#. {M} - exact count
-#. {M,} - minimum count, maximum is infinity
-#. {M,N} - M through N
-#: src/dfa.c:874 src/dfa.c:880 src/dfa.c:890 src/dfa.c:898 src/dfa.c:913
-msgid "unfinished repeat count"
-msgstr "μη τερματισμένος μετρητής επανάληψης"
+#: lib/closeout.c:112 src/main.c:894
+#, c-format
+msgid "write error"
+msgstr "ΟƒΟ†Ξ¬Ξ»ΞΌΞ± ΞµΞ³Ξ³ΟΞ±Ο†Ξ®Ο‚"
 
-# src/dfa.c:569 src/dfa.c:583 src/dfa.c:587
-# src/dfa.c:577 src/dfa.c:591 src/dfa.c:595
-#: src/dfa.c:887 src/dfa.c:904 src/dfa.c:912 src/dfa.c:916
-msgid "malformed repeat count"
-msgstr "κακοσχηματισμένος μετρητής επανάληψης"
+#: lib/error.c:188
+msgid "Unknown system error"
+msgstr "Ξ†Ξ³Ξ½Ο‰ΟƒΟ„ΞΏ Ξ»Ξ¬ΞΈΞΏΟ‚ ΟƒΟ…ΟƒΟ„Ξ®ΞΌΞ±Ο„ΞΏΟ‚"
 
-# src/dfa.c:841
-# src/dfa.c:849
-#: src/dfa.c:1253
-msgid "Unbalanced ("
-msgstr "Μη ισορροπημένο ("
+# src/getopt.c:628
+# src/getopt.c:628
+#: lib/getopt.c:547 lib/getopt.c:576
+#, fuzzy, c-format
+msgid "%s: option '%s' is ambiguous; possibilities:"
+msgstr "%s: Ξ· ΞµΟ€ΞΉΞ»ΞΏΞ³Ξ® Β«%sΒ» ΞµΞ―Ξ½Ξ±ΞΉ Ξ΄ΞΉΟ†ΞΏΟΞΏΟΞΌΞµΞ½Ξ·\n"
 
-# src/dfa.c:962
-# src/dfa.c:970
-#: src/dfa.c:1378
-msgid "No syntax specified"
-msgstr "Δεν ορίστηκε συντακτικό"
+# src/getopt.c:652
+# src/getopt.c:652
+#: lib/getopt.c:624 lib/getopt.c:628
+#, fuzzy, c-format
+msgid "%s: option '--%s' doesn't allow an argument\n"
+msgstr "%s: Ξ· ΞµΟ€ΞΉΞ»ΞΏΞ³Ξ® Β«--%sΒ» Ξ΄ΞµΞ½ ΞµΟ€ΞΉΟ„ΟΞ­Ο€ΞµΞΉ ΞΏΟΞ―ΟƒΞΌΞ±Ο„Ξ±\n"
 
-# src/dfa.c:970
-# src/dfa.c:978
-#: src/dfa.c:1386
-msgid "Unbalanced )"
-msgstr "Μη ισορροπημένο )"
+# src/getopt.c:657
+# src/getopt.c:657
+#: lib/getopt.c:637 lib/getopt.c:642
+#, fuzzy, c-format
+msgid "%s: option '%c%s' doesn't allow an argument\n"
+msgstr "%s: Ξ· ΞµΟ€ΞΉΞ»ΞΏΞ³Ξ® Β«%c%sΒ» Ξ΄ΞµΞ½ ΞµΟ€ΞΉΟ„ΟΞ­Ο€ΞµΞΉ ΞΏΟΞ―ΟƒΞΌΞ±Ο„Ξ±\n"
 
-# src/dfa.c:1990
-# src/dfa.c:1998
-#: src/dfa.c:2956
-msgid "out of memory"
-msgstr "η μνήμη εξαντλήθηκε"
+# src/getopt.c:674 src/getopt.c:847
+# src/getopt.c:674 src/getopt.c:847
+#: lib/getopt.c:685 lib/getopt.c:704
+#, fuzzy, c-format
+msgid "%s: option '--%s' requires an argument\n"
+msgstr "%s: Ξ· ΞµΟ€ΞΉΞ»ΞΏΞ³Ξ® Β«%sΒ» Ξ±Ο€Ξ±ΞΉΟ„ΞµΞ― ΟΟΞΉΟƒΞΌΞ±\n"
+
+# src/getopt.c:703
+# src/getopt.c:703
+#: lib/getopt.c:742 lib/getopt.c:745
+#, fuzzy, c-format
+msgid "%s: unrecognized option '--%s'\n"
+msgstr "%s: ΞΌΞ· Ξ±Ξ½Ξ±Ξ³Ξ½Ο‰ΟΞ―ΟƒΞΉΞΌΞ· ΞµΟ€ΞΉΞ»ΞΏΞ³Ξ® Β«--%sΒ»\n"
+
+# src/getopt.c:707
+# src/getopt.c:707
+#: lib/getopt.c:753 lib/getopt.c:756
+#, fuzzy, c-format
+msgid "%s: unrecognized option '%c%s'\n"
+msgstr "%s: ΞΌΞ· Ξ±Ξ½Ξ±Ξ³Ξ½Ο‰ΟΞ―ΟƒΞΉΞΌΞ· ΞµΟ€ΞΉΞ»ΞΏΞ³Ξ® Β«%c%sΒ»\n"
+
+# src/getopt.c:736
+# src/getopt.c:736
+#: lib/getopt.c:805 lib/getopt.c:808
+#, fuzzy, c-format
+msgid "%s: invalid option -- '%c'\n"
+msgstr "%s: ΞΌΞ· Ξ­Ξ³ΞΊΟ…ΟΞ· ΞµΟ€ΞΉΞ»ΞΏΞ³Ξ® -- %c\n"
+
+# src/getopt.c:766 src/getopt.c:896
+# src/getopt.c:766 src/getopt.c:896
+#: lib/getopt.c:861 lib/getopt.c:878 lib/getopt.c:1088 lib/getopt.c:1106
+#, fuzzy, c-format
+msgid "%s: option requires an argument -- '%c'\n"
+msgstr "%s: Ξ· ΞµΟ€ΞΉΞ»ΞΏΞ³Ξ® Ξ±Ο€Ξ±ΞΉΟ„ΞµΞ― Ξ­Ξ½Ξ± ΟΟΞΉΟƒΞΌΞ± -- %c\n"
+
+# src/getopt.c:813
+# src/getopt.c:813
+#: lib/getopt.c:934 lib/getopt.c:950
+#, fuzzy, c-format
+msgid "%s: option '-W %s' is ambiguous\n"
+msgstr "%s: Ξ· ΞµΟ€ΞΉΞ»ΞΏΞ³Ξ® Β«-W %sΒ» ΞµΞ―Ξ½Ξ±ΞΉ Ξ΄ΞΉΟ†ΞΏΟΞΏΟΞΌΞµΞ½Ξ·\n"
+
+# src/getopt.c:831
+# src/getopt.c:831
+#: lib/getopt.c:974 lib/getopt.c:992
+#, fuzzy, c-format
+msgid "%s: option '-W %s' doesn't allow an argument\n"
+msgstr "%s: Ξ· ΞµΟ€ΞΉΞ»ΞΏΞ³Ξ® Β«-W %sΒ» Ξ΄ΞµΞ½ Ξ΄Ξ­Ο‡ΞµΟ„Ξ±ΞΉ ΞΏΟΞ―ΟƒΞΌΞ±Ο„Ξ±\n"
+
+# src/getopt.c:674 src/getopt.c:847
+# src/getopt.c:674 src/getopt.c:847
+#: lib/getopt.c:1013 lib/getopt.c:1031
+#, fuzzy, c-format
+msgid "%s: option '-W %s' requires an argument\n"
+msgstr "%s: Ξ· ΞµΟ€ΞΉΞ»ΞΏΞ³Ξ® Β«%sΒ» Ξ±Ο€Ξ±ΞΉΟ„ΞµΞ― ΟΟΞΉΟƒΞΌΞ±\n"
 
 # src/grep.c:144 src/grep.c:161 src/grep.c:222 src/grep.c:263 src/kwset.c:184
 # src/kwset.c:190
 # src/grep.c:164 src/grep.c:181 src/grep.c:283 src/grep.c:338 src/kwset.c:184
 # src/kwset.c:190
-#: lib/obstack.c:471 src/kwset.c:171 src/kwset.c:177 src/search.c:103 src/search.c:209 src/search.c:293
+#: lib/obstack.c:413 lib/obstack.c:415 lib/xalloc-die.c:34 src/kwset.c:178
+#: src/kwset.c:186 src/kwset.c:409 src/pcresearch.c:153
+#, c-format
 msgid "memory exhausted"
-msgstr "η μνήμη εξαντλήθηκε"
+msgstr "Ξ· ΞΌΞ½Ξ®ΞΌΞ· ΞµΞΎΞ±Ξ½Ο„Ξ»Ξ®ΞΈΞ·ΞΊΞµ"
+
+#: lib/openat-die.c:38
+#, c-format
+msgid "unable to record current working directory"
+msgstr "Ξ΄ΞµΞ½ ΞµΞ―Ξ½Ξ±ΞΉ Ξ΄Ο…Ξ½Ξ±Ο„Ξ® Ξ· ΞΊΞ±Ο„Ξ±Ξ³ΟΞ±Ο†Ξ® Ο„ΞΏΟ… Ο„ΟΞ­Ο‡ΞΏΞ½Ο„ΞΏΟ‚ Ο†Ξ±ΞΊΞ­Ξ»ΞΏΟ… ΞµΟΞ³Ξ±ΟƒΞ―Ξ±Ο‚"
+
+#: lib/openat-die.c:57
+#, c-format
+msgid "failed to return to initial working directory"
+msgstr "Ξ±Ο€ΞΏΟ„Ο…Ο‡Ξ―Ξ± ΞµΟ€ΞΉΟƒΟ„ΟΞΏΟ†Ξ®Ο‚ ΟƒΟ„ΞΏΞ½ Ξ±ΟΟ‡ΞΉΞΊΟ Ο†Ξ¬ΞΊΞµΞ»ΞΏ ΞµΟΞ³Ξ±ΟƒΞ―Ξ±Ο‚"
+
+#. TRANSLATORS:
+#. Get translations for open and closing quotation marks.
+#. The message catalog should translate "`" to a left
+#. quotation mark suitable for the locale, and similarly for
+#. "'".  For example, a French Unicode local should translate
+#. these to U+00AB (LEFT-POINTING DOUBLE ANGLE
+#. QUOTATION MARK), and U+00BB (RIGHT-POINTING DOUBLE ANGLE
+#. QUOTATION MARK), respectively.
+#.
+#. If the catalog has no translation, we will try to
+#. use Unicode U+2018 (LEFT SINGLE QUOTATION MARK) and
+#. Unicode U+2019 (RIGHT SINGLE QUOTATION MARK).  If the
+#. current locale is not Unicode, locale_quoting_style
+#. will quote 'like this', and clocale_quoting_style will
+#. quote "like this".  You should always include translations
+#. for "`" and "'" even if U+2018 and U+2019 are appropriate
+#. for your locale.
+#.
+#. If you don't know what to put here, please see
+#. <http://en.wikipedia.org/wiki/Quotation_marks_in_other_languages>
+#. and use glyphs suitable for your language.
+#: lib/quotearg.c:312
+msgid "`"
+msgstr "Β«"
+
+#: lib/quotearg.c:313
+msgid "'"
+msgstr "Β»"
+
+#: lib/regcomp.c:130
+msgid "Success"
+msgstr "Ξ•Ο€ΞΉΟ„Ο…Ο‡Ξ―Ξ±"
+
+#: lib/regcomp.c:133
+msgid "No match"
+msgstr "ΞΞ±ΞΌΞ―Ξ± Ξ±Ξ½Ο„ΞΉΟƒΟ„ΞΏΞΉΟ‡Ξ―Ξ±"
+
+#: lib/regcomp.c:136
+msgid "Invalid regular expression"
+msgstr "Ξ†ΞΊΟ…ΟΞ· ΞΊΞ±Ξ½ΞΏΞ½ΞΉΞΊΞ® Ξ­ΞΊΟ†ΟΞ±ΟƒΞ·"
+
+#: lib/regcomp.c:139
+msgid "Invalid collation character"
+msgstr ""
+
+#: lib/regcomp.c:142
+msgid "Invalid character class name"
+msgstr ""
+
+#: lib/regcomp.c:145
+msgid "Trailing backslash"
+msgstr ""
+
+#: lib/regcomp.c:148
+msgid "Invalid back reference"
+msgstr ""
+
+#: lib/regcomp.c:151
+msgid "Unmatched [ or [^"
+msgstr ""
+
+#: lib/regcomp.c:154
+msgid "Unmatched ( or \\("
+msgstr ""
+
+#: lib/regcomp.c:157
+msgid "Unmatched \\{"
+msgstr ""
+
+#: lib/regcomp.c:160 src/dfa.c:1375
+msgid "Invalid content of \\{\\}"
+msgstr ""
+
+#: lib/regcomp.c:163
+msgid "Invalid range end"
+msgstr "Ξ†ΞΊΟ…ΟΞΏ Ο„Ξ­Ξ»ΞΏΟ‚ ΟƒΞµΞΉΟΞ¬Ο‚"
+
+# src/dfa.c:147 src/dfa.c:159 src/dfa.c:172
+# src/dfa.c:155 src/dfa.c:167 src/dfa.c:180 src/grep.c:827
+#: lib/regcomp.c:166
+msgid "Memory exhausted"
+msgstr "Ξ— ΞΌΞ½Ξ®ΞΌΞ· ΞµΞΎΞ±Ξ½Ο„Ξ»Ξ®ΞΈΞ·ΞΊΞµ"
+
+#: lib/regcomp.c:169
+msgid "Invalid preceding regular expression"
+msgstr "Ξ†ΞΊΟ…ΟΞ· Ο€ΟΞΏΞ·Ξ³ΞΏΟΞΌΞµΞ½Ξ·Ο‚ ΞΊΞ±Ξ½ΞΏΞ½ΞΉΞΊΞ®Ο‚ Ξ­ΞΊΟ†ΟΞ±ΟƒΞ·Ο‚"
+
+#: lib/regcomp.c:172
+msgid "Premature end of regular expression"
+msgstr "Ξ ΟΟΟ‰ΟΞΏ Ο„Ξ­Ξ»ΞΏΟ‚ Ο„Ξ·Ο‚ ΞΊΞ±Ξ½ΞΏΞ½ΞΉΞΊΞ®Ο‚ Ξ­ΞΊΟ†ΟΞ±ΟƒΞ·Ο‚"
+
+#: lib/regcomp.c:175 src/dfa.c:1378
+msgid "Regular expression too big"
+msgstr "Ξ¥Ο€ΞµΟΞ²ΞΏΞ»ΞΉΞΊΞ¬ ΞΌΞµΞ³Ξ¬Ξ»Ξ· Ξ· ΞΊΞ±Ξ½ΞΏΞ½ΞΉΞΊΞ® Ξ­ΞΊΟ†ΟΞ±ΟƒΞ·"
+
+#: lib/regcomp.c:178
+msgid "Unmatched ) or \\)"
+msgstr ""
+
+#: lib/regcomp.c:703
+msgid "No previous regular expression"
+msgstr "ΞΞ±ΞΌΞ―Ξ± Ο€ΟΞΏΞ·Ξ³ΞΏΟΞΌΞµΞ½Ξ· ΞΊΞ±Ξ½ΞΏΞ½ΞΉΞΊΞ® Ξ­ΞΊΟ†ΟΞ±ΟƒΞ·"
+
+#: lib/version-etc.c:74
+#, fuzzy, c-format
+msgid "Packaged by %s (%s)\n"
+msgstr "Ξ£Ο…ΟƒΞΊΞµΟ…Ξ¬ΟƒΟ„Ξ·ΞΊΞµ Ξ±Ο€Ο %s (%s)\n"
+
+#: lib/version-etc.c:77
+#, fuzzy, c-format
+msgid "Packaged by %s\n"
+msgstr "Ξ£Ο…ΟƒΞΊΞµΟ…Ξ¬ΟƒΟ„Ξ·ΞΊΞµ Ξ±Ο€Ο %s\n"
+
+#. TRANSLATORS: Translate "(C)" to the copyright symbol
+#. (C-in-a-circle), if this symbol is available in the user's
+#. locale.  Otherwise, do not translate "(C)"; leave it as-is.
+#: lib/version-etc.c:84
+msgid "(C)"
+msgstr "(C)"
+
+#: lib/version-etc.c:86
+msgid ""
+"\n"
+"License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.\n"
+"This is free software: you are free to change and redistribute it.\n"
+"There is NO WARRANTY, to the extent permitted by law.\n"
+"\n"
+msgstr ""
+"\n"
+"Ξ†Ξ΄ΞµΞΉΞ± Ο‡ΟΞ®ΟƒΞ·Ο‚ GPLv3+: GNU GPL Ξ­ΞΊΞ΄ΞΏΟƒΞ· 3 Ξ® ΞΌΞµΟ„Ξ±Ξ³ΞµΞ½Ξ­ΟƒΟ„ΞµΟΞ· <http://gnu.org/licenses/gpl.html>\n"
+"Ξ‘Ο…Ο„Ο ΞµΞ―Ξ½Ξ±ΞΉ ΞµΞ»ΞµΟΞΈΞµΟΞΏ Ξ»ΞΏΞ³ΞΉΟƒΞΌΞΉΞΊΟ: Ξ•Ξ―ΟƒΟ„Ξµ ΞµΞ»ΞµΟΞΈΞµΟΞΏΞΉ Ξ½Ξ± Ο„ΞΏ Ξ±Ξ»Ξ»Ξ¬ΞΎΞµΟ„Ξµ ΞΊΞ±ΞΉ Ξ½Ξ± Ο„ΞΏ Ξ±Ξ½Ξ±Ξ΄ΞΉΞ±Ξ½Ξ­ΞΌΞµΟ„Ξµ.\n"
+"Ξ”ΞµΞ½ Ο…Ο€Ξ¬ΟΟ‡ΞµΞΉ ΞΞ‘ΞΞ™Ξ‘ Ξ•Ξ“Ξ“Ξ¥Ξ—Ξ£Ξ— ΟƒΟ„Ξ·Ξ½ Ξ­ΞΊΟ„Ξ±ΟƒΞ· Ο€ΞΏΟ… ΞµΟ€ΞΉΟ„ΟΞ­Ο€ΞµΟ„Ξ±ΞΉ Ξ±Ο€Ο Ο„ΞΏ Ξ½ΟΞΌΞΏ.\n"
+"\n"
+
+#. TRANSLATORS: %s denotes an author name.
+#: lib/version-etc.c:102
+#, fuzzy, c-format
+msgid "Written by %s.\n"
+msgstr "Ξ£Ο…Ξ½Ο„Ξ¬Ο‡ΞΈΞ·ΞΊΞµ Ξ±Ο€Ο Ο„ΞΏΞ½ %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#: lib/version-etc.c:106
+#, fuzzy, c-format
+msgid "Written by %s and %s.\n"
+msgstr "Ξ£Ο…Ξ½Ο„Ξ¬Ο‡ΞΈΞ·ΞΊΞµ Ξ±Ο€Ο Ο„ΞΏΟ…Ο‚ %s ΞΊΞ±ΞΉ %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#: lib/version-etc.c:110
+#, fuzzy, c-format
+msgid "Written by %s, %s, and %s.\n"
+msgstr "Ξ£Ο…Ξ½Ο„Ξ¬Ο‡ΞΈΞ·ΞΊΞµ Ξ±Ο€Ο Ο„ΞΏΟ…Ο‚ %s, %s, ΞΊΞ±ΞΉ %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:117
+#, fuzzy, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"and %s.\n"
+msgstr ""
+"Ξ£Ο…Ξ½Ο„Ξ¬Ο‡ΞΈΞ·ΞΊΞµ Ξ±Ο€Ο Ο„ΞΏΟ…Ο‚ %s, %s, %s,\n"
+"ΞΊΞ±ΞΉ %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:124
+#, fuzzy, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, and %s.\n"
+msgstr ""
+"Ξ£Ο…Ξ½Ο„Ξ¬Ο‡ΞΈΞ·ΞΊΞµ Ξ±Ο€Ο Ο„ΞΏΟ…Ο‚ %s, %s, %s,\n"
+"%s, ΞΊΞ±ΞΉ %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:131
+#, fuzzy, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, and %s.\n"
+msgstr ""
+"Ξ£Ο…Ξ½Ο„Ξ¬Ο‡ΞΈΞ·ΞΊΞµ Ξ±Ο€Ο Ο„ΞΏΞ½ %s, %s, %s,\n"
+"%s, %s, and %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:139
+#, fuzzy, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, and %s.\n"
+msgstr ""
+"Ξ£Ο…Ξ½Ο„Ξ¬Ο‡ΞΈΞ·ΞΊΞµ Ξ±Ο€Ο Ο„ΞΏΟ…Ο‚ %s, %s, %s,\n"
+"%s, %s, %s, ΞΊΞ±ΞΉ %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:147
+#, fuzzy, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"and %s.\n"
+msgstr ""
+"Ξ£Ο…Ξ½Ο„Ξ¬Ο‡ΞΈΞ·ΞΊΞµ Ξ±Ο€Ο Ο„ΞΏΟ…Ο‚ %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"ΞΊΞ±ΞΉ %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:156
+#, fuzzy, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s, and %s.\n"
+msgstr ""
+"Ξ£Ο…Ξ½Ο„Ξ¬Ο‡ΞΈΞ·ΞΊΞµ Ξ±Ο€Ο Ο„ΞΏΟ…Ο‚ %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s, ΞΊΞ±ΞΉ %s.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:167
+#, fuzzy, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s, %s, and others.\n"
+msgstr ""
+"Ξ£Ο…Ξ½Ο„Ξ¬Ο‡ΞΈΞ·ΞΊΞµ Ξ±Ο€Ο Ο„ΞΏΟ…Ο‚ %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s, %s, ΞΊΞ±ΞΉ Ξ¬Ξ»Ξ»ΞΏΟ…Ο‚.\n"
+
+#. TRANSLATORS: The placeholder indicates the bug-reporting address
+#. for this package.  Please add _another line_ saying
+#. "Report translation bugs to <...>\n" with the address for translation
+#. bugs (typically your translation team's web or email address).
+#: lib/version-etc.c:245 src/main.c:1571
+#, c-format
+msgid ""
+"\n"
+"Report bugs to: %s\n"
+msgstr ""
+"\n"
+"Ξ‘Ξ½Ξ±Ο†ΞΏΟΞ¬ ΟƒΟ†Ξ±Ξ»ΞΌΞ¬Ο„Ο‰Ξ½: %s\n"
+
+#: lib/version-etc.c:247
+#, c-format
+msgid "Report %s bugs to: %s\n"
+msgstr "Ξ‘Ξ½Ξ±Ο†ΞΏΟΞ¬ %s ΟƒΟ†Ξ±Ξ»ΞΌΞ¬Ο„Ο‰Ξ½: %s\n"
+
+#: lib/version-etc.c:251
+#, c-format
+msgid "%s home page: <%s>\n"
+msgstr "%s ΞΊΞµΞ½Ο„ΟΞΉΞΊΞ® ΟƒΞµΞ»Ξ―Ξ΄Ξ±: <%s>\n"
+
+#: lib/version-etc.c:253
+#, c-format
+msgid "%s home page: <http://www.gnu.org/software/%s/>\n"
+msgstr "%s ΞΊΞµΞ½Ο„ΟΞΉΞΊΞ® ΟƒΞµΞ»Ξ―Ξ΄Ξ±: <http://www.gnu.org/software/%s/>\n"
+
+#: lib/version-etc.c:256 src/main.c:1574
+msgid "General help using GNU software: <http://www.gnu.org/gethelp/>\n"
+msgstr "Ξ“ΞµΞ½ΞΉΞΊΞ® Ξ²ΞΏΞ®ΞΈΞµΞΉΞ± Ο‡ΟΞ®ΟƒΞ·Ο‚ Ξ»ΞΏΞ³ΞΉΟƒΞΌΞΉΞΊΞΏΟ GNU: <http://www.gnu.org/gethelp/>\n"
+
+#: lib/xstrtol-error.c:63
+#, c-format
+msgid "invalid %s%s argument '%s'"
+msgstr "Ξ¬ΞΊΟ…ΟΞ· %s%s ΞµΟ€ΞΉΞ»ΞΏΞ³Ξ® Β«%sΒ»"
+
+#: lib/xstrtol-error.c:68
+#, c-format
+msgid "invalid suffix in %s%s argument '%s'"
+msgstr "Ξ¬ΞΊΟ…ΟΞ· ΞΊΞ±Ο„Ξ¬Ξ»Ξ·ΞΎΞ· ΟƒΟ„Ξ·Ξ½ %s%s ΞµΟ€ΞΉΞ»ΞΏΞ³Ξ® Β«%sΒ»"
+
+#: lib/xstrtol-error.c:72
+#, c-format
+msgid "%s%s argument '%s' too large"
+msgstr "Ξ· %s%s ΞµΟ€ΞΉΞ»ΞΏΞ³Ξ® Β«%sΒ» ΞµΞ―Ξ½Ξ±ΞΉ Ο…Ο€ΞµΟΞ²ΞΏΞ»ΞΉΞΊΞ¬ ΞΌΞµΞ³Ξ¬Ξ»Ξ·"
+
+# src/dfa.c:652 src/dfa.c:655 src/dfa.c:682 src/dfa.c:686 src/dfa.c:687
+# src/dfa.c:690 src/dfa.c:703 src/dfa.c:704
+# src/dfa.c:660 src/dfa.c:663 src/dfa.c:690 src/dfa.c:694 src/dfa.c:695
+# src/dfa.c:698 src/dfa.c:711 src/dfa.c:712
+#: src/dfa.c:953 src/dfa.c:956 src/dfa.c:976 src/dfa.c:986 src/dfa.c:998
+#: src/dfa.c:1051 src/dfa.c:1060 src/dfa.c:1063 src/dfa.c:1068 src/dfa.c:1081
+#: src/dfa.c:1139
+#, fuzzy
+msgid "unbalanced ["
+msgstr "ΞΞ· ΞΉΟƒΞΏΟΟΞΏΟ€Ξ·ΞΌΞ­Ξ½ΞΏ ["
+
+#: src/dfa.c:1007
+msgid "invalid character class"
+msgstr "Ξ¬ΞΊΟ…ΟΞ· ΞΊΞ±Ο„Ξ·Ξ³ΞΏΟΞ―Ξ± Ο‡Ξ±ΟΞ±ΞΊΟ„Ξ®ΟΟ‰Ξ½"
+
+#: src/dfa.c:1176
+msgid "character class syntax is [[:space:]], not [:space:]"
+msgstr "Ξ· ΟƒΟΞ½Ο„Ξ±ΞΎΞ· ΞΊΞ±Ο„Ξ·Ξ³ΞΏΟΞ―Ξ±Ο‚ Ο‡Ξ±ΟΞ±ΞΊΟ„Ξ®ΟΟ‰Ξ½ ΞµΞ―Ξ½Ξ±ΞΉ [[:space:]], ΟΟ‡ΞΉ [:space:]"
+
+# src/dfa.c:444
+# src/dfa.c:452
+#: src/dfa.c:1228
+#, fuzzy
+msgid "unfinished \\ escape"
+msgstr "ΞΞ· Ο„ΞµΟΞΌΞ±Ο„ΞΉΟƒΞΌΞ­Ξ½ΞΏΟ‚ Ο‡Ξ±ΟΞ±ΞΊΟ„Ξ®ΟΞ±Ο‚ Ξ΄ΞΉΞ±Ο†Ο…Ξ³Ξ®Ο‚ \\"
+
+# src/dfa.c:841
+# src/dfa.c:849
+#: src/dfa.c:1763
+#, fuzzy
+msgid "unbalanced ("
+msgstr "ΞΞ· ΞΉΟƒΞΏΟΟΞΏΟ€Ξ·ΞΌΞ­Ξ½ΞΏ ("
+
+# src/dfa.c:962
+# src/dfa.c:970
+#: src/dfa.c:1893
+#, fuzzy
+msgid "no syntax specified"
+msgstr "Ξ”ΞµΞ½ ΞΏΟΞ―ΟƒΟ„Ξ·ΞΊΞµ ΟƒΟ…Ξ½Ο„Ξ±ΞΊΟ„ΞΉΞΊΟ"
+
+# src/dfa.c:970
+# src/dfa.c:978
+#: src/dfa.c:1901
+#, fuzzy
+msgid "unbalanced )"
+msgstr "ΞΞ· ΞΉΟƒΞΏΟΟΞΏΟ€Ξ·ΞΌΞ­Ξ½ΞΏ )"
+
+#: src/egrep.c:16
+msgid "PATTERN is an extended regular expression (ERE).\n"
+msgstr "Ξ¤ΞΏ Ξ Ξ΅ΞΞ¤Ξ¥Ξ Ξ ΞµΞ―Ξ½Ξ±ΞΉ ΞΌΞΉΞ± ΞµΞΊΟ„ΞµΟ„Ξ±ΞΌΞ­Ξ½Ξ· ΞΊΞ±Ξ½ΞΏΞ½ΞΉΞΊΞ® Ξ­ΞΊΟ†ΟΞ±ΟƒΞ· (Ξ•ΞΞ•).\n"
+
+#: src/egrep.c:18
+msgid "Invocation as 'egrep' is deprecated; use 'grep -E' instead.\n"
+msgstr "Ξ— ΞµΟ€Ξ―ΞΊΞ»Ξ·ΟƒΞ· Ο‰Ο‚ Β«egrepΒ» Ξ­Ο‡ΞµΞΉ ΞΊΞ±Ο„Ξ±ΟΞ³Ξ·ΞΈΞµΞ―Ξ‡ Ο‡ΟΞ·ΟƒΞΉΞΌΞΏΟ€ΞΏΞΉΞ®ΟƒΟ„Ξµ Ο„ΞΏ Β«grep -EΒ».\n"
+
+#: src/fgrep.c:10
+msgid "PATTERN is a set of newline-separated fixed strings.\n"
+msgstr ""
+
+#: src/fgrep.c:12
+msgid "Invocation as 'fgrep' is deprecated; use 'grep -F' instead.\n"
+msgstr "Ξ— ΞµΟ€Ξ―ΞΊΞ»Ξ·ΟƒΞ· Ο‰Ο‚ Β«fgrepΒ» Ξ­Ο‡ΞµΞΉ ΞΊΞ±Ο„Ξ±ΟΞ³Ξ·ΞΈΞµΞ―Ξ‡ Ο‡ΟΞ·ΟƒΞΉΞΌΞΏΟ€ΞΏΞΉΞ®ΟƒΟ„Ξµ Ο„ΞΏ Β«grep -FΒ».\n"
+
+#: src/grep.c:32
+msgid "PATTERN is, by default, a basic regular expression (BRE).\n"
+msgstr ""
+
+#: src/grep.c:34
+msgid ""
+"'egrep' means 'grep -E'.  'fgrep' means 'grep -F'.\n"
+"Direct invocation as either 'egrep' or 'fgrep' is deprecated.\n"
+msgstr ""
+"To Β«egrepΒ» ΞµΞ―Ξ½Ξ±ΞΉ ΞΉΟƒΞΏΞ΄ΟΞ½Ξ±ΞΌΞΏ Ο„ΞΏΟ… Β«grep -EΒ». Ξ¤ΞΏ Β«fgrepΒ» ΞµΞ―Ξ½Ξ±ΞΉ ΞΉΟƒΞΏΞ΄ΟΞ½Ξ±ΞΌΞΏ Ο„ΞΏΟ…\n"
+"Β«grep -FΒ».\n"
+"Ξ— Ξ¬ΞΌΞµΟƒΞ· ΞµΟ€Ξ―ΞΊΞ»Ξ·ΟƒΞ· Ο‰Ο‚ Β«egrepΒ» Ξ® Β«fgrepΒ» Ξ­Ο‡ΞµΞΉ ΞΊΞ±Ο„Ξ±ΟΞ³Ξ·ΞΈΞµΞ―.\n"
+
+#. This is a proper name. See the gettext manual, section Names.
+#: src/main.c:58
+msgid "Mike Haertel"
+msgstr "Mike Haertel"
+
+#: src/main.c:59
+msgid "others, see <http://git.sv.gnu.org/cgit/grep.git/tree/AUTHORS>"
+msgstr "Ξ¬Ξ»Ξ»ΞΏΞΉ, ΞΊΞΏΞΉΟ„Ξ¬ΞΎΟ„Ξµ Ο„ΞΏΞ½ ΟƒΟΞ½Ξ΄ΞµΟƒΞΌΞΏ <http://git.sv.gnu.org/cgit/grep.git/tree/AUTHORS>"
 
 # src/grep.c:785 src/grep.c:792
 # src/grep.c:1060 src/grep.c:1067 src/grep.c:1076
-#: src/grep.c:205
+#: src/main.c:448
 msgid "invalid context length argument"
-msgstr "μη έγκυρο όρισμα μήκους περιεχομένου"
+msgstr "ΞΌΞ· Ξ­Ξ³ΞΊΟ…ΟΞΏ ΟΟΞΉΟƒΞΌΞ± ΞΌΞ®ΞΊΞΏΟ…Ο‚ Ο€ΞµΟΞΉΞµΟ‡ΞΏΞΌΞ­Ξ½ΞΏΟ…"
 
-#: src/grep.c:475
+#: src/main.c:503
+msgid "lseek failed"
+msgstr "Ξ±Ο€ΞΏΟ„Ο…Ο‡Ξ―Ξ± Ο„ΞΏΟ… lseek"
+
+#: src/main.c:650
+#, c-format
 msgid "input is too large to count"
-msgstr "η είσοδος είναι πολύ μεγάλη για να μετρηθεί"
-
-# src/grep.c:392 src/grep.c:1034
-# src/grep.c:487 src/grep.c:1284
-#: src/grep.c:597
-msgid "writing output"
-msgstr "εγγραφή αποτελέσματος"
+msgstr "Ξ· ΞµΞ―ΟƒΞΏΞ΄ΞΏΟ‚ ΞµΞ―Ξ½Ξ±ΞΉ Ο€ΞΏΞ»Ο ΞΌΞµΞ³Ξ¬Ξ»Ξ· Ξ³ΞΉΞ± Ξ½Ξ± ΞΌΞµΟ„ΟΞ·ΞΈΞµΞ―"
 
 # src/grep.c:715
-#: src/grep.c:870
+#: src/main.c:1205
 #, c-format
 msgid "Binary file %s matches\n"
-msgstr "Το δυαδικό αρχείο %s ταιριάζει\n"
-
-# src/grep.c:964 src/grep.c:1015
-# src/grep.c:730
-#: src/grep.c:884
-msgid "(standard input)"
-msgstr "(κανονική είσοδος)"
+msgstr "Ξ¤ΞΏ Ξ΄Ο…Ξ±Ξ΄ΞΉΞΊΟ Ξ±ΟΟ‡ΞµΞ―ΞΏ %s Ο„Ξ±ΞΉΟΞΉΞ¬Ξ¶ΞµΞΉ\n"
 
 # src/grep.c:293
 # src/grep.c:366
-#: src/grep.c:989
-#, c-format
-msgid "warning: %s: %s\n"
-msgstr "προειδοποίηση: %s: %s\n"
+#: src/main.c:1256
+#, fuzzy, c-format
+msgid "warning: %s: %s"
+msgstr "Ο€ΟΞΏΞµΞΉΞ΄ΞΏΟ€ΞΏΞ―Ξ·ΟƒΞ·: %s: %s\n"
 
 # src/grep.c:844
-#: src/grep.c:990
+#: src/main.c:1257
 msgid "recursive directory loop"
-msgstr "αναδρομική αλληλοδιαδοχή καταλόγων"
+msgstr "Ξ±Ξ½Ξ±Ξ΄ΟΞΏΞΌΞΉΞΊΞ® Ξ±Ξ»Ξ»Ξ·Ξ»ΞΏΞ΄ΞΉΞ±Ξ΄ΞΏΟ‡Ξ® ΞΊΞ±Ο„Ξ±Ξ»ΟΞ³Ο‰Ξ½"
+
+#: src/main.c:1399
+#, c-format
+msgid "input file %s is also the output"
+msgstr "Ο„ΞΏ Ξ±ΟΟ‡ΞµΞ―ΞΏ ΞµΞΉΟƒΞ±Ξ³Ο‰Ξ³Ξ®Ο‚ %s ΞµΞ―Ξ½Ξ±ΞΉ ΞµΟ€Ξ―ΟƒΞ·Ο‚ Ο„ΞΏ Ξ±ΟΟ‡ΞµΞ―ΞΏ ΞµΞΎΟΞ΄ΞΏΟ…"
+
+# src/grep.c:964 src/grep.c:1015
+# src/grep.c:730
+#: src/main.c:1457
+msgid "(standard input)"
+msgstr "(ΞΊΞ±Ξ½ΞΏΞ½ΞΉΞΊΞ® ΞµΞ―ΟƒΞΏΞ΄ΞΏΟ‚)"
 
 # src/grep.c:597
 # src/grep.c:862
-#: src/grep.c:1038
+#: src/main.c:1473 src/main.c:1480
 #, c-format
 msgid "Usage: %s [OPTION]... PATTERN [FILE]...\n"
-msgstr "Χρήση: %s [ΕΠΙΛΟΓΗ]... ΥΠΟΔΕΙΓΜΑ [ΑΡΧΕΙΟ]...\n"
+msgstr "Ξ§ΟΞ®ΟƒΞ·: %s [Ξ•Ξ Ξ™Ξ›ΞΞ“Ξ—]... Ξ¥Ξ ΞΞ”Ξ•Ξ™Ξ“ΞΞ‘ [Ξ‘Ξ΅Ξ§Ξ•Ξ™Ξ]...\n"
 
 # src/grep.c:598
 # src/grep.c:863
-#: src/grep.c:1040
+#: src/main.c:1475
 #, c-format
-msgid "Try `%s --help' for more information.\n"
-msgstr "Δοκιμάστε `%s --help' για περισσότερες πληροφορίες.\n"
+msgid "Try '%s --help' for more information.\n"
+msgstr "Ξ”ΞΏΞΊΞΉΞΌΞ¬ΟƒΟ„Ξµ Β«%s --helpΒ» Ξ³ΞΉΞ± Ο€ΞµΟΞΉΟƒΟƒΟΟ„ΞµΟΞµΟ‚ Ο€Ξ»Ξ·ΟΞΏΟ†ΞΏΟΞ―ΞµΟ‚.\n"
 
-# src/grep.c:602
-# src/grep.c:867
-#: src/grep.c:1045
+#: src/main.c:1481
 #, c-format
-msgid "Usage: %s [OPTION]... PATTERN [FILE] ...\n"
-msgstr "Χρήση: %s [ΕΠΙΛΟΓΗ]... ΥΠΟΔΕΙΓΜΑ [ΑΡΧΕΙΟ] ...\n"
+msgid "Search for PATTERN in each FILE or standard input.\n"
+msgstr ""
 
-#: src/grep.c:1046
+#: src/main.c:1484
 #, c-format
 msgid ""
-"Search for PATTERN in each FILE or standard input.\n"
 "Example: %s -i 'hello world' menu.h main.c\n"
 "\n"
 "Regexp selection and interpretation:\n"
 msgstr ""
-"Εύρεση του ΥΠΟΔΕΙΓΜΑτος σε κάθε ΑΡΧΕΙΟ ή την κανονική είσοδο.\n"
-"Παράδειγμα: %s -i 'hello world' menu.h main.c\n"
+"Ξ•ΟΟΞµΟƒΞ· Ο„ΞΏΟ… Ξ¥Ξ ΞΞ”Ξ•Ξ™Ξ“ΞΞ‘Ο„ΞΏΟ‚ ΟƒΞµ ΞΊΞ¬ΞΈΞµ Ξ‘Ξ΅Ξ§Ξ•Ξ™Ξ Ξ® Ο„Ξ·Ξ½ ΞΊΞ±Ξ½ΞΏΞ½ΞΉΞΊΞ® ΞµΞ―ΟƒΞΏΞ΄ΞΏ.\n"
+"Ξ Ξ±ΟΞ¬Ξ΄ΞµΞΉΞ³ΞΌΞ±: %s -i 'hello world' menu.h main.c\n"
 "\n"
-"Επιλογή κανονικής έκφρασης και ερμηνεία:\n"
+"Ξ•Ο€ΞΉΞ»ΞΏΞ³Ξ® ΞΊΞ±Ξ½ΞΏΞ½ΞΉΞΊΞ®Ο‚ Ξ­ΞΊΟ†ΟΞ±ΟƒΞ·Ο‚ ΞΊΞ±ΞΉ ΞµΟΞΌΞ·Ξ½ΞµΞ―Ξ±:\n"
 
-#: src/grep.c:1051
+#: src/main.c:1489
+#, c-format
 msgid ""
-"  -E, --extended-regexp     PATTERN is an extended regular expression\n"
-"  -F, --fixed-strings       PATTERN is a set of newline-separated strings\n"
-"  -G, --basic-regexp        PATTERN is a basic regular expression\n"
+"  -E, --extended-regexp     PATTERN is an extended regular expression (ERE)\n"
+"  -F, --fixed-strings       PATTERN is a set of newline-separated fixed strings\n"
+"  -G, --basic-regexp        PATTERN is a basic regular expression (BRE)\n"
 "  -P, --perl-regexp         PATTERN is a Perl regular expression\n"
 msgstr ""
-"  -E, --extended-regexp     ΥΠΟΔΕΙΓΜΑ είναι μια εκτεταμένη κανονική έκφραση\n"
-"  -F, --fixed-regexp        ΥΠΟΔΕΙΓΜΑ είναι στατικό αλφαριθμητικό διαχωρι-\n"
-"                              ζόμενο με χαρακτήρες αλλαγής γραμμής\n"
-"  -G, --basic-regexp        ΥΠΟΔΕΙΓΜΑ είναι απλή κανονική έκφραση\n"
-"  -P, --perl-regexp         ΥΠΟΔΕΙΓΜΑ είναι κανονική έκφραση Perl\n"
+"  -E, --extended-regexp     Ξ¥Ξ ΞΞ”Ξ•Ξ™Ξ“ΞΞ‘ ΞµΞ―Ξ½Ξ±ΞΉ ΞΌΞΉΞ± ΞµΞΊΟ„ΞµΟ„Ξ±ΞΌΞ­Ξ½Ξ· ΞΊΞ±Ξ½ΞΏΞ½ΞΉΞΊΞ® Ξ­ΞΊΟ†ΟΞ±ΟƒΞ·\n"
+"  -F, --fixed-regexp        Ξ¥Ξ ΞΞ”Ξ•Ξ™Ξ“ΞΞ‘ ΞµΞ―Ξ½Ξ±ΞΉ ΟƒΟ„Ξ±Ο„ΞΉΞΊΟ Ξ±Ξ»Ο†Ξ±ΟΞΉΞΈΞΌΞ·Ο„ΞΉΞΊΟ Ξ΄ΞΉΞ±Ο‡Ο‰ΟΞΉ-\n"
+"                              Ξ¶ΟΞΌΞµΞ½ΞΏ ΞΌΞµ Ο‡Ξ±ΟΞ±ΞΊΟ„Ξ®ΟΞµΟ‚ Ξ±Ξ»Ξ»Ξ±Ξ³Ξ®Ο‚ Ξ³ΟΞ±ΞΌΞΌΞ®Ο‚\n"
+"  -G, --basic-regexp        Ξ¥Ξ ΞΞ”Ξ•Ξ™Ξ“ΞΞ‘ ΞµΞ―Ξ½Ξ±ΞΉ Ξ±Ο€Ξ»Ξ® ΞΊΞ±Ξ½ΞΏΞ½ΞΉΞΊΞ® Ξ­ΞΊΟ†ΟΞ±ΟƒΞ·\n"
+"  -P, --perl-regexp         Ξ¥Ξ ΞΞ”Ξ•Ξ™Ξ“ΞΞ‘ ΞµΞ―Ξ½Ξ±ΞΉ ΞΊΞ±Ξ½ΞΏΞ½ΞΉΞΊΞ® Ξ­ΞΊΟ†ΟΞ±ΟƒΞ· Perl\n"
 
 # src/grep.c:603
 # src/grep.c:868
-#: src/grep.c:1056
+#: src/main.c:1495
+#, c-format
 msgid ""
-"  -e, --regexp=PATTERN      use PATTERN as a regular expression\n"
+"  -e, --regexp=PATTERN      use PATTERN for matching\n"
 "  -f, --file=FILE           obtain PATTERN from FILE\n"
 "  -i, --ignore-case         ignore case distinctions\n"
 "  -w, --word-regexp         force PATTERN to match only whole words\n"
 "  -x, --line-regexp         force PATTERN to match only whole lines\n"
 "  -z, --null-data           a data line ends in 0 byte, not newline\n"
 msgstr ""
-"  -e, --regexp=ΥΠΟΔΕΙΓΜΑ    χρήση ΥΠΟΔΕΙΓΜΑτος για κανονική έκφραση\n"
-"  -f, --file=ΑΡΧΕΙΟ         λήψη ΥΠΟΔΕΙΓΜΑτος από το αρχείο ΑΡΧΕΙΟ\n"
-"  -i, --ignore-case         αγνόησε διαφορές πεζών/κεφαλαίων\n"
-"  -w, --word-regexp         επιβολή του ΥΠΟΔΕΙΓΜΑτος να ταιριάζει μόνο\n"
-"                              ολόκληρες λέξεις\n"
-"  -x, --line-regexp         επιβολή του ΥΠΟΔΕΙΓΜΑτος να ταιριάζει μόνο\n"
-"                              ολόκληρες γραμμές\n"
-"  -z, --null-data           η γραμμή δεδομένων τερματίζεται με byte 0\n"
-"                              και όχι με χαρακτήρα αλλαγής γραμμής\n"
+"  -e, --regexp=Ξ¥Ξ ΞΞ”Ξ•Ξ™Ξ“ΞΞ‘    Ο‡ΟΞ®ΟƒΞ· Ξ¥Ξ ΞΞ”Ξ•Ξ™Ξ“ΞΞ‘Ο„ΞΏΟ‚ Ξ³ΞΉΞ± ΞΊΞ±Ξ½ΞΏΞ½ΞΉΞΊΞ® Ξ­ΞΊΟ†ΟΞ±ΟƒΞ·\n"
+"  -f, --file=Ξ‘Ξ΅Ξ§Ξ•Ξ™Ξ         Ξ»Ξ®ΟΞ· Ξ¥Ξ ΞΞ”Ξ•Ξ™Ξ“ΞΞ‘Ο„ΞΏΟ‚ Ξ±Ο€Ο Ο„ΞΏ Ξ±ΟΟ‡ΞµΞ―ΞΏ Ξ‘Ξ΅Ξ§Ξ•Ξ™Ξ\n"
+"  -i, --ignore-case         Ξ±Ξ³Ξ½ΟΞ·ΟƒΞµ Ξ΄ΞΉΞ±Ο†ΞΏΟΞ­Ο‚ Ο€ΞµΞ¶ΟΞ½/ΞΊΞµΟ†Ξ±Ξ»Ξ±Ξ―Ο‰Ξ½\n"
+"  -w, --word-regexp         ΞµΟ€ΞΉΞ²ΞΏΞ»Ξ® Ο„ΞΏΟ… Ξ¥Ξ ΞΞ”Ξ•Ξ™Ξ“ΞΞ‘Ο„ΞΏΟ‚ Ξ½Ξ± Ο„Ξ±ΞΉΟΞΉΞ¬Ξ¶ΞµΞΉ ΞΌΟΞ½ΞΏ\n"
+"                              ΞΏΞ»ΟΞΊΞ»Ξ·ΟΞµΟ‚ Ξ»Ξ­ΞΎΞµΞΉΟ‚\n"
+"  -x, --line-regexp         ΞµΟ€ΞΉΞ²ΞΏΞ»Ξ® Ο„ΞΏΟ… Ξ¥Ξ ΞΞ”Ξ•Ξ™Ξ“ΞΞ‘Ο„ΞΏΟ‚ Ξ½Ξ± Ο„Ξ±ΞΉΟΞΉΞ¬Ξ¶ΞµΞΉ ΞΌΟΞ½ΞΏ\n"
+"                              ΞΏΞ»ΟΞΊΞ»Ξ·ΟΞµΟ‚ Ξ³ΟΞ±ΞΌΞΌΞ­Ο‚\n"
+"  -z, --null-data           Ξ· Ξ³ΟΞ±ΞΌΞΌΞ® Ξ΄ΞµΞ΄ΞΏΞΌΞ­Ξ½Ο‰Ξ½ Ο„ΞµΟΞΌΞ±Ο„Ξ―Ξ¶ΞµΟ„Ξ±ΞΉ ΞΌΞµ byte 0\n"
+"                              ΞΊΞ±ΞΉ ΟΟ‡ΞΉ ΞΌΞµ Ο‡Ξ±ΟΞ±ΞΊΟ„Ξ®ΟΞ± Ξ±Ξ»Ξ»Ξ±Ξ³Ξ®Ο‚ Ξ³ΟΞ±ΞΌΞΌΞ®Ο‚\n"
 
 # src/grep.c:615
 # src/grep.c:880
-#: src/grep.c:1063
+#: src/main.c:1502
+#, c-format
 msgid ""
 "\n"
 "Miscellaneous:\n"
@@ -199,20 +635,19 @@ msgid ""
 "  -v, --invert-match        select non-matching lines\n"
 "  -V, --version             print version information and exit\n"
 "      --help                display this help and exit\n"
-"      --mmap                use memory-mapped input if possible\n"
+"      --mmap                deprecated no-op; evokes a warning\n"
 msgstr ""
 "\n"
-"Λοιπά:\n"
-"  -s, --no-messages         αποφυγή εμφάνισης μηνυμάτων σφαλμάτων\n"
-"  -v, --revert-match        επιλογή γραμμών που δεν ταιριάζουν\n"
-"  -V, --version             εμφάνισης πληροφοριών έκδοσης και έξοδος\n"
-"      --help                εμφάνισης αυτής της βοήθειας και έξοδος\n"
-"      --mmap                χρήση εισόδου απεικονισμένη-στη-μνήμη αν\n"
-"                              υπάρχει τέτοια δυνατότητα\n"
+"Ξ›ΞΏΞΉΟ€Ξ¬:\n"
+"  -s, --no-messages         Ξ±Ο€ΞΏΟ†Ο…Ξ³Ξ® ΞµΞΌΟ†Ξ¬Ξ½ΞΉΟƒΞ·Ο‚ ΞΌΞ·Ξ½Ο…ΞΌΞ¬Ο„Ο‰Ξ½ ΟƒΟ†Ξ±Ξ»ΞΌΞ¬Ο„Ο‰Ξ½\n"
+"  -v, --revert-match        ΞµΟ€ΞΉΞ»ΞΏΞ³Ξ® Ξ³ΟΞ±ΞΌΞΌΟΞ½ Ο€ΞΏΟ… Ξ΄ΞµΞ½ Ο„Ξ±ΞΉΟΞΉΞ¬Ξ¶ΞΏΟ…Ξ½\n"
+"  -V, --version             ΞµΞΌΟ†Ξ¬Ξ½ΞΉΟƒΞ·Ο‚ Ο€Ξ»Ξ·ΟΞΏΟ†ΞΏΟΞΉΟΞ½ Ξ­ΞΊΞ΄ΞΏΟƒΞ·Ο‚ ΞΊΞ±ΞΉ Ξ­ΞΎΞΏΞ΄ΞΏΟ‚\n"
+"      --help                ΞµΞΌΟ†Ξ¬Ξ½ΞΉΟƒΞ·Ο‚ Ξ±Ο…Ο„Ξ®Ο‚ Ο„Ξ·Ο‚ Ξ²ΞΏΞ®ΞΈΞµΞΉΞ±Ο‚ ΞΊΞ±ΞΉ Ξ­ΞΎΞΏΞ΄ΞΏΟ‚\n"
+"      --mmap                Ο‡ΟΞ®ΟƒΞ· ΞµΞΉΟƒΟΞ΄ΞΏΟ… Ξ±Ο€ΞµΞΉΞΊΞΏΞ½ΞΉΟƒΞΌΞ­Ξ½Ξ·-ΟƒΟ„Ξ·-ΞΌΞ½Ξ®ΞΌΞ· Ξ±Ξ½\n"
+"                              Ο…Ο€Ξ¬ΟΟ‡ΞµΞΉ Ο„Ξ­Ο„ΞΏΞΉΞ± Ξ΄Ο…Ξ½Ξ±Ο„ΟΟ„Ξ·Ο„Ξ±\n"
 
-# src/grep.c:622
-# src/grep.c:887
-#: src/grep.c:1071
+#: src/main.c:1510
+#, c-format
 msgid ""
 "\n"
 "Output control:\n"
@@ -220,343 +655,173 @@ msgid ""
 "  -b, --byte-offset         print the byte offset with output lines\n"
 "  -n, --line-number         print line number with output lines\n"
 "      --line-buffered       flush output on every line\n"
-"  -H, --with-filename       print the filename for each match\n"
-"  -h, --no-filename         suppress the prefixing filename on output\n"
-"      --label=LABEL         print LABEL as filename for standard input\n"
+"  -H, --with-filename       print the file name for each match\n"
+"  -h, --no-filename         suppress the file name prefix on output\n"
+"      --label=LABEL         use LABEL as the standard input file name prefix\n"
+msgstr ""
+
+#: src/main.c:1521
+#, c-format
+msgid ""
 "  -o, --only-matching       show only the part of a line matching PATTERN\n"
 "  -q, --quiet, --silent     suppress all normal output\n"
-"      --binary-files=TYPE   assume that binary files are TYPE\n"
-"                            TYPE is 'binary', 'text', or 'without-match'\n"
+"      --binary-files=TYPE   assume that binary files are TYPE;\n"
+"                            TYPE is `binary', `text', or `without-match'\n"
 "  -a, --text                equivalent to --binary-files=text\n"
+msgstr ""
+
+#: src/main.c:1528
+#, c-format
+msgid ""
 "  -I                        equivalent to --binary-files=without-match\n"
-"  -d, --directories=ACTION  how to handle directories\n"
-"                            ACTION is 'read', 'recurse', or 'skip'\n"
-"  -D, --devices=ACTION      how to handle devices, FIFOs and sockets\n"
-"                            ACTION is 'read' or 'skip'\n"
-"  -R, -r, --recursive       equivalent to --directories=recurse\n"
-"      --include=PATTERN     files that match PATTERN will be examined\n"
-"      --exclude=PATTERN     files that match PATTERN will be skipped.\n"
-"      --exclude-from=FILE   files that match PATTERN in FILE will be skipped.\n"
-"  -L, --files-without-match only print FILE names containing no match\n"
-"  -l, --files-with-matches  only print FILE names containing matches\n"
-"  -c, --count               only print a count of matching lines per FILE\n"
+"  -d, --directories=ACTION  how to handle directories;\n"
+"                            ACTION is `read', `recurse', or `skip'\n"
+"  -D, --devices=ACTION      how to handle devices, FIFOs and sockets;\n"
+"                            ACTION is `read' or `skip'\n"
+"  -r, --recursive           like --directories=recurse\n"
+"  -R, --dereference-recursive  likewise, but follow all symlinks\n"
+msgstr ""
+
+#: src/main.c:1537
+#, c-format
+msgid ""
+"      --include=FILE_PATTERN  search only files that match FILE_PATTERN\n"
+"      --exclude=FILE_PATTERN  skip files and directories matching FILE_PATTERN\n"
+"      --exclude-from=FILE   skip files matching any file pattern from FILE\n"
+"      --exclude-dir=PATTERN  directories that match PATTERN will be skipped.\n"
+msgstr ""
+
+#: src/main.c:1543
+#, c-format
+msgid ""
+"  -L, --files-without-match  print only names of FILEs containing no match\n"
+"  -l, --files-with-matches  print only names of FILEs containing matches\n"
+"  -c, --count               print only a count of matching lines per FILE\n"
+"  -T, --initial-tab         make tabs line up (if needed)\n"
 "  -Z, --null                print 0 byte after FILE name\n"
 msgstr ""
-"\n"
-"Έλεγχος εξόδου:\n"
-"  -m, --max-count=ΑΡΙΘΜΟΣ   σταμάτημα μετά από ΑΡΙΘΜΟ ταιριάσματα\n"
-"  -b, --byte-offset         εμφάνιση σχετικής θέσης του byte με τις γραμμές\n"
-"                              εξόδου\n"
-"  -n, --line-number         εμφάνιση αριθμών γραμμής με τις γραμμές εξόδου\n"
-"  -H, --with-filename       εμφάνιση ονόματος αρχείου με κάθε ταίριασμα\n"
-"  -h, --no-filename         αποφυγή εμφάνισης του ονόματος του αρχείου στην\n"
-"                              αρχή της εξόδου\n"
-"      --label=LABEL         print LABEL as filename for standard input\n"
-"  -o, --only-matching       show only the part of a line matching PATTERN\n"
-"  -q, --quiet, --silent     αποφυγή εμφάνισης όλης της κανονικής εξόδου\n"
-"      --binary-files=TYPE   assume that binary files are TYPE\n"
-"                            TYPE is 'binary', 'text', or 'without-match'\n"
-"  -a, --text                να μην αποφευχθεί η έξοδος δυαδικών δεδομένων\n"
-"  -I                        equivalent to --binary-files=without-match\n"
-"  -d, --directories=ΕΝΕΡΓΕΙΑ  τρόπος χρήσης των καταλόγων\n"
-"                            Η ΕΝΕΡΓΕΙΑ είναι 'read', 'recurse' ή 'skip'.\n"
-"                            (Για ανάγνωση, αναδρομή και παράκαμψη αντίστοιχα).\n"
-"  -D, --devices=ΕΝΕΡΓΕΙΑ    τρόπος χρήσης των συσκευών, FIFO και socket\n"
-"                            Η ΕΝΕΡΓΕΙΑ είναι 'read' ή 'skip'.\n"
-"                            (Για ανάγνωση και παράκαμψη αντίστοιχα).\n"
-"  -R, -r, --recursive       ισοδύναμο με --directories=recurse.\n"
-"      --include=ΥΠΟΔΕΙΓΜΑ   θα ελεγχθούν αρχεία που ταιριάζουν στο ΥΠΟΔΕΙΓΜΑ.\n"
-"      --exclude=ΥΠΟΔΕΙΓΜΑ   θα παρακαμφθούν αρχεία που ταιριάζουν στο ΥΠΟΔΕΙΓΜΑ\n"
-"      --exclude-from=ΑΡΧΕΙΟ θα παρακαμφθούν τα αρχεία που ταιριάζουν στα\n"
-"                            ΥΠΟΔΕΙΓΜΑτα που περιέχονται μέσα στο ΑΡΧΕΙΟ.\n"
-"  -L, --files-without-match εμφάνιση μόνο τα ονόματα ΑΡΧΕΙΩΝ που δεν\n"
-"                              περιέχουν ταιριάσματα\n"
-"  -l, --files-with-matches  εμφάνιση μόνο τα ονόματα ΑΡΧΕΙΩΝ με ταιριάσματα\n"
-"  -c, --count               εμφάνιση μόνο τον αριθμό των γραμμών με\n"
-"                              ταιριάσματα για κάθε ΑΡΧΕΙΟ\n"
-"  -Z, --null                εγγραφή ενός μηδενικού byte μετά το όνομα ΑΡΧΕΙΟΥ\n"
 
-# src/grep.c:633
-# src/grep.c:902
-#: src/grep.c:1099
+#: src/main.c:1549
+#, fuzzy, c-format
 msgid ""
 "\n"
 "Context control:\n"
 "  -B, --before-context=NUM  print NUM lines of leading context\n"
 "  -A, --after-context=NUM   print NUM lines of trailing context\n"
 "  -C, --context=NUM         print NUM lines of output context\n"
+msgstr ""
+"\n"
+"ΞΞ»ΞµΞ³Ο‡ΞΏΟ‚ Ξ²Ξ¬ΟƒΞµΞΉ Ο„ΞΏΟ… Ο€ΞµΟΞΉΞµΟ‡ΞΏΞΌΞ­Ξ½ΞΏΟ…:\n"
+"  -B, --before-context=Ξ‘Ξ΅Ξ™ΞΞΞΞ£ ΞµΞΌΟ†Ξ¬Ξ½ΞΉΟƒΞ· Ξ‘Ξ΅Ξ™ΞΞΞΞ£ Ξ³ΟΞ±ΞΌΞΌΟΞ½ ΞΌΞµ Ξ±ΞΊΞΏΞ»ΞΏΟ…ΞΈΞΏΟΞΌΞµΞ½ΞΏ\n"
+"                              Ο€ΞµΟΞΉΞµΟ‡ΟΞΌΞµΞ½ΞΏ\n"
+"  -A, --after-context=Ξ‘Ξ΅Ξ™ΞΞΞΞ£  ΞµΞΌΟ†Ξ¬Ξ½ΞΉΟƒΞ· Ξ‘Ξ΅Ξ™ΞΞΞΞ£ Ξ³ΟΞ±ΞΌΞΌΟΞ½ ΞΌΞµ Ο€ΟΞΏΟ€ΞΏΟΞµΟ…ΟΞΌΞµΞ½ΞΏ\n"
+"                              Ο€ΞµΟΞΉΞµΟ‡ΟΞΌΞµΞ½ΞΏ\n"
+"  -C, --context=Ξ‘Ξ΅Ξ™ΞΞΞΞ£     ΞµΞΌΟ†Ξ¬Ξ½ΞΉΟƒΞ· Ξ‘Ξ΅Ξ™ΞΞΞΞ£ (ΞµΞΎ ΞΏΟΞΉΟƒΞΌΞΏΟ 2) Ξ³ΟΞ±ΞΌΞΌΟΞ½ ΞΌΞµ\n"
+"                              Ο€ΞµΟΞΉΞµΟ‡ΟΞΌΞµΞ½ΞΏ ΞµΞΎΟΞ΄ΞΏΟ…\n"
+
+# src/grep.c:633
+# src/grep.c:902
+#: src/main.c:1556
+#, c-format
+msgid ""
 "  -NUM                      same as --context=NUM\n"
 "      --color[=WHEN],\n"
-"      --colour[=WHEN]       use markers to distinguish the matching string\n"
-"                            WHEN may be `always', `never' or `auto'.\n"
-"  -U, --binary              do not strip CR characters at EOL (MSDOS)\n"
-"  -u, --unix-byte-offsets   report offsets as if CRs were not there (MSDOS)\n"
+"      --colour[=WHEN]       use markers to highlight the matching strings;\n"
+"                            WHEN is `always', `never', or `auto'\n"
+"  -U, --binary              do not strip CR characters at EOL (MSDOS/Windows)\n"
+"  -u, --unix-byte-offsets   report offsets as if CRs were not there\n"
+"                            (MSDOS/Windows)\n"
 "\n"
-"`egrep' means `grep -E'.  `fgrep' means `grep -F'.\n"
-"With no FILE, or when FILE is -, read standard input.  If less than\n"
-"two FILEs given, assume -h.  Exit status is 0 if match, 1 if no match,\n"
-"and 2 if trouble.\n"
 msgstr ""
-"\n"
-"Έλεγχος βάσει του περιεχομένου:\n"
-"  -B, --before-context=ΑΡΙΘΜΟΣ εμφάνιση ΑΡΙΘΜΟΣ γραμμών με ακολουθούμενο\n"
-"                              περιεχόμενο\n"
-"  -A, --after-context=ΑΡΙΘΜΟΣ  εμφάνιση ΑΡΙΘΜΟΣ γραμμών με προπορευόμενο\n"
-"                              περιεχόμενο\n"
-"  -C, --context=ΑΡΙΘΜΟΣ     εμφάνιση ΑΡΙΘΜΟΣ (εξ ορισμού 2) γραμμών με\n"
-"                              περιεχόμενο εξόδου\n"
-"                              εκτός κι αν αναιρεθεί με -A ή -B\n"
-"  -NUM                      το ίδιο με --context=ΑΡΙΘΜΟΣ\n"
+"  -NUM                      Ο„ΞΏ Ξ―Ξ΄ΞΉΞΏ ΞΌΞµ --context=Ξ‘Ξ΅Ξ™ΞΞΞΞ£\n"
 "      --color[=WHEN],\n"
 "      --colour[=WHEN]       use markers to distinguish the matching string\n"
 "                            WHEN may be `always', `never' or `auto'.\n"
-"  -U, --binary              να μην απαλείφονται χαρακτήρες CR στο EOL (MSDOS)\n"
-"  -u, --unix-byte-offsets   αναφορά σχετικών θέσεων σα να μην υπήρχαν\n"
-"                              χαρακτήρες CR (MSDOS)\n"
+"  -U, --binary              Ξ½Ξ± ΞΌΞ·Ξ½ Ξ±Ο€Ξ±Ξ»ΞµΞ―Ο†ΞΏΞ½Ο„Ξ±ΞΉ Ο‡Ξ±ΟΞ±ΞΊΟ„Ξ®ΟΞµΟ‚ CR ΟƒΟ„ΞΏ EOL (MSDOS)\n"
+"  -u, --unix-byte-offsets   Ξ±Ξ½Ξ±Ο†ΞΏΟΞ¬ ΟƒΟ‡ΞµΟ„ΞΉΞΊΟΞ½ ΞΈΞ­ΟƒΞµΟ‰Ξ½ ΟƒΞ± Ξ½Ξ± ΞΌΞ·Ξ½ Ο…Ο€Ξ®ΟΟ‡Ξ±Ξ½\n"
+"                              Ο‡Ξ±ΟΞ±ΞΊΟ„Ξ®ΟΞµΟ‚ CR (MSDOS)\n"
 "\n"
-"To `egrep' είναι ισοδύναμο του `grep -E'. Το `fgrep' είναι ισοδύναμο του\n"
-"`grep -F'.\n"
-"With no FILE, or when FILE is -, read standard input.  If less than\n"
-"Χωρία ΑΡΧΕΙΟ, ή όταν το ΑΡΧΕΙΟ είναι -, διαβάζεται η κανονική είσοδος.\n"
-"Αν στα ορίσματα υπάρχουν λιγότερα από δύο ΑΡΧΕΙΑ, τότε υποτίθεται ότι έχει\n"
-"δοθεί η επιλογή -h.  Η κατάσταση εξόδου του προγράμματος είναι 0 αν βρέθηκε\n"
-"το ΥΠΟΔΕΙΓΜΑ, 1 αν δεν βρέθηκε και 2 αν προέκυψε κάποιο πρόβλημα.\n"
 
-# src/grep.c:647
-# src/grep.c:917
-#: src/grep.c:1116
+#: src/main.c:1566
+#, fuzzy, c-format
 msgid ""
-"\n"
-"Report bugs to <bug-gnu-utils@gnu.org>.\n"
+"When FILE is -, read standard input.  With no FILE, read . if a command-line\n"
+"-r is given, - otherwise.  If fewer than two FILEs are given, assume -h.\n"
+"Exit status is 0 if any line is selected, 1 otherwise;\n"
+"if any error occurs and -q is not given, the exit status is 2.\n"
 msgstr ""
-"\n"
-"Στείλτε αναφορές σφαλμάτων στο <bug-gnu-utils@gnu.org>.\n"
+"Ξ§Ο‰ΟΞ―Ξ± Ξ‘Ξ΅Ξ§Ξ•Ξ™Ξ, Ξ® ΟΟ„Ξ±Ξ½ Ο„ΞΏ Ξ‘Ξ΅Ξ§Ξ•Ξ™Ξ ΞµΞ―Ξ½Ξ±ΞΉ -, Ξ΄ΞΉΞ±Ξ²Ξ¬Ξ¶ΞµΟ„Ξ±ΞΉ Ξ· ΞΊΞ±Ξ½ΞΏΞ½ΞΉΞΊΞ® ΞµΞ―ΟƒΞΏΞ΄ΞΏΟ‚.\n"
+"Ξ‘Ξ½ ΟƒΟ„Ξ± ΞΏΟΞ―ΟƒΞΌΞ±Ο„Ξ± Ο…Ο€Ξ¬ΟΟ‡ΞΏΟ…Ξ½ Ξ»ΞΉΞ³ΟΟ„ΞµΟΞ± Ξ±Ο€Ο Ξ΄ΟΞΏ Ξ‘Ξ΅Ξ§Ξ•Ξ™Ξ‘, Ο„ΟΟ„Ξµ Ο…Ο€ΞΏΟ„Ξ―ΞΈΞµΟ„Ξ±ΞΉ ΟΟ„ΞΉ Ξ­Ο‡ΞµΞΉ\n"
+"Ξ΄ΞΏΞΈΞµΞ― Ξ· ΞµΟ€ΞΉΞ»ΞΏΞ³Ξ® -h.  Ξ— ΞΊΞ±Ο„Ξ¬ΟƒΟ„Ξ±ΟƒΞ· ΞµΞΎΟΞ΄ΞΏΟ… Ο„ΞΏΟ… Ο€ΟΞΏΞ³ΟΞ¬ΞΌΞΌΞ±Ο„ΞΏΟ‚ ΞµΞ―Ξ½Ξ±ΞΉ 0 Ξ±Ξ½ Ξ²ΟΞ­ΞΈΞ·ΞΊΞµ\n"
+"Ο„ΞΏ Ξ¥Ξ ΞΞ”Ξ•Ξ™Ξ“ΞΞ‘, 1 Ξ±Ξ½ Ξ΄ΞµΞ½ Ξ²ΟΞ­ΞΈΞ·ΞΊΞµ ΞΊΞ±ΞΉ 2 Ξ±Ξ½ Ο€ΟΞΏΞ­ΞΊΟ…ΟΞµ ΞΊΞ¬Ο€ΞΏΞΉΞΏ Ο€ΟΟΞ²Ξ»Ξ·ΞΌΞ±.\n"
+
+#: src/main.c:1572
+#, c-format
+msgid "GNU Grep home page: <%s>\n"
+msgstr ""
+
+#: src/main.c:1604
+#, c-format
+msgid "%s can only use the %s pattern syntax"
+msgstr ""
 
 # src/grep.c:829
 # src/grep.c:1112
-#: src/grep.c:1126
+#: src/main.c:1607
+#, c-format
 msgid "conflicting matchers specified"
-msgstr "ορίστηκαν αντικρουόμενα στοιχεία αναζήτησης"
-
-# src/grep.c:1133
-#: src/grep.c:1363
-msgid "unknown devices method"
-msgstr "άγνωστη μέθοδος συσκευών"
-
-# src/grep.c:1133
-#: src/grep.c:1430
-msgid "unknown directories method"
-msgstr "άγνωστη μέθοδος καταλόγων"
+msgstr "ΞΏΟΞ―ΟƒΟ„Ξ·ΞΊΞ±Ξ½ Ξ±Ξ½Ο„ΞΉΞΊΟΞΏΟ…ΟΞΌΞµΞ½Ξ± ΟƒΟ„ΞΏΞΉΟ‡ΞµΞ―Ξ± Ξ±Ξ½Ξ±Ξ¶Ξ®Ο„Ξ·ΟƒΞ·Ο‚"
 
 # src/dfa.c:556 src/dfa.c:562 src/dfa.c:573 src/dfa.c:584
 # src/dfa.c:564 src/dfa.c:570 src/dfa.c:581 src/dfa.c:592
-#: src/grep.c:1497
+#: src/main.c:1621
+#, fuzzy, c-format
+msgid "invalid matcher %s"
+msgstr "ΞΌΞ· Ξ­Ξ³ΞΊΟ…ΟΞΏΟ‚ ΞΌΞ­Ξ³ΞΉΟƒΟ„ΞΏΟ‚ ΞΌΞµΟ„ΟΞ·Ο„Ξ®Ο‚"
+
+# src/grep.c:1133
+#: src/main.c:1869
+#, c-format
+msgid "unknown devices method"
+msgstr "Ξ¬Ξ³Ξ½Ο‰ΟƒΟ„Ξ· ΞΌΞ­ΞΈΞΏΞ΄ΞΏΟ‚ ΟƒΟ…ΟƒΞΊΞµΟ…ΟΞ½"
+
+# src/dfa.c:556 src/dfa.c:562 src/dfa.c:573 src/dfa.c:584
+# src/dfa.c:564 src/dfa.c:570 src/dfa.c:581 src/dfa.c:592
+#: src/main.c:1998
+#, c-format
 msgid "invalid max count"
-msgstr "μη έγκυρος μέγιστος μετρητής"
+msgstr "ΞΌΞ· Ξ­Ξ³ΞΊΟ…ΟΞΏΟ‚ ΞΌΞ­Ξ³ΞΉΟƒΟ„ΞΏΟ‚ ΞΌΞµΟ„ΟΞ·Ο„Ξ®Ο‚"
 
-#: src/grep.c:1551
+#: src/main.c:2055
+#, c-format
 msgid "unknown binary-files type"
-msgstr "άγνωστο είδος δυαδικών αρχείων"
+msgstr "Ξ¬Ξ³Ξ½Ο‰ΟƒΟ„ΞΏ ΞµΞ―Ξ΄ΞΏΟ‚ Ξ΄Ο…Ξ±Ξ΄ΞΉΞΊΟΞ½ Ξ±ΟΟ‡ΞµΞ―Ο‰Ξ½"
 
-# src/grep.c:915
-# src/grep.c:1219
-#: src/grep.c:1646
+#: src/main.c:2118
 #, c-format
-msgid "%s (GNU grep) %s\n"
-msgstr "%s (GNU grep) %s\n"
+msgid "the --mmap option has been a no-op since 2010"
+msgstr "Ξ· ΞµΟ€ΞΉΞ»ΞΏΞ³Ξ® --mmap Ξ΄ΞµΞ½ Ξ»ΞµΞΉΟ„ΞΏΟ…ΟΞ³ΞµΞ― Ξ±Ο€Ο Ο„ΞΏ 2010"
 
-# src/grep.c:917
-# src/grep.c:1221
-#: src/grep.c:1648
-msgid "Copyright 1988, 1992-1999, 2000, 2001 Free Software Foundation, Inc.\n"
-msgstr "Δικαίωμα αντιγραφής 1988, 1992-1999, 2000, 2001 Ίδρυμα Ελεύθερου Λογισμικού\n"
+#: src/pcresearch.c:42
+msgid "support for the -P option is not compiled into this --disable-perl-regexp binary"
+msgstr "Ξ· Ο…Ο€ΞΏΟƒΟ„Ξ®ΟΞΉΞΎΞ· Ξ³ΞΉΞ± Ο„Ξ·Ξ½ ΞµΟ€ΞΉΞ»ΞΏΞ³Ξ® -P Ξ΄ΞµΞ½ ΞµΞ―Ξ½Ξ±ΞΉ ΞΌΞµΟ„Ξ±Ξ³Ξ»Ο‰Ο„Ο„ΞΉΟƒΞΌΞ­Ξ½Ξ· ΟƒΞµ Ξ±Ο…Ο„Ο Ο„ΞΏ --disable-perl-regexp Ξ΄Ο…Ξ±Ξ΄ΞΉΞΊΟ [Ξ±ΟΟ‡ΞµΞ―ΞΏ]"
 
-# src/grep.c:919
-# src/grep.c:1223
-#: src/grep.c:1650
-msgid ""
-"This is free software; see the source for copying conditions. There is NO\n"
-"warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
+#: src/pcresearch.c:56
+#, c-format
+msgid "the -P option only supports a single pattern"
+msgstr "Ξ— ΞµΟ€ΞΉΞ»ΞΏΞ³Ξ® -P Ο…Ο€ΞΏΟƒΟ„Ξ·ΟΞ―Ξ¶ΞµΞΉ ΞΌΟΞ½ΞΏ Ξ­Ξ½Ξ± Ο…Ο€ΟΞ΄ΞµΞΉΞ³ΞΌΞ±"
+
+#: src/pcresearch.c:110
+#, c-format
+msgid "internal error"
+msgstr "ΞµΟƒΟ‰Ο„ΞµΟΞΉΞΊΟ ΟƒΟ†Ξ¬Ξ»ΞΌΞ±"
+
+#: src/pcresearch.c:138
+#, c-format
+msgid "exceeded PCRE's line length limit"
 msgstr ""
-"Αυτό είναι ελεύθερο λογισμικό, δείτε τον πηγαίο κώδικα για τους κανόνες\n"
-"αντιγραφής. ΔΕΝ υπάρχει εγγύηση, ούτε ακόμα για ΧΡΗΣΙΜΟΤΗΤΑ ή ΚΑΤΑΛΛΗΛΟΤΗΤΑ\n"
-"ΓΙΑ ΕΝΑ ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ.\n"
 
-#: src/search.c:606
-msgid "The -P option is not supported"
-msgstr "Η επιλογή -P δεν υποστηρίζεται"
-
-#: src/search.c:619
-msgid "The -P and -z options cannot be combined"
-msgstr "Οι επιλογές -P και -z δεν μπορούν να συνδυαστούν"
-
-#: lib/error.c:117
-msgid "Unknown system error"
-msgstr "¶γνωστο λάθος συστήματος"
-
-# src/getopt.c:628
-# src/getopt.c:628
-#: lib/getopt.c:675
+#: src/pcresearch.c:157
 #, c-format
-msgid "%s: option `%s' is ambiguous\n"
-msgstr "%s: η επιλογή `%s' είναι διφορούμενη\n"
-
-# src/getopt.c:652
-# src/getopt.c:652
-#: lib/getopt.c:700
-#, c-format
-msgid "%s: option `--%s' doesn't allow an argument\n"
-msgstr "%s: η επιλογή `--%s' δεν επιτρέπει ορίσματα\n"
-
-# src/getopt.c:657
-# src/getopt.c:657
-#: lib/getopt.c:705
-#, c-format
-msgid "%s: option `%c%s' doesn't allow an argument\n"
-msgstr "%s: η επιλογή `%c%s' δεν επιτρέπει ορίσματα\n"
-
-# src/getopt.c:674 src/getopt.c:847
-# src/getopt.c:674 src/getopt.c:847
-#: lib/getopt.c:723 lib/getopt.c:896
-#, c-format
-msgid "%s: option `%s' requires an argument\n"
-msgstr "%s: η επιλογή `%s' απαιτεί όρισμα\n"
-
-# src/getopt.c:703
-# src/getopt.c:703
-#. --option
-#: lib/getopt.c:752
-#, c-format
-msgid "%s: unrecognized option `--%s'\n"
-msgstr "%s: μη αναγνωρίσιμη επιλογή `--%s'\n"
-
-# src/getopt.c:707
-# src/getopt.c:707
-#. +option or -option
-#: lib/getopt.c:756
-#, c-format
-msgid "%s: unrecognized option `%c%s'\n"
-msgstr "%s: μη αναγνωρίσιμη επιλογή `%c%s'\n"
-
-# src/getopt.c:733
-# src/getopt.c:733
-#. 1003.2 specifies the format of this message.
-#: lib/getopt.c:782
-#, c-format
-msgid "%s: illegal option -- %c\n"
-msgstr "%s: μη αποδεκτή επιλογή -- %c\n"
-
-# src/getopt.c:736
-# src/getopt.c:736
-#: lib/getopt.c:785
-#, c-format
-msgid "%s: invalid option -- %c\n"
-msgstr "%s: μη έγκυρη επιλογή -- %c\n"
-
-# src/getopt.c:766 src/getopt.c:896
-# src/getopt.c:766 src/getopt.c:896
-#. 1003.2 specifies the format of this message.
-#: lib/getopt.c:815 lib/getopt.c:945
-#, c-format
-msgid "%s: option requires an argument -- %c\n"
-msgstr "%s: η επιλογή απαιτεί ένα όρισμα -- %c\n"
-
-# src/getopt.c:813
-# src/getopt.c:813
-#: lib/getopt.c:862
-#, c-format
-msgid "%s: option `-W %s' is ambiguous\n"
-msgstr "%s: η επιλογή `-W %s' είναι διφορούμενη\n"
-
-# src/getopt.c:831
-# src/getopt.c:831
-#: lib/getopt.c:880
-#, c-format
-msgid "%s: option `-W %s' doesn't allow an argument\n"
-msgstr "%s: η επιλογή `-W %s' δεν δέχεται ορίσματα\n"
-
-#. Get translations for open and closing quotation marks.
-#.
-#. The message catalog should translate "`" to a left
-#. quotation mark suitable for the locale, and similarly for
-#. "'".  If the catalog has no translation,
-#. locale_quoting_style quotes `like this', and
-#. clocale_quoting_style quotes "like this".
-#.
-#. For example, an American English Unicode locale should
-#. translate "`" to U+201C (LEFT DOUBLE QUOTATION MARK), and
-#. should translate "'" to U+201D (RIGHT DOUBLE QUOTATION
-#. MARK).  A British English Unicode locale should instead
-#. translate these to U+2018 (LEFT SINGLE QUOTATION MARK) and
-#. U+2019 (RIGHT SINGLE QUOTATION MARK), respectively.
-#: lib/quotearg.c:259
-msgid "`"
-msgstr "`"
-
-#: lib/quotearg.c:260
-msgid "'"
-msgstr "'"
-
-# src/getopt1.c:132
-# src/getopt1.c:132
-#~ msgid "option %s"
-#~ msgstr "επιλογή %s"
-
-# src/getopt1.c:134
-# src/getopt1.c:134
-#~ msgid " with arg %s"
-#~ msgstr " με όρισμα %s"
-
-# src/getopt1.c:149
-# src/getopt1.c:149
-#~ msgid "digits occur in two different argv-elements.\n"
-#~ msgstr "υπάρχουν ψηφία σε δύο διαφορετικά argv-στοιχεία.\n"
-
-# src/getopt1.c:151
-# src/getopt1.c:151
-#~ msgid "option %c\n"
-#~ msgstr "επιλογή %c\n"
-
-# src/getopt1.c:155
-# src/getopt1.c:155
-#~ msgid "option a\n"
-#~ msgstr "επιλογή α\n"
-
-# src/getopt1.c:159
-# src/getopt1.c:159
-#~ msgid "option b\n"
-#~ msgstr "επιλογή β\n"
-
-# src/getopt1.c:163
-# src/getopt1.c:163
-#~ msgid "option c with value `%s'\n"
-#~ msgstr "επιλογή γ με τιμή `%s'\n"
-
-# src/getopt1.c:167
-# src/getopt1.c:167
-#~ msgid "option d with value `%s'\n"
-#~ msgstr "επιλογή δ με τιμή `%s'\n"
-
-# src/getopt1.c:174
-# src/getopt1.c:174
-#~ msgid "?? getopt returned character code 0%o ??\n"
-#~ msgstr "?? η getopt επέστρεψε αλφαβητικό κωδικό 0%o ??\n"
-
-# src/getopt1.c:180
-# src/getopt1.c:180
-#~ msgid "non-option ARGV-elements: "
-#~ msgstr "ARGV-στοιχεία που δεν είναι επιλογές: "
-
-# src/grep.c:800 src/grep.c:805 src/grep.c:810
-# src/grep.c:1083 src/grep.c:1088 src/grep.c:1093
-#~ msgid "you may specify only one of -E, -F, or -G"
-#~ msgstr "μπορείτε να ορίσετε μόνο ένα από τα-E, -F ή -G"
-
-# src/obstack.c:467
-# src/obstack.c:467
-#~ msgid "memory exhausted\n"
-#~ msgstr "η μνήμη εξαντλήθηκε\n"
-
-# src/grep.c:1027 src/grep.c:1030
-#~ msgid "(standard input)\n"
-#~ msgstr "(κανονική είσοδος)\n"
+msgid "exceeded PCRE's backtracking limit"
+msgstr ""
