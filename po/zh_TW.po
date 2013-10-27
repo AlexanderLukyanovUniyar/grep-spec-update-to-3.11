@@ -1,21 +1,24 @@
-# Chinese (traditional) Translatino of grep
+# Traditional Chinese Translation of grep.
 # Copyright (C) 2004, 2012 Free Software Foundation, Inc.
 # This file is distributed under the same license as the grep package.
 # Yuan-Chen Cheng <ycheng@sinica.edu.tw>, 2004.
 # Webber Liao <wpliao@gmail.com>, 2012.
+# Wei-Lun Chao <bluebat@member.fsf.org>, 2013.
+#
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: grep 2.13.16-pre1\n"
+"Project-Id-Version: grep 2.14\n"
 "Report-Msgid-Bugs-To: bug-grep@gnu.org\n"
-"POT-Creation-Date: 2012-08-17 07:43+0200\n"
-"PO-Revision-Date: 2012-08-19 00:10+1000\n"
-"Last-Translator: Webber Liao <wpliao@gmail.com>\n"
+"POT-Creation-Date: 2012-08-20 08:12+0200\n"
+"PO-Revision-Date: 2013-03-19 00:10+1000\n"
+"Last-Translator: Wei-Lun Chao <bluebat@member.fsf.org>\n"
 "Language-Team: Chinese (traditional) <zh-l10n@linux.org.tw>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: lib/argmatch.c:133
 #, c-format
@@ -438,7 +441,7 @@ msgstr "\"egrep\" 的呼叫方式已被廢除; 請用 \"grep -E\" 代替。\n"
 
 #: src/fgrep.c:10
 msgid "PATTERN is a set of newline-separated fixed strings.\n"
-msgstr "PATTERN 是一組以換行分隔開的固定字串。\n"
+msgstr "PATTERN 是一組以換列分隔開的固定字串。\n"
 
 #: src/fgrep.c:12
 msgid "Invocation as 'fgrep' is deprecated; use 'grep -F' instead.\n"
@@ -504,7 +507,7 @@ msgstr "(標準輸入)"
 #: src/main.c:1531 src/main.c:1538
 #, c-format
 msgid "Usage: %s [OPTION]... PATTERN [FILE]...\n"
-msgstr "用法: %s [選項]... PATTERN [檔案]...\n"
+msgstr "用法: %s [選項]… PATTERN [檔案]…\n"
 
 #: src/main.c:1533
 #, c-format
@@ -536,7 +539,7 @@ msgid ""
 "  -P, --perl-regexp         PATTERN is a Perl regular expression\n"
 msgstr ""
 "  -E, --extended-regexp     PATTERN 是一個延伸正規表示式 (ERE)\n"
-"  -F, --fixed-strings       PATTERN 是一組以換行分隔開的固定字串\n"
+"  -F, --fixed-strings       PATTERN 是一組以換列分隔開的固定字串\n"
 "  -G, --basic-regexp        PATTERN 是一個基本正規表示式 (BRE)\n"
 "  -P, --perl-regexp         PATTERN 是一個 Perl 的正規表示式\n"
 
@@ -555,7 +558,7 @@ msgstr ""
 "  -i, --ignore-case         忽略大小寫的差異\n"
 "  -w, --word-regexp         限制 PATTERN 只符合整個單字\n"
 "  -x, --line-regexp         限制整列符合 PATTERN\n"
-"  -z, --null-data           設定資料列結尾為空白位元組，非換行符號\n"
+"  -z, --null-data           設定資料列結尾為空白位元組，非換列符號\n"
 
 #: src/main.c:1560
 #, c-format
@@ -786,7 +789,7 @@ msgstr "已超過 PCRE 的回溯上限"
 #~ msgstr "正在輸出"
 
 #~ msgid "Usage: %s [OPTION]... PATTERN [FILE] ...\n"
-#~ msgstr "用法: %s [選項]... 樣板 [檔案]...\n"
+#~ msgstr "用法: %s [選項]… 樣板 [檔案]…\n"
 
 #~ msgid ""
 #~ "\n"
@@ -822,11 +825,11 @@ msgstr "已超過 PCRE 的回溯上限"
 #~ "  -m, --max-count=NUM       在顯示 NUM 個結果後停止\n"
 #~ "  -b, --byte-offset         只顯示合乎條件資料以 byte 為記數單位的位置\n"
 #~ "  -n, --line-number         只顯示合乎條件的行列編號\n"
-#~ "      --line-buffered       每一行輸出後都立即顯示\n"
-#~ "  -H, --with-filename       每行結果都印出檔案名稱\n"
+#~ "      --line-buffered       每一列輸出後都立即顯示\n"
+#~ "  -H, --with-filename       每列結果都印出檔案名稱\n"
 #~ "  -h, --no-filename         輸出時不顯示前置的檔案名稱\n"
 #~ "      --label=LABEL         對於標準輸入, 在顯示檔名處顯示 LABEL\n"
-#~ "  -o, --only-matching       只顯示一行資料中與樣板條件相符的部分\n"
+#~ "  -o, --only-matching       只顯示一列資料中與樣板條件相符的部分\n"
 #~ "  -q, --quiet, --silent     關閉所有一般輸出的\n"
 #~ "      --binary-files=TYPE   設定二進位檔案型別為 TYPE\n"
 #~ "                            TYPE 是 'binary', 'text', 或 'without-match' 之一\n"
