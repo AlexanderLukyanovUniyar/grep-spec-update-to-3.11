@@ -36,6 +36,7 @@ TESTS =						\
   backref					\
   backref-multibyte-slow			\
   backref-word					\
+  backslash-s-vs-invalid-multitype		\
   big-hole					\
   big-match					\
   bogus-wctob					\
@@ -46,12 +47,13 @@ TESTS =						\
   case-fold-char-range				\
   case-fold-char-type				\
   char-class-multibyte				\
+  char-class-multibyte2				\
   dfa-coverage					\
   dfa-heap-overrun				\
   dfaexec-multibyte				\
   empty						\
   epipe						\
-  equiv-classes                                 \
+  equiv-classes					\
   ere						\
   euc-mb					\
   fedora					\
@@ -63,11 +65,13 @@ TESTS =						\
   grep-dir					\
   help-version					\
   ignore-mmap					\
-  in-eq-out-infloop                             \
+  in-eq-out-infloop				\
   include-exclude				\
-  inconsistent-range                            \
+  inconsistent-range				\
+  invalid-multibyte-infloop			\
   khadafy					\
   max-count-vs-context				\
+  multibyte-white-space				\
   empty-line-mb					\
   unibyte-bracket-expr				\
   high-bit-range				\
@@ -85,6 +89,7 @@ TESTS =						\
   spencer1					\
   spencer1-locale				\
   status					\
+  surrogate-pair				\
   symlink					\
   turkish-I					\
   turkish-I-without-dot				\
@@ -132,9 +137,9 @@ TESTS_ENVIRONMENT =				\
   fi;							\
 						\
   export_with_values				\
-  VERSION='$(VERSION)'                          \
-  LOCALE_FR='$(LOCALE_FR)'                      \
-  LOCALE_FR_UTF8='$(LOCALE_FR_UTF8)'            \
+  VERSION='$(VERSION)'				\
+  LOCALE_FR='$(LOCALE_FR)'			\
+  LOCALE_FR_UTF8='$(LOCALE_FR_UTF8)'		\
   AWK=$(AWK)					\
   GREP_OPTIONS=''				\
   LC_ALL=C					\
