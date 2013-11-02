@@ -36,6 +36,7 @@ TESTS =						\
   backref					\
   backref-multibyte-slow			\
   backref-word					\
+  backslash-s-and-repetition-operators		\
   backslash-s-vs-invalid-multitype		\
   big-hole					\
   big-match					\
@@ -78,6 +79,7 @@ TESTS =						\
   options					\
   pcre						\
   pcre-abort					\
+  pcre-invalid-utf8-input			\
   pcre-utf8					\
   pcre-z					\
   prefix-of-multibyte				\
