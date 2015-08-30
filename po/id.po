@@ -2,14 +2,14 @@
 # Copyright (C) 1999, 2000, 2001, 2002 Free Software Foundation, Inc.
 # This file is distributed under the same license as the grep package.
 # Tedi Heriyanto <tedi_h@gmx.net>, 1999, 2000, 2001, 2002.
-# Arif E. Nugroho <arif_endro@yahoo.com>, 2008, 2009, 2010, 2011, 2012.
+# Arif E. Nugroho <arif_endro@yahoo.com>, 2008, 2009, 2010, 2011, 2012, 2013, 2014.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: grep 2.11.11-pre1\n"
+"Project-Id-Version: grep 2.19.12\n"
 "Report-Msgid-Bugs-To: bug-grep@gnu.org\n"
-"POT-Creation-Date: 2012-04-09 22:09+0200\n"
-"PO-Revision-Date: 2012-05-27 07:00+0700\n"
+"POT-Creation-Date: 2014-05-29 21:52-0700\n"
+"PO-Revision-Date: 2014-08-05 07:00+0700\n"
 "Last-Translator: Arif E. Nugroho <arif_endro@yahoo.com>\n"
 "Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
 "Language: id\n"
@@ -31,7 +31,7 @@ msgstr "ambiguous (tidak sesuai) argumen %s untuk %s"
 msgid "Valid arguments are:"
 msgstr "Valid (sesuai) argumen adalah:"
 
-#: lib/closeout.c:112 src/main.c:894
+#: lib/closeout.c:112 src/grep.c:949
 #, c-format
 msgid "write error"
 msgstr "penulisan error"
@@ -95,8 +95,8 @@ msgstr "%s: opsi `-W %s' tidak mengijinkan sebuah argumen\n"
 msgid "%s: option '-W %s' requires an argument\n"
 msgstr "%s: opsi `-W %s' membutuhkan sebuah argumen\n"
 
-#: lib/obstack.c:413 lib/obstack.c:415 lib/xalloc-die.c:34 src/kwset.c:178
-#: src/kwset.c:186 src/kwset.c:409 src/pcresearch.c:153
+#: lib/obstack.c:416 lib/obstack.c:418 lib/xalloc-die.c:34
+#: src/pcresearch.c:177
 #, c-format
 msgid "memory exhausted"
 msgstr "kehabisan memori"
@@ -140,75 +140,75 @@ msgstr "`"
 msgid "'"
 msgstr "'"
 
-#: lib/regcomp.c:130
+#: lib/regcomp.c:131
 msgid "Success"
 msgstr "Sukses"
 
-#: lib/regcomp.c:133
+#: lib/regcomp.c:134
 msgid "No match"
 msgstr "Tidak cocok"
 
-#: lib/regcomp.c:136
+#: lib/regcomp.c:137
 msgid "Invalid regular expression"
 msgstr "Ekspresi umum tidak valid"
 
-#: lib/regcomp.c:139
+#: lib/regcomp.c:140
 msgid "Invalid collation character"
 msgstr "Karakter kolasi tidak valid"
 
-#: lib/regcomp.c:142
+#: lib/regcomp.c:143
 msgid "Invalid character class name"
 msgstr "Nama kelas karakter tidak valid"
 
-#: lib/regcomp.c:145
+#: lib/regcomp.c:146
 msgid "Trailing backslash"
 msgstr "Kelebihan backslash"
 
-#: lib/regcomp.c:148
+#: lib/regcomp.c:149
 msgid "Invalid back reference"
 msgstr "Referensi balik tidak valid"
 
-#: lib/regcomp.c:151
+#: lib/regcomp.c:152
 msgid "Unmatched [ or [^"
 msgstr "Tidak cocok [ atau [^"
 
-#: lib/regcomp.c:154
+#: lib/regcomp.c:155
 msgid "Unmatched ( or \\("
 msgstr "Tidak cocok ( atau \\("
 
-#: lib/regcomp.c:157
+#: lib/regcomp.c:158
 msgid "Unmatched \\{"
 msgstr "Tidak cocok \\{"
 
-#: lib/regcomp.c:160 src/dfa.c:1375
+#: lib/regcomp.c:161
 msgid "Invalid content of \\{\\}"
 msgstr "Isi dari \\{\\} tidak valid"
 
-#: lib/regcomp.c:163
+#: lib/regcomp.c:164
 msgid "Invalid range end"
 msgstr "Akhir jangkauan tidak valid"
 
-#: lib/regcomp.c:166
+#: lib/regcomp.c:167
 msgid "Memory exhausted"
 msgstr "Kehabisan memori"
 
-#: lib/regcomp.c:169
+#: lib/regcomp.c:170
 msgid "Invalid preceding regular expression"
 msgstr "Ekspresi umum yang mengawali tidak valid"
 
-#: lib/regcomp.c:172
+#: lib/regcomp.c:173
 msgid "Premature end of regular expression"
 msgstr "Akhir dari ekspresi umum tidak sempurna"
 
-#: lib/regcomp.c:175 src/dfa.c:1378
+#: lib/regcomp.c:176
 msgid "Regular expression too big"
 msgstr "Ekspresi umum terlalu besar"
 
-#: lib/regcomp.c:178
+#: lib/regcomp.c:179
 msgid "Unmatched ) or \\)"
 msgstr "Tidak cocok ) atau \\)"
 
-#: lib/regcomp.c:703
+#: lib/regcomp.c:707
 msgid "No previous regular expression"
 msgstr "Tidak ada ekspresi umum sebelumnya"
 
@@ -238,7 +238,6 @@ msgid ""
 "\n"
 msgstr ""
 "\n"
-"Hak Cipta (C) %s Free Software Foundation, Inc.\n"
 "Lisensi GPLv3+; GNU GPL versi 3 atau lebih lanjut <http://gnu.org/licenses/gpl.html>\n"
 "Ini adalah aplikasi bebas; anda bebas untuk mengubah dan meredistribusikannya.\n"
 "TIDAK ADA GARANSI disini, sampai batas yang diijinkan oleh hukum yang berlaku.\n"
@@ -355,7 +354,7 @@ msgstr ""
 #. for this package.  Please add _another line_ saying
 #. "Report translation bugs to <...>\n" with the address for translation
 #. bugs (typically your translation team's web or email address).
-#: lib/version-etc.c:245 src/main.c:1571
+#: lib/version-etc.c:245 src/grep.c:1620
 #, c-format
 msgid ""
 "\n"
@@ -379,7 +378,7 @@ msgstr "Halaman rumah %s: <%s>\n"
 msgid "%s home page: <http://www.gnu.org/software/%s/>\n"
 msgstr "Halaman rumah %s: <http://www.gnu.org/software/%s/>\n"
 
-#: lib/version-etc.c:256 src/main.c:1574
+#: lib/version-etc.c:256 src/grep.c:1623
 msgid "General help using GNU software: <http://www.gnu.org/gethelp/>\n"
 msgstr "Bantuan umum menggunakan aplikasi GNU: <http://www.gnu.org/gethelp/>\n"
 
@@ -398,125 +397,110 @@ msgstr "invalid (tidak sesuai) akhiran dalam %s%s argumen '%s'"
 msgid "%s%s argument '%s' too large"
 msgstr "%s%s argumen '%s' terlalu besar"
 
-#: src/dfa.c:953 src/dfa.c:956 src/dfa.c:976 src/dfa.c:986 src/dfa.c:998
-#: src/dfa.c:1051 src/dfa.c:1060 src/dfa.c:1063 src/dfa.c:1068 src/dfa.c:1081
-#: src/dfa.c:1139
+#: src/dfa.c:1017 src/dfa.c:1020 src/dfa.c:1039 src/dfa.c:1049 src/dfa.c:1061
+#: src/dfa.c:1097 src/dfa.c:1106 src/dfa.c:1109 src/dfa.c:1114 src/dfa.c:1128
+#: src/dfa.c:1174
 msgid "unbalanced ["
 msgstr "[ tidak seimbang"
 
-#: src/dfa.c:1007
+#: src/dfa.c:1073
 msgid "invalid character class"
 msgstr "Nama kelas karakter tidak valid"
 
-#: src/dfa.c:1176
+#: src/dfa.c:1217
 msgid "character class syntax is [[:space:]], not [:space:]"
 msgstr "character (karakter) tingkat sintaks adalah [[:space:]], tidak [:space:]"
 
-#: src/dfa.c:1228
+#: src/dfa.c:1265
 msgid "unfinished \\ escape"
 msgstr "escape \\\\ tidak selesai"
 
-#: src/dfa.c:1763
+#: src/dfa.c:1412
+msgid "invalid content of \\{\\}"
+msgstr "Isi dari \\{\\} tidak valid"
+
+#: src/dfa.c:1415
+msgid "regular expression too big"
+msgstr "Ekspresi umum terlalu besar"
+
+#: src/dfa.c:1845
 msgid "unbalanced ("
 msgstr "( tidak seimbang"
 
-#: src/dfa.c:1893
+#: src/dfa.c:1971
 msgid "no syntax specified"
 msgstr "Tidak ada sintaks yang dispesifikasikan"
 
-#: src/dfa.c:1901
+#: src/dfa.c:1979
 msgid "unbalanced )"
 msgstr ") tidak seimbang"
 
-#: src/egrep.c:16
-msgid "PATTERN is an extended regular expression (ERE).\n"
-msgstr "POLA adalah sebuah ekstensi ekspresi regular (ERE).\n"
-
-#: src/egrep.c:18
-msgid "Invocation as 'egrep' is deprecated; use 'grep -E' instead.\n"
-msgstr "Pemanggilan sebagai `egrep' sudah ditinggalkan; lebih baik gunakan `grep -E'.\n"
-
-#: src/fgrep.c:10
-msgid "PATTERN is a set of newline-separated fixed strings.\n"
-msgstr "POLA adalah sebuah seet dari baris-baru dipisahkan string tetap.\n"
-
-#: src/fgrep.c:12
-msgid "Invocation as 'fgrep' is deprecated; use 'grep -F' instead.\n"
-msgstr "pemanggilan sebagai `fgrep' sudah ditinggalkan; lebih baik gunakan `grep -F'.\n"
-
-#: src/grep.c:32
-msgid "PATTERN is, by default, a basic regular expression (BRE).\n"
-msgstr "POLA adalah, secara baku, sebuah ekspresi regular dasar (BRE).\n"
-
-#: src/grep.c:34
-msgid ""
-"'egrep' means 'grep -E'.  'fgrep' means 'grep -F'.\n"
-"Direct invocation as either 'egrep' or 'fgrep' is deprecated.\n"
-msgstr ""
-"`egrep' berarti `grep -E'. `fgrep' berarti `grep -F'.\n"
-"Pemanggilan langsung baik sebagai `egrep' atau `fgrep' sudah ditinggalkan.\n"
-
 #. This is a proper name. See the gettext manual, section Names.
-#: src/main.c:58
+#: src/grep.c:57
 msgid "Mike Haertel"
 msgstr "Mike Haertel"
 
-#: src/main.c:59
+#: src/grep.c:58
 msgid "others, see <http://git.sv.gnu.org/cgit/grep.git/tree/AUTHORS>"
 msgstr "lain, lihat <http://git.sv.gnu.org/sgit/grep.git/tree/AUTHORS>"
 
-#: src/main.c:448
+#: src/grep.c:502
 msgid "invalid context length argument"
 msgstr "konteks panjang argumen tidak valid"
 
-#: src/main.c:503
+#: src/grep.c:571
 msgid "lseek failed"
 msgstr "gagal lseek"
 
-#: src/main.c:650
+#: src/grep.c:704
 #, c-format
 msgid "input is too large to count"
 msgstr "masukan terlalu besar untuk dihitung"
 
-#: src/main.c:1205
+#: src/grep.c:1257
 #, c-format
 msgid "Binary file %s matches\n"
 msgstr "Berkas binari %s cocok\n"
 
-#: src/main.c:1256
-#, fuzzy, c-format
+#: src/grep.c:1300
+#, c-format
 msgid "warning: %s: %s"
-msgstr "peringatan: %s: %s\n"
+msgstr "peringatan: %s: %s"
 
-#: src/main.c:1257
+#: src/grep.c:1301
 msgid "recursive directory loop"
 msgstr "perulangan direktori rekursif"
 
-#: src/main.c:1399
+#: src/grep.c:1449
 #, c-format
 msgid "input file %s is also the output"
 msgstr "input (masuk) berkas %s juga keluar"
 
-#: src/main.c:1457
+#: src/grep.c:1507
 msgid "(standard input)"
 msgstr "(standar masukan)"
 
-#: src/main.c:1473 src/main.c:1480
+#: src/grep.c:1523 src/grep.c:1530
 #, c-format
 msgid "Usage: %s [OPTION]... PATTERN [FILE]...\n"
 msgstr "Penggunaan: %s [OPSI]... POLA [BERKAS]...\n"
 
-#: src/main.c:1475
-#, fuzzy, c-format
+#: src/grep.c:1525
+#, c-format
 msgid "Try '%s --help' for more information.\n"
-msgstr "Coba `%s --help' untuk informasi lebih lanjut.\n"
+msgstr "Coba '%s --help' untuk informasi lebih lanjut.\n"
 
-#: src/main.c:1481
+#: src/grep.c:1531
 #, c-format
 msgid "Search for PATTERN in each FILE or standard input.\n"
 msgstr "Cari untuk POLA dalam setiap berkas atau standar masukan.\n"
 
-#: src/main.c:1484
+#: src/grep.c:1532
+#, c-format
+msgid "PATTERN is, by default, a basic regular expression (BRE).\n"
+msgstr "POLA adalah, secara baku, sebuah ekspresi regular dasar (BRE).\n"
+
+#: src/grep.c:1533
 #, c-format
 msgid ""
 "Example: %s -i 'hello world' menu.h main.c\n"
@@ -527,7 +511,7 @@ msgstr ""
 "\n"
 "Seleksi dan interpretasi regexp:\n"
 
-#: src/main.c:1489
+#: src/grep.c:1537
 #, c-format
 msgid ""
 "  -E, --extended-regexp     PATTERN is an extended regular expression (ERE)\n"
@@ -540,7 +524,7 @@ msgstr ""
 "  -G, --basic-regexp        POLA adalah ekspresi reguler dasar\n"
 "  -P, --perl-regexp         POLA adalah sebuah ekspresi reguler Perl\n"
 
-#: src/main.c:1495
+#: src/grep.c:1543
 #, c-format
 msgid ""
 "  -e, --regexp=PATTERN      use PATTERN for matching\n"
@@ -558,16 +542,15 @@ msgstr ""
 "  -z, --null-data          baris data berakhir dalam 0 byte, bukan baris-baru\n"
 "\n"
 
-#: src/main.c:1502
-#, fuzzy, c-format
+#: src/grep.c:1550
+#, c-format
 msgid ""
 "\n"
 "Miscellaneous:\n"
 "  -s, --no-messages         suppress error messages\n"
 "  -v, --invert-match        select non-matching lines\n"
-"  -V, --version             print version information and exit\n"
-"      --help                display this help and exit\n"
-"      --mmap                deprecated no-op; evokes a warning\n"
+"  -V, --version             display version information and exit\n"
+"      --help                display this help text and exit\n"
 msgstr ""
 "\n"
 "Lain-lain:\n"
@@ -575,9 +558,8 @@ msgstr ""
 "  -v, --invert-match        pilih baris-baris yang tidak sesuai\n"
 "  -V, --version             tampilkan informasi versi dan keluar\n"
 "      --help                tampilkan bantuan ini dan keluar\n"
-"      --mmap                gunakan masukan memory-mapped bila memungkinkan\n"
 
-#: src/main.c:1510
+#: src/grep.c:1557
 #, c-format
 msgid ""
 "\n"
@@ -590,30 +572,51 @@ msgid ""
 "  -h, --no-filename         suppress the file name prefix on output\n"
 "      --label=LABEL         use LABEL as the standard input file name prefix\n"
 msgstr ""
+"\n"
+"Output control:\n"
+"  -m, --max-count=NUM       stop after NUM matches\n"
+"  -b, --byte-offset         print the byte offset with output lines\n"
+"  -n, --line-number         print line number with output lines\n"
+"      --line-buffered       flush output on every line\n"
+"  -H, --with-filename       print the file name for each match\n"
+"  -h, --no-filename         suppress the file name prefix on output\n"
+"      --label=LABEL         use LABEL as the standard input file name prefix\n"
 
-#: src/main.c:1521
+#: src/grep.c:1568
 #, c-format
 msgid ""
 "  -o, --only-matching       show only the part of a line matching PATTERN\n"
 "  -q, --quiet, --silent     suppress all normal output\n"
 "      --binary-files=TYPE   assume that binary files are TYPE;\n"
-"                            TYPE is `binary', `text', or `without-match'\n"
+"                            TYPE is 'binary', 'text', or 'without-match'\n"
 "  -a, --text                equivalent to --binary-files=text\n"
 msgstr ""
+"  -o, --only-matching       show only the part of a line matching PATTERN\n"
+"  -q, --quiet, --silent     suppress all normal output\n"
+"      --binary-files=TYPE   assume that binary files are TYPE;\n"
+"                            TYPE is 'binary', 'text', or 'without-match'\n"
+"  -a, --text                equivalent to --binary-files=text\n"
 
-#: src/main.c:1528
+#: src/grep.c:1575
 #, c-format
 msgid ""
 "  -I                        equivalent to --binary-files=without-match\n"
 "  -d, --directories=ACTION  how to handle directories;\n"
-"                            ACTION is `read', `recurse', or `skip'\n"
+"                            ACTION is 'read', 'recurse', or 'skip'\n"
 "  -D, --devices=ACTION      how to handle devices, FIFOs and sockets;\n"
-"                            ACTION is `read' or `skip'\n"
+"                            ACTION is 'read' or 'skip'\n"
 "  -r, --recursive           like --directories=recurse\n"
 "  -R, --dereference-recursive  likewise, but follow all symlinks\n"
 msgstr ""
+"  -I                        equivalent to --binary-files=without-match\n"
+"  -d, --directories=ACTION  how to handle directories;\n"
+"                            ACTION is 'read', 'recurse', or 'skip'\n"
+"  -D, --devices=ACTION      how to handle devices, FIFOs and sockets;\n"
+"                            ACTION is 'read' or 'skip'\n"
+"  -r, --recursive           like --directories=recurse\n"
+"  -R, --dereference-recursive  likewise, but follow all symlinks\n"
 
-#: src/main.c:1537
+#: src/grep.c:1584
 #, c-format
 msgid ""
 "      --include=FILE_PATTERN  search only files that match FILE_PATTERN\n"
@@ -621,8 +624,12 @@ msgid ""
 "      --exclude-from=FILE   skip files matching any file pattern from FILE\n"
 "      --exclude-dir=PATTERN  directories that match PATTERN will be skipped.\n"
 msgstr ""
+"      --include=FILE_PATTERN  search only files that match FILE_PATTERN\n"
+"      --exclude=FILE_PATTERN  skip files and directories matching FILE_PATTERN\n"
+"      --exclude-from=FILE   skip files matching any file pattern from FILE\n"
+"      --exclude-dir=PATTERN  directories that match PATTERN will be skipped.\n"
 
-#: src/main.c:1543
+#: src/grep.c:1590
 #, c-format
 msgid ""
 "  -L, --files-without-match  print only names of FILEs containing no match\n"
@@ -631,8 +638,13 @@ msgid ""
 "  -T, --initial-tab         make tabs line up (if needed)\n"
 "  -Z, --null                print 0 byte after FILE name\n"
 msgstr ""
+"  -L, --files-without-match  print only names of FILEs containing no match\n"
+"  -l, --files-with-matches  print only names of FILEs containing matches\n"
+"  -c, --count               print only a count of matching lines per FILE\n"
+"  -T, --initial-tab         make tabs line up (if needed)\n"
+"  -Z, --null                print 0 byte after FILE name\n"
 
-#: src/main.c:1549
+#: src/grep.c:1596
 #, c-format
 msgid ""
 "\n"
@@ -641,24 +653,24 @@ msgid ""
 "  -A, --after-context=NUM   print NUM lines of trailing context\n"
 "  -C, --context=NUM         print NUM lines of output context\n"
 msgstr ""
+"\n"
+"Context control:\n"
+"  -B, --before-context=NUM  print NUM lines of leading context\n"
+"  -A, --after-context=NUM   print NUM lines of trailing context\n"
+"  -C, --context=NUM         print NUM lines of output context\n"
 
-#: src/main.c:1556
-#, fuzzy, c-format
+#: src/grep.c:1603
+#, c-format
 msgid ""
 "  -NUM                      same as --context=NUM\n"
 "      --color[=WHEN],\n"
 "      --colour[=WHEN]       use markers to highlight the matching strings;\n"
-"                            WHEN is `always', `never', or `auto'\n"
+"                            WHEN is 'always', 'never', or 'auto'\n"
 "  -U, --binary              do not strip CR characters at EOL (MSDOS/Windows)\n"
 "  -u, --unix-byte-offsets   report offsets as if CRs were not there\n"
 "                            (MSDOS/Windows)\n"
 "\n"
 msgstr ""
-"\n"
-"Kontrol Konteks:\n"
-"  -B, --before-context=NUM  menampilkan NUM baris dari konteks yang mengawali\n"
-"  -A, --after-context=NUM   menampilkan NUM baris dari konteks yang mengakhiri\n"
-"  -C, --context=NUM         menampilkan NUM baris dari konteks keluaran\n"
 "  -NUM                      sama seperti --context=NUM\n"
 "      --color[=WHEN],\n"
 "      --colour[=WHEN]       gunakan penanda untuk membedakan string yang cocok\n"
@@ -667,8 +679,17 @@ msgstr ""
 "  -u, --unix-byte-offsets   laporkan ofset seperti bila CR tidak ada (MSDOS)\n"
 "\n"
 
-#: src/main.c:1566
-#, fuzzy, c-format
+#: src/grep.c:1612
+#, c-format
+msgid ""
+"'egrep' means 'grep -E'.  'fgrep' means 'grep -F'.\n"
+"Direct invocation as either 'egrep' or 'fgrep' is deprecated.\n"
+msgstr ""
+"`egrep' berarti `grep -E'. `fgrep' berarti `grep -F'.\n"
+"Pemanggilan langsung baik sebagai `egrep' atau `fgrep' sudah ditinggalkan.\n"
+
+#: src/grep.c:1615
+#, c-format
 msgid ""
 "When FILE is -, read standard input.  With no FILE, read . if a command-line\n"
 "-r is given, - otherwise.  If fewer than two FILEs are given, assume -h.\n"
@@ -679,70 +700,91 @@ msgstr ""
 "yang diberikan, asumsikan -h. Status keluar adalah 0 jika baris apapun telah dipilih, 1 jika tidak;\n"
 "jika ada error apapun yang terjadi dan opsi -q tidak diberikan, status keluar adalah 2.\n"
 
-#: src/main.c:1572
+#: src/grep.c:1621
 #, c-format
 msgid "GNU Grep home page: <%s>\n"
 msgstr "Halaman rumah GNU Grep: <%s>\n"
 
-#: src/main.c:1604
-#, c-format
-msgid "%s can only use the %s pattern syntax"
-msgstr ""
-
-#: src/main.c:1607
+#: src/grep.c:1687
 #, c-format
 msgid "conflicting matchers specified"
 msgstr "konflik pencocokan dispesifikasikan"
 
-#: src/main.c:1621
-#, fuzzy, c-format
+#: src/grep.c:1698
+#, c-format
 msgid "invalid matcher %s"
-msgstr "jumlah maksimal tidak valid"
+msgstr "matcher tidak valid %s"
 
-#: src/main.c:1869
+#: src/grep.c:2006
 #, c-format
 msgid "unknown devices method"
 msgstr "metode device tidak dikenal"
 
-#: src/main.c:1998
+#: src/grep.c:2133
 #, c-format
 msgid "invalid max count"
 msgstr "jumlah maksimal tidak valid"
 
-#: src/main.c:2055
+#: src/grep.c:2190
 #, c-format
 msgid "unknown binary-files type"
 msgstr "tipe berkas binari tidak dikenal"
 
-#: src/main.c:2118
-#, c-format
-msgid "the --mmap option has been a no-op since 2010"
-msgstr ""
-
-#: src/pcresearch.c:42
-#, fuzzy
+#: src/pcresearch.c:48
 msgid "support for the -P option is not compiled into this --disable-perl-regexp binary"
 msgstr "Dukungan untuk opsi -P tidak dikompile kedalam ini --disable-perl-regexp binari"
 
-#: src/pcresearch.c:56
-#, fuzzy, c-format
+#: src/pcresearch.c:64
+#, c-format
 msgid "the -P option only supports a single pattern"
 msgstr "Opsi -P hanya mendukung sebuah pola tunggal"
 
 #: src/pcresearch.c:110
-#, fuzzy, c-format
+#, c-format
+msgid "internal error (should never happen)"
+msgstr "internal error (should never happen)"
+
+#: src/pcresearch.c:120
+#, c-format
+msgid "failed to allocate memory for the PCRE JIT stack"
+msgstr "failed to allocate memory for the PCRE JIT stack"
+
+#: src/pcresearch.c:134
+#, c-format
 msgid "internal error"
 msgstr "penulisan error"
 
-#: src/pcresearch.c:138
+#: src/pcresearch.c:162
 #, c-format
 msgid "exceeded PCRE's line length limit"
-msgstr ""
+msgstr "exceeded PCRE's line length limit"
 
-#: src/pcresearch.c:157
+#: src/pcresearch.c:181
 #, c-format
 msgid "exceeded PCRE's backtracking limit"
-msgstr ""
+msgstr "exceeded PCRE's backtracking limit"
+
+#: src/pcresearch.c:185
+#, c-format
+msgid "invalid UTF-8 byte sequence in input"
+msgstr "invalid UTF-8 byte sequence in input"
+
+#: src/pcresearch.c:192
+#, c-format
+msgid "internal PCRE error: %d"
+msgstr "penulisan error PCRE: %d"
+
+#~ msgid "PATTERN is an extended regular expression (ERE).\n"
+#~ msgstr "POLA adalah sebuah ekstensi ekspresi regular (ERE).\n"
+
+#~ msgid "Invocation as 'egrep' is deprecated; use 'grep -E' instead.\n"
+#~ msgstr "Pemanggilan sebagai `egrep' sudah ditinggalkan; lebih baik gunakan `grep -E'.\n"
+
+#~ msgid "PATTERN is a set of newline-separated fixed strings.\n"
+#~ msgstr "POLA adalah sebuah seet dari baris-baru dipisahkan string tetap.\n"
+
+#~ msgid "Invocation as 'fgrep' is deprecated; use 'grep -F' instead.\n"
+#~ msgstr "pemanggilan sebagai `fgrep' sudah ditinggalkan; lebih baik gunakan `grep -F'.\n"
 
 #~ msgid "unfinished repeat count"
 #~ msgstr "jumlah perulangan tidak selesai"
