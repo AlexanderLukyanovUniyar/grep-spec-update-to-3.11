@@ -1,4 +1,3 @@
 copy: alt/*
-diff: grep-current:. grep-alt:. name=@name@-@version@-@release@.patch
 tar: grep-current:. name=grep-@version@-@release@
 tar: po-current:po name=po-@version@-@release@ base=po
