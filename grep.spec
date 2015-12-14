@@ -76,6 +76,8 @@ install -pm644 %_sourcedir/GREP_COLORS \
 %find_lang %name
 
 %check
+# pcre-jitstack needs more stack space
+ulimit -s 32768
 %make_build -k check
 
 %files -f %name.lang
