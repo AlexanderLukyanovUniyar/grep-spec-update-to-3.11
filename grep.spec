@@ -1,5 +1,5 @@
 Name: grep
-Version: 2.21.0.65.4f89
+Version: 2.22
 Release: alt1
 
 Summary: The GNU versions of grep pattern matching utilities
@@ -89,6 +89,10 @@ ulimit -s 32768
 %doc AUTHORS NEWS README TODO
 
 %changelog
+* Mon Dec 14 2015 Dmitry V. Levin <ldv@altlinux.org> 2.22-alt1
+- Updated to v2.22.
+- Updated translations from translationproject.org.
+
 * Sun Sep 20 2015 Dmitry V. Levin <ldv@altlinux.org> 2.21.0.65.4f89-alt1
 - Updated to v2.21-65-g4f89.
 - Updated translations from translationproject.org.
