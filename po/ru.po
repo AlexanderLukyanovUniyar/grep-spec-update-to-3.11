@@ -4,20 +4,21 @@
 # This file is distributed under the same license as the grep package.
 #
 # Denis Perchine <dyp@perchine.com>, 1998-2000.
-# Yuri Kozlov <yuray@komyakino.ru>, 2009, 2010, 2011, 2012, 2013, 2014, 2015.
+# Yuri Kozlov <yuray@komyakino.ru>, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017.
 msgid ""
 msgstr ""
-"Project-Id-Version: grep 2.21.78\n"
+"Project-Id-Version: grep 2.23.7\n"
 "Report-Msgid-Bugs-To: bug-grep@gnu.org\n"
-"POT-Creation-Date: 2015-10-17 21:59-0700\n"
-"PO-Revision-Date: 2015-10-18 13:35+0300\n"
+"POT-Creation-Date: 2016-03-03 17:39-0800\n"
+"PO-Revision-Date: 2017-02-01 09:08+0300\n"
 "Last-Translator: Yuri Kozlov <yuray@komyakino.ru>\n"
 "Language-Team: Russian <gnu@d07.ru>\n"
 "Language: ru\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Lokalize 2.0\n"
 "Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: lib/argmatch.c:133
@@ -34,7 +35,7 @@ msgstr "двусмысленный аргумент %s для %s"
 msgid "Valid arguments are:"
 msgstr "Допустимые аргументы:"
 
-#: lib/closeout.c:112 src/grep.c:1143
+#: lib/closeout.c:112 src/grep.c:1199
 #, c-format
 msgid "write error"
 msgstr "ошибка записи"
@@ -104,7 +105,7 @@ msgid "%s: option '-W %s' requires an argument\n"
 msgstr "%s: для параметра «-W %s» требуется аргумент\n"
 
 #: lib/obstack.c:338 lib/obstack.c:340 lib/xalloc-die.c:34
-#: src/pcresearch.c:309
+#: src/pcresearch.c:338
 #, c-format
 msgid "memory exhausted"
 msgstr "память исчерпана"
@@ -140,11 +141,11 @@ msgstr "не удалось вернуться в начальный рабоч�
 #. If you don't know what to put here, please see
 #. <http://en.wikipedia.org/wiki/Quotation_marks_in_other_languages>
 #. and use glyphs suitable for your language.
-#: lib/quotearg.c:312
+#: lib/quotearg.c:347
 msgid "`"
 msgstr "«"
 
-#: lib/quotearg.c:313
+#: lib/quotearg.c:348
 msgid "'"
 msgstr "»"
 
@@ -177,8 +178,8 @@ msgid "Invalid back reference"
 msgstr "Неправильная обратная ссылка"
 
 #: lib/regcomp.c:156
-msgid "Unmatched [ or [^"
-msgstr "Непарная [ или [^"
+msgid "Unmatched [, [^, [:, [., or [="
+msgstr "Непарная [, [^, [:, [. или [="
 
 #: lib/regcomp.c:159
 msgid "Unmatched ( or \\("
@@ -216,7 +217,7 @@ msgstr "Регулярное выражение слишком большое"
 msgid "Unmatched ) or \\)"
 msgstr "Непарная ) или \\)"
 
-#: lib/regcomp.c:711
+#: lib/regcomp.c:687
 msgid "No previous regular expression"
 msgstr "Нет предыдущего регулярного выражения"
 
@@ -448,69 +449,69 @@ msgstr "несбалансированная )"
 #. This is a proper name. See the gettext manual, section Names.
 #: src/grep.c:57
 msgid "Mike Haertel"
-msgstr "Майк Хертель (Mike Haertel)"
+msgstr "Майк Гертель (Mike Haertel)"
 
 #: src/grep.c:58
 msgid "others, see <http://git.sv.gnu.org/cgit/grep.git/tree/AUTHORS>"
 msgstr "другие, см. <http://git.sv.gnu.org/cgit/grep.git/tree/AUTHORS>"
 
-#: src/grep.c:639
+#: src/grep.c:648
 msgid "invalid context length argument"
 msgstr "неверный аргумент длины контекста"
 
-#: src/grep.c:692
+#: src/grep.c:712
 #, c-format
 msgid "input is too large to count"
 msgstr "входные данные слишком велики, чтобы сосчитать"
 
-#: src/grep.c:734
+#: src/grep.c:754
 msgid "lseek failed"
 msgstr "Вызов lseek завершился неудачно"
 
-#: src/grep.c:1467
+#: src/grep.c:1501
 #, c-format
 msgid "Binary file %s matches\n"
 msgstr "Двоичный файл %s совпадает\n"
 
-#: src/grep.c:1513
+#: src/grep.c:1550
 #, c-format
 msgid "warning: %s: %s"
 msgstr "предупреждение: %s: %s"
 
-#: src/grep.c:1514
+#: src/grep.c:1551
 msgid "recursive directory loop"
 msgstr "каталоги зациклены"
 
-#: src/grep.c:1683
+#: src/grep.c:1720
 #, c-format
 msgid "input file %s is also the output"
 msgstr "файл ввода %s также используется и для вывода"
 
-#: src/grep.c:1741
+#: src/grep.c:1782
 msgid "(standard input)"
 msgstr "(стандартный ввод)"
 
-#: src/grep.c:1757 src/grep.c:1764
+#: src/grep.c:1798 src/grep.c:1805
 #, c-format
 msgid "Usage: %s [OPTION]... PATTERN [FILE]...\n"
 msgstr "Использование: %s [ПАРАМЕТР]… ШАБЛОН [ФАЙЛ]…\n"
 
-#: src/grep.c:1759
+#: src/grep.c:1800
 #, c-format
 msgid "Try '%s --help' for more information.\n"
 msgstr "Запустите «%s --help» для получения более подробного описания.\n"
 
-#: src/grep.c:1765
+#: src/grep.c:1806
 #, c-format
 msgid "Search for PATTERN in each FILE or standard input.\n"
 msgstr "Поиск ШАБЛОНА в каждом ФАЙЛЕ или в стандартном вводе.\n"
 
-#: src/grep.c:1766
+#: src/grep.c:1807
 #, c-format
 msgid "PATTERN is, by default, a basic regular expression (BRE).\n"
 msgstr "По умолчанию, ШАБЛОН представляет собой простое регулярное выражение (BRE).\n"
 
-#: src/grep.c:1767
+#: src/grep.c:1808
 #, c-format
 msgid ""
 "Example: %s -i 'hello world' menu.h main.c\n"
@@ -521,7 +522,7 @@ msgstr ""
 "\n"
 "Выбор типа регулярного выражения и его интерпретация:\n"
 
-#: src/grep.c:1771
+#: src/grep.c:1812
 #, c-format
 msgid ""
 "  -E, --extended-regexp     PATTERN is an extended regular expression (ERE)\n"
@@ -534,7 +535,7 @@ msgstr ""
 "  -G, --basic-regexp        ШАБЛОН — простое регулярное выражение (BRE)\n"
 "  -P, --perl-regexp         ШАБЛОН — регулярное выражения языка Perl\n"
 
-#: src/grep.c:1777
+#: src/grep.c:1818
 #, c-format
 msgid ""
 "  -e, --regexp=PATTERN      use PATTERN for matching\n"
@@ -552,7 +553,7 @@ msgstr ""
 "  -z, --null-data           строки разделяются байтом с нулевым значением, а не\n"
 "                            символом конца строки\n"
 
-#: src/grep.c:1784
+#: src/grep.c:1825
 #, c-format
 msgid ""
 "\n"
@@ -569,7 +570,7 @@ msgstr ""
 "  -V, --version             показать информацию о версии и закончить работу\n"
 "      --help                показать эту справку и закончить работу\n"
 
-#: src/grep.c:1791
+#: src/grep.c:1832
 #, c-format
 msgid ""
 "\n"
@@ -594,7 +595,7 @@ msgstr ""
 "      --label=МЕТКА         использовать МЕТКУ в качестве имени файла для\n"
 "                            стандартного ввода\n"
 
-#: src/grep.c:1802
+#: src/grep.c:1843
 #, c-format
 msgid ""
 "  -o, --only-matching       show only the part of a line matching PATTERN\n"
@@ -609,7 +610,7 @@ msgstr ""
 "                            «binary», «text» или «without-match».\n"
 "  -a, --text                то же что и --binary-files=text\n"
 
-#: src/grep.c:1809
+#: src/grep.c:1850
 #, c-format
 msgid ""
 "  -I                        equivalent to --binary-files=without-match\n"
@@ -629,7 +630,7 @@ msgstr ""
 "  -r, --recursive           то же, что и --directories=recurse\n"
 "  -R, --dereference-recursive                             тоже, но с переходом по всем символьным ссылкам\n"
 
-#: src/grep.c:1818
+#: src/grep.c:1859
 #, c-format
 msgid ""
 "      --include=FILE_PATTERN  search only files that match FILE_PATTERN\n"
@@ -645,7 +646,7 @@ msgstr ""
 "      --exclude-dir=ШАБЛОН  каталоги, подпадающие под ШАБЛОН,\n"
 "                            будут пропущены\n"
 
-#: src/grep.c:1825
+#: src/grep.c:1866
 #, c-format
 msgid ""
 "  -L, --files-without-match  print only names of FILEs containing no match\n"
@@ -661,7 +662,7 @@ msgstr ""
 "  -T, --initial-tab         выравнивать табуляцией (если нужно)\n"
 "  -Z, --null                печатать байт 0 после имени ФАЙЛА\n"
 
-#: src/grep.c:1831
+#: src/grep.c:1872
 #, c-format
 msgid ""
 "\n"
@@ -676,7 +677,7 @@ msgstr ""
 "  -A, --after-context=ЧИС   печатать ЧИСЛО строк последующего контекста\n"
 "  -C, --context[=ЧИС]       печатать ЧИСЛО строк контекста\n"
 
-#: src/grep.c:1838
+#: src/grep.c:1879
 #, c-format
 msgid ""
 "  -NUM                      same as --context=NUM\n"
@@ -698,7 +699,7 @@ msgstr ""
 "  -u, --unix-byte-offsets   выдавать смещения без учёта CR-ов (MSDOS/Windows)\n"
 "\n"
 
-#: src/grep.c:1847
+#: src/grep.c:1888
 #, c-format
 msgid ""
 "'egrep' means 'grep -E'.  'fgrep' means 'grep -F'.\n"
@@ -707,7 +708,7 @@ msgstr ""
 "Вместо «egrep» предполагается запуск «grep -E». Вместо «fgrep» предполагается\n"
 "«grep -F». Запуск под именами «egrep» или «fgrep» лучше не выполнять.\n"
 
-#: src/grep.c:1850
+#: src/grep.c:1891
 #, c-format
 msgid ""
 "When FILE is -, read standard input.  With no FILE, read . if a command-line\n"
@@ -722,32 +723,32 @@ msgstr ""
 "0, и 1, если ничего не совпало. При возникновении ошибок и если не указан\n"
 "параметр -q, кодом завершения будет 2.\n"
 
-#: src/grep.c:1917
+#: src/grep.c:1958
 #, c-format
 msgid "conflicting matchers specified"
 msgstr "заданы конфликтующие образцы"
 
-#: src/grep.c:1928
+#: src/grep.c:1969
 #, c-format
 msgid "invalid matcher %s"
 msgstr "неверный образец %s"
 
-#: src/grep.c:2211
+#: src/grep.c:2252
 #, c-format
 msgid "warning: GREP_OPTIONS is deprecated; please use an alias or script"
 msgstr "предупреждение: GREP_OPTIONS устарел; используйте псевдоним или сценарий"
 
-#: src/grep.c:2241
+#: src/grep.c:2282
 #, c-format
 msgid "unknown devices method"
 msgstr "неизвестный метод для устройств"
 
-#: src/grep.c:2368
+#: src/grep.c:2409
 #, c-format
 msgid "invalid max count"
 msgstr "неверное максимальное количество совпадений"
 
-#: src/grep.c:2425
+#: src/grep.c:2466
 #, c-format
 msgid "unknown binary-files type"
 msgstr "неизвестный тип двоичных файлов"
@@ -757,46 +758,51 @@ msgstr "неизвестный тип двоичных файлов"
 msgid "failed to allocate memory for the PCRE JIT stack"
 msgstr "ошибка выделения памяти для стека PCRE JIT"
 
-#: src/pcresearch.c:94
+#: src/pcresearch.c:96
 msgid "support for the -P option is not compiled into this --disable-perl-regexp binary"
 msgstr "поддержка параметра -P не включена при компиляции данного исполняемого файла (--disable-perl-regexp)"
 
-#: src/pcresearch.c:110
+#: src/pcresearch.c:119
 #, c-format
 msgid "-P supports only unibyte and UTF-8 locales"
 msgstr "параметр -P поддерживает только однобайтовые локали и UTF-8"
 
-#: src/pcresearch.c:114
+#: src/pcresearch.c:126
 #, c-format
 msgid "the -P option only supports a single pattern"
 msgstr "параметр -P поддерживает только одиночный шаблон"
 
-#: src/pcresearch.c:160
+#: src/pcresearch.c:138
+#, c-format
+msgid "unescaped ^ or $ not supported with -Pz"
+msgstr "неэкранированный символ ^ или $ не поддерживается при указании -Pz"
+
+#: src/pcresearch.c:182
 #, c-format
 msgid "internal error (should never happen)"
 msgstr "внутренняя ошибка (не должна возникать)"
 
-#: src/pcresearch.c:182
+#: src/pcresearch.c:204
 #, c-format
 msgid "internal error"
 msgstr "внутренняя ошибка"
 
-#: src/pcresearch.c:223
+#: src/pcresearch.c:248
 #, c-format
 msgid "exceeded PCRE's line length limit"
 msgstr "превышено ограничение длины строки PCRE"
 
-#: src/pcresearch.c:313
+#: src/pcresearch.c:342
 #, c-format
 msgid "exhausted PCRE JIT stack"
 msgstr "исчерпан стек PCRE JIT"
 
-#: src/pcresearch.c:317
+#: src/pcresearch.c:346
 #, c-format
 msgid "exceeded PCRE's backtracking limit"
 msgstr "исчерпан лимит в PCRE по возврату"
 
-#: src/pcresearch.c:324
+#: src/pcresearch.c:353
 #, c-format
 msgid "internal PCRE error: %d"
 msgstr "внутренняя ошибка PCRE: %d"

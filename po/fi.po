@@ -1,42 +1,80 @@
 # Finnish translation for GNU grep.
-# Copyright © 2002, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015 Free Software Foundation, Inc.
+# Copyright © 2002, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016 Free Software Foundation, Inc.
 # This file is distributed under the same license as the grep package.
 # Sami J. Laine <sami.laine@iki.fi>, 2002.
-# Jorma Karvonen <karvonen.jorma@gmail.com>, 2007-2015.
+# Jorma Karvonen <karvonen.jorma@gmail.com>, 2007-2016.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: grep 2.21.78\n"
+"Project-Id-Version: grep 2.26.37\n"
 "Report-Msgid-Bugs-To: bug-grep@gnu.org\n"
-"POT-Creation-Date: 2015-10-17 21:59-0700\n"
-"PO-Revision-Date: 2015-11-08 12:59+0200\n"
+"POT-Creation-Date: 2016-11-28 10:18-0800\n"
+"PO-Revision-Date: 2016-12-16 18:24+0200\n"
 "Last-Translator: Jorma Karvonen <karvonen.jorma@gmail.com>\n"
 "Language-Team: Finnish <translation-team-fi@lists.sourceforge.net>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: lib/argmatch.c:133
+#: lib/argmatch.c:134
 #, c-format
 msgid "invalid argument %s for %s"
 msgstr "virheellinen argumentti %s kohteelle %s"
 
-#: lib/argmatch.c:134
+#: lib/argmatch.c:135
 #, c-format
 msgid "ambiguous argument %s for %s"
 msgstr "monimerkityksellinen argumentti %s kohteelle %s"
 
-#: lib/argmatch.c:153
+#: lib/argmatch.c:154
 msgid "Valid arguments are:"
 msgstr "Kelvollisia argumentteja ovat:"
 
-#: lib/closeout.c:112 src/grep.c:1143
-#, c-format
+#: lib/closeout.c:112 src/grep.c:1290
 msgid "write error"
 msgstr "kirjoitusvirhe"
+
+#: lib/dfa.c:961 lib/dfa.c:964 lib/dfa.c:983 lib/dfa.c:993 lib/dfa.c:1006
+#: lib/dfa.c:1034 lib/dfa.c:1043 lib/dfa.c:1046 lib/dfa.c:1051 lib/dfa.c:1073
+#: lib/dfa.c:1076
+msgid "unbalanced ["
+msgstr "pariton ["
+
+#: lib/dfa.c:1019
+msgid "invalid character class"
+msgstr "virheellinen merkkiluokkanimi"
+
+#: lib/dfa.c:1142
+msgid "character class syntax is [[:space:]], not [:space:]"
+msgstr "merkkiluokkasyntaksi on [[:välilyönti:]], ei [:välilyönti:]"
+
+#: lib/dfa.c:1211
+msgid "unfinished \\ escape"
+msgstr "päättymätön \\-ohjausmerkki"
+
+#: lib/dfa.c:1372
+msgid "invalid content of \\{\\}"
+msgstr "virheellinen kohteen \\{\\} sisältö"
+
+#: lib/dfa.c:1375
+msgid "regular expression too big"
+msgstr "säännöllinen lauseke on liian suuri"
+
+#: lib/dfa.c:1789
+msgid "unbalanced ("
+msgstr "pariton ("
+
+#: lib/dfa.c:1916
+msgid "no syntax specified"
+msgstr "syntaksia ei ole määritelty"
+
+#: lib/dfa.c:1924
+msgid "unbalanced )"
+msgstr "pariton )"
 
 #: lib/error.c:191
 msgid "Unknown system error"
@@ -103,8 +141,7 @@ msgid "%s: option '-W %s' requires an argument\n"
 msgstr "%s: valitsin ’-W %s’ tarvitsee argumentin\n"
 
 #: lib/obstack.c:338 lib/obstack.c:340 lib/xalloc-die.c:34
-#: src/pcresearch.c:309
-#, c-format
+#: src/pcresearch.c:284
 msgid "memory exhausted"
 msgstr "muisti loppui"
 
@@ -139,11 +176,11 @@ msgstr "alustavan työhakemiston palattaminen epäonnistui"
 #. If you don't know what to put here, please see
 #. <http://en.wikipedia.org/wiki/Quotation_marks_in_other_languages>
 #. and use glyphs suitable for your language.
-#: lib/quotearg.c:312
+#: lib/quotearg.c:352
 msgid "`"
 msgstr "”"
 
-#: lib/quotearg.c:313
+#: lib/quotearg.c:353
 msgid "'"
 msgstr "”"
 
@@ -176,8 +213,8 @@ msgid "Invalid back reference"
 msgstr "Virheellinen paluuviite"
 
 #: lib/regcomp.c:156
-msgid "Unmatched [ or [^"
-msgstr "Pariton [ tai [^"
+msgid "Unmatched [, [^, [:, [., or [="
+msgstr "Pariton [, [^, [:, [., or [="
 
 #: lib/regcomp.c:159
 msgid "Unmatched ( or \\("
@@ -215,7 +252,7 @@ msgstr "Säännöllinen lauseke on liian suuri"
 msgid "Unmatched ) or \\)"
 msgstr "Pariton ) tai \\)"
 
-#: lib/regcomp.c:711
+#: lib/regcomp.c:687
 msgid "No previous regular expression"
 msgstr "Ei edeltävää säännöllistä lauseketta"
 
@@ -410,110 +447,67 @@ msgstr "virheellinen loppuliite valitsimen %s%s argumentissa ’%s’"
 msgid "%s%s argument '%s' too large"
 msgstr "valitsimen %s%s argumentti ’%s’ on liian iso"
 
-#: src/dfa.c:1005 src/dfa.c:1008 src/dfa.c:1027 src/dfa.c:1037 src/dfa.c:1049
-#: src/dfa.c:1076 src/dfa.c:1085 src/dfa.c:1088 src/dfa.c:1093 src/dfa.c:1114
-#: src/dfa.c:1117
-msgid "unbalanced ["
-msgstr "pariton ["
-
-#: src/dfa.c:1061
-msgid "invalid character class"
-msgstr "virheellinen merkkiluokkanimi"
-
-#: src/dfa.c:1183
-msgid "character class syntax is [[:space:]], not [:space:]"
-msgstr "merkkiluokkasyntaksi on [[:välilyönti:]], ei [:välilyönti:]"
-
-#: src/dfa.c:1245
-msgid "unfinished \\ escape"
-msgstr "päättymätön \\-ohjausmerkki"
-
-#: src/dfa.c:1392
-msgid "invalid content of \\{\\}"
-msgstr "virheellinen kohteen \\{\\} sisältö"
-
-#: src/dfa.c:1395
-msgid "regular expression too big"
-msgstr "säännöllinen lauseke on liian suuri"
-
-#: src/dfa.c:1811
-msgid "unbalanced ("
-msgstr "pariton ("
-
-#: src/dfa.c:1937
-msgid "no syntax specified"
-msgstr "syntaksia ei ole määritelty"
-
-#: src/dfa.c:1945
-msgid "unbalanced )"
-msgstr "pariton )"
-
 #. This is a proper name. See the gettext manual, section Names.
-#: src/grep.c:57
+#: src/grep.c:58
 msgid "Mike Haertel"
 msgstr "Mike Haertel"
 
-#: src/grep.c:58
+#: src/grep.c:59
 msgid "others, see <http://git.sv.gnu.org/cgit/grep.git/tree/AUTHORS>"
 msgstr "muut, katso <http://git.sv.gnu.org/cgit/grep.git/tree/AUTHORS>"
 
-#: src/grep.c:639
+#: src/grep.c:600
+msgid "(standard input)"
+msgstr "(vakiosyöte)"
+
+#: src/grep.c:778
 msgid "invalid context length argument"
 msgstr "virheellinen kontekstin pituusargumentti"
 
-#: src/grep.c:692
-#, c-format
+#: src/grep.c:841
 msgid "input is too large to count"
 msgstr "syöte on liian suuri laskettavaksi"
 
-#: src/grep.c:734
-msgid "lseek failed"
-msgstr "lseek epäonnistui"
-
-#: src/grep.c:1467
+#: src/grep.c:1603
 #, c-format
 msgid "Binary file %s matches\n"
 msgstr "Binääritiedosto %s täsmää hakuun\n"
 
-#: src/grep.c:1513
+#: src/grep.c:1651
 #, c-format
 msgid "warning: %s: %s"
 msgstr "varoitus: %s: %s"
 
-#: src/grep.c:1514
+#: src/grep.c:1652
 msgid "recursive directory loop"
 msgstr "rekursiivinen hakemistosilmukka"
 
-#: src/grep.c:1683
+#: src/grep.c:1874
 #, c-format
 msgid "input file %s is also the output"
 msgstr "syötetiedosto %s on myös tuloste"
 
-#: src/grep.c:1741
-msgid "(standard input)"
-msgstr "(vakiosyöte)"
-
-#: src/grep.c:1757 src/grep.c:1764
+#: src/grep.c:1940 src/grep.c:1947
 #, c-format
 msgid "Usage: %s [OPTION]... PATTERN [FILE]...\n"
 msgstr "Käyttö: %s [VALITSIN]... HAKULAUSEKE [TIEDOSTO]...\n"
 
-#: src/grep.c:1759
+#: src/grep.c:1942
 #, c-format
 msgid "Try '%s --help' for more information.\n"
 msgstr "Katso lisäohjeet valitsimella ’%s --help’.\n"
 
-#: src/grep.c:1765
+#: src/grep.c:1948
 #, c-format
 msgid "Search for PATTERN in each FILE or standard input.\n"
 msgstr "Haetaan HAKULAUSEKEtta jokaisessa TIEDOSTOssa tai vakiosyötteessä.\n"
 
-#: src/grep.c:1766
+#: src/grep.c:1949
 #, c-format
 msgid "PATTERN is, by default, a basic regular expression (BRE).\n"
 msgstr "HAKULAUSEKE on oletuksena perussäännöllinen lauseke (BRE).\n"
 
-#: src/grep.c:1767
+#: src/grep.c:1950
 #, c-format
 msgid ""
 "Example: %s -i 'hello world' menu.h main.c\n"
@@ -524,7 +518,7 @@ msgstr ""
 "\n"
 "Säännöllisten lausekkeiden valinta ja tulkinta:\n"
 
-#: src/grep.c:1771
+#: src/grep.c:1954
 #, c-format
 msgid ""
 "  -E, --extended-regexp     PATTERN is an extended regular expression (ERE)\n"
@@ -537,7 +531,7 @@ msgstr ""
 "  -G, --basic-regexp        HAKULAUSEKE on perussäännöllinen lauseke (BRE)\n"
 "  -P, --perl-regexp         HAKULAUSEKE on Perl-tyyppinen säännöllinen lauseke\n"
 
-#: src/grep.c:1777
+#: src/grep.c:1960
 #, c-format
 msgid ""
 "  -e, --regexp=PATTERN      use PATTERN for matching\n"
@@ -554,7 +548,7 @@ msgstr ""
 "  -x, --line-regexp         pakota HAKULAUSEKE täsmäämään vain kokonaisiin riveihin\n"
 "  -z, --null-data           datarivi päättyy nollatavuun, ei rivinvaihtoon\n"
 
-#: src/grep.c:1784
+#: src/grep.c:1967
 #, c-format
 msgid ""
 "\n"
@@ -571,7 +565,7 @@ msgstr ""
 "  -V, --version             tulosta versiotiedot ja poistu\n"
 "      --help                tulosta tämä ohje ja poistu\n"
 
-#: src/grep.c:1791
+#: src/grep.c:1974
 #, c-format
 msgid ""
 "\n"
@@ -594,7 +588,7 @@ msgstr ""
 "  -h, --no-filename         vaienna etuliitteelliset tiedostonimet tulosteessa\n"
 "      --label=NIMIÖ         tulosta NIMIÖ tiedostonimenä vakiosyötteelle\n"
 
-#: src/grep.c:1802
+#: src/grep.c:1985
 #, c-format
 msgid ""
 "  -o, --only-matching       show only the part of a line matching PATTERN\n"
@@ -609,7 +603,7 @@ msgstr ""
 "                            TYYPPI on ’binary’, ’text’, tai ’without-match’\n"
 "  -a, --text                sama kuin --binary-files=text\n"
 
-#: src/grep.c:1809
+#: src/grep.c:1992
 #, c-format
 msgid ""
 "  -I                        equivalent to --binary-files=without-match\n"
@@ -628,7 +622,7 @@ msgstr ""
 "  -r, --recursive           sama kuin --directories=recurse\n"
 "  -R, --dereference-recursive  samoin, mutta seuraa kaikkia symbolisia linkkejä\n"
 
-#: src/grep.c:1818
+#: src/grep.c:2001
 #, c-format
 msgid ""
 "      --include=FILE_PATTERN  search only files that match FILE_PATTERN\n"
@@ -641,7 +635,7 @@ msgstr ""
 "      --exclude-from=TIEDOSTO        ohita mihinkä tahansa tiedostohakulausekkeeseen täsmäävät tiedostot TIEDOSTOsta\n"
 "      --exclude-dir=HAKULAUSEKE      ohitetaan HAKULAUSEKE-täsmäävät hakemistot.\n"
 
-#: src/grep.c:1825
+#: src/grep.c:2008
 #, c-format
 msgid ""
 "  -L, --files-without-match  print only names of FILEs containing no match\n"
@@ -656,7 +650,7 @@ msgstr ""
 "  -T, --initial-tab         tee sarkaimet rivi ylöspäin (jos tarvitaan)\n"
 "  -Z, --null                tulosta nollatavu TIEDOSTOnimen jälkeen\n"
 
-#: src/grep.c:1831
+#: src/grep.c:2014
 #, c-format
 msgid ""
 "\n"
@@ -671,7 +665,7 @@ msgstr ""
 "  -A, --after-context=N     tulosta N riviä konteksin jälkeen\n"
 "  -C, --context=N           tulosta N riviä tulostekonteksia\n"
 
-#: src/grep.c:1838
+#: src/grep.c:2021
 #, c-format
 msgid ""
 "  -NUM                      same as --context=NUM\n"
@@ -695,7 +689,7 @@ msgstr ""
 "                            -merkkiä CR ei olisi lainkaan (MSDOS/Windows)\n"
 "\n"
 
-#: src/grep.c:1847
+#: src/grep.c:2030
 #, c-format
 msgid ""
 "'egrep' means 'grep -E'.  'fgrep' means 'grep -F'.\n"
@@ -704,7 +698,7 @@ msgstr ""
 "Käsky ’egrep’ tarkoittaa ’grep -E’.  Käsky ’fgrep’ tarkoittaa ’grep -F’.\n"
 "Suora kutsuminen ’egrep’- ja ’fgrep’-käskyillä ei ole enää suositeltavaa.\n"
 
-#: src/grep.c:1850
+#: src/grep.c:2033
 #, c-format
 msgid ""
 "When FILE is -, read standard input.  With no FILE, read . if a command-line\n"
@@ -719,84 +713,75 @@ msgstr ""
 "jos tapahtuu virheitä ja ”-q”-valitsinta ei ollut annettu, niin paluuarvo\n"
 "on kaksi.\n"
 
-#: src/grep.c:1917
-#, c-format
+#: src/grep.c:2100
 msgid "conflicting matchers specified"
 msgstr "määritelty ristiriitaiset haut"
 
-#: src/grep.c:1928
+#: src/grep.c:2111
 #, c-format
 msgid "invalid matcher %s"
 msgstr "virheellinen täsmääjä %s"
 
-#: src/grep.c:2211
+#: src/grep.c:2432
 #, c-format
 msgid "warning: GREP_OPTIONS is deprecated; please use an alias or script"
 msgstr "varoitus: GREP_OPTIONS on vanhentunut; käytä aliasta tai skriptiä"
 
-#: src/grep.c:2241
-#, c-format
+#: src/grep.c:2462
 msgid "unknown devices method"
 msgstr "tuntematon laitemetodi"
 
-#: src/grep.c:2368
-#, c-format
+#: src/grep.c:2594
 msgid "invalid max count"
 msgstr "virheellinen maksimimäärä"
 
-#: src/grep.c:2425
-#, c-format
+#: src/grep.c:2651
 msgid "unknown binary-files type"
 msgstr "tuntematon binääritiedostojen tyyppi"
 
-#: src/pcresearch.c:71
-#, c-format
+#: src/pcresearch.c:72
 msgid "failed to allocate memory for the PCRE JIT stack"
 msgstr "muistin varaaminen PCRE JIT-pinolle epäonnistui"
 
-#: src/pcresearch.c:94
+#: src/pcresearch.c:95
 msgid "support for the -P option is not compiled into this --disable-perl-regexp binary"
 msgstr "tuki valitsimelle ”-P” ei ole käännetty tähän ”--disable-perl-regexp”-binääriin"
 
-#: src/pcresearch.c:110
-#, c-format
+#: src/pcresearch.c:116
 msgid "-P supports only unibyte and UTF-8 locales"
 msgstr "-P tukee vain unibyte- ja UTF-8-paikallisasetuksia"
 
-#: src/pcresearch.c:114
-#, c-format
+#: src/pcresearch.c:122
 msgid "the -P option only supports a single pattern"
 msgstr "valitsin ”-P” tukee vain yhtä HAKULAUSEKEtta"
 
-#: src/pcresearch.c:160
-#, c-format
+#: src/pcresearch.c:164
 msgid "internal error (should never happen)"
 msgstr "sisäinen virhe (ei pitäisi koskaan tapahtua)"
 
-#: src/pcresearch.c:182
-#, c-format
+#: src/pcresearch.c:186
 msgid "internal error"
 msgstr "sisäinen virhe"
 
-#: src/pcresearch.c:223
-#, c-format
+#: src/pcresearch.c:208
 msgid "exceeded PCRE's line length limit"
 msgstr "ylitettiin PCRE-rivipituusraja"
 
-#: src/pcresearch.c:313
-#, c-format
+#: src/pcresearch.c:288
 msgid "exhausted PCRE JIT stack"
 msgstr "loppuunkäsitelty PCRE JIT-pino"
 
-#: src/pcresearch.c:317
-#, c-format
+#: src/pcresearch.c:292
 msgid "exceeded PCRE's backtracking limit"
 msgstr "ylitettiin PCRE-paluujäljitysraja"
 
-#: src/pcresearch.c:324
+#: src/pcresearch.c:299
 #, c-format
 msgid "internal PCRE error: %d"
 msgstr "sisäinen PCRE-virhe: %d"
+
+#~ msgid "lseek failed"
+#~ msgstr "lseek epäonnistui"
 
 #~ msgid "GNU Grep home page: <%s>\n"
 #~ msgstr "GNU Grep-kotisivu: <%s>\n"
