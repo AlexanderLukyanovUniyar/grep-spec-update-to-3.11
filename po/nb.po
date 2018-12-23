@@ -1,111 +1,128 @@
-# Norwegian Bokmål translation of GNU Grep
+# Norwegian bokmål translation of GNU Grep
 # Copyright (C) 1996 Free Software Foundation, Inc.
 # This file is distributed under the same license as the grep package.
-# Åka Sikrom <a4@hush.com>, 2014-2016
+# Åka Sikrom <a4@hush.com>, 2014-2018
 # Eivind Tagseth <eivindt@multinet.no>, 1997, 2004
 # Karl Anders Øygard <karl.oygard@fou.telenor.no>, 1996.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: grep-2.23.7\n"
+"Project-Id-Version: grep-3.1.48\n"
 "Report-Msgid-Bugs-To: bug-grep@gnu.org\n"
-"POT-Creation-Date: 2016-03-03 17:39-0800\n"
-"PO-Revision-Date: 2016-03-07 12:12+0100\n"
+"POT-Creation-Date: 2018-12-15 18:40-0800\n"
+"PO-Revision-Date: 2018-12-16 09:42+0100\n"
 "Last-Translator: Åka Sikrom <a4@hush.com>\n"
 "Language-Team: Norwegian Bokmaal <i18n-nb@lister.ping.uio.no>\n"
-"Language: Norwegian bokmål\n"
-"X-Bugs: Report translation errors to the Language-Team address.\n"
+"Language: nb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
+"X-Generator: Poedit 2.0.6\n"
 
-#: lib/argmatch.c:133
+#: lib/argmatch.c:134
 #, c-format
 msgid "invalid argument %s for %s"
 msgstr "«%s» er et ugyldig argument for %s"
 
-#: lib/argmatch.c:134
+#: lib/argmatch.c:135
 #, c-format
 msgid "ambiguous argument %s for %s"
 msgstr "«%s» er et tvetydig argument for %s"
 
-#: lib/argmatch.c:153
+#: lib/argmatch.c:154
 msgid "Valid arguments are:"
 msgstr "Følgende argumenter er gyldige:"
 
-#: lib/closeout.c:112 src/grep.c:1199
-#, c-format
+#: lib/c-stack.c:208 lib/c-stack.c:301
+msgid "program error"
+msgstr "programfeil"
+
+#: lib/c-stack.c:209 lib/c-stack.c:302
+msgid "stack overflow"
+msgstr "stabel er full"
+
+#: lib/closeout.c:122 src/grep.c:1277
 msgid "write error"
 msgstr "skrivefeil"
 
-#: lib/error.c:191
+#: lib/dfa.c:970
+msgid "unbalanced ["
+msgstr "ubalansert «[»"
+
+#: lib/dfa.c:1091
+msgid "invalid character class"
+msgstr "ugyldig tegnklasse"
+
+#: lib/dfa.c:1217
+msgid "character class syntax is [[:space:]], not [:space:]"
+msgstr "gjeldende tegnklasse-syntaks er [[:space:]], ikke [:space:]"
+
+#: lib/dfa.c:1284
+msgid "unfinished \\ escape"
+msgstr "ufullstendig \\-skiftetegn"
+
+#: lib/dfa.c:1445
+msgid "invalid content of \\{\\}"
+msgstr "ugyldig innhold i \\{\\}"
+
+#: lib/dfa.c:1448
+msgid "regular expression too big"
+msgstr "regulært uttrykk er for stort"
+
+#: lib/dfa.c:1863
+msgid "unbalanced ("
+msgstr "ubalansert «(»"
+
+#: lib/dfa.c:1981
+msgid "no syntax specified"
+msgstr "ingen syntaks er valgt"
+
+#: lib/dfa.c:1992
+msgid "unbalanced )"
+msgstr "ubalansert «)»"
+
+#: lib/error.c:195
 msgid "Unknown system error"
 msgstr "Ukjent systemfeil"
 
-#: lib/getopt.c:575 lib/getopt.c:604
+#: lib/getopt.c:278
 #, c-format
-msgid "%s: option '%s' is ambiguous; possibilities:"
-msgstr "%s: valget «%s» er flertydig, og kan bety følgende:"
+msgid "%s: option '%s%s' is ambiguous\n"
+msgstr "%s: valget «%s%s» er flertydig\n"
 
-#: lib/getopt.c:619
+#: lib/getopt.c:284
 #, c-format
-msgid "%s: option '%s' is ambiguous\n"
-msgstr "%s: valget «%s» er flertydig\n"
+msgid "%s: option '%s%s' is ambiguous; possibilities:"
+msgstr "%s: valget «%s%s» er flertydig, og kan bety følgende:"
 
-#: lib/getopt.c:654 lib/getopt.c:658
+#: lib/getopt.c:319
 #, c-format
-msgid "%s: option '--%s' doesn't allow an argument\n"
-msgstr "%s: valget «--%s» tillater ikke argumenter\n"
+msgid "%s: unrecognized option '%s%s'\n"
+msgstr "%s: valget «%s%s» er ukjent\n"
 
-#: lib/getopt.c:667 lib/getopt.c:672
+#: lib/getopt.c:345
 #, c-format
-msgid "%s: option '%c%s' doesn't allow an argument\n"
-msgstr "%s: valget «%c%s» tillater ikke argumenter\n"
+msgid "%s: option '%s%s' doesn't allow an argument\n"
+msgstr "%s: valget «%s%s» tillater ikke argumenter\n"
 
-#: lib/getopt.c:715 lib/getopt.c:734
+#: lib/getopt.c:360
 #, c-format
-msgid "%s: option '--%s' requires an argument\n"
-msgstr "%s: valget «--%s» krever et argument\n"
+msgid "%s: option '%s%s' requires an argument\n"
+msgstr "%s: valget «%s%s» krever et argument\n"
 
-#: lib/getopt.c:772 lib/getopt.c:775
-#, c-format
-msgid "%s: unrecognized option '--%s'\n"
-msgstr "%s: valget «--%s» er ukjent\n"
-
-#: lib/getopt.c:783 lib/getopt.c:786
-#, c-format
-msgid "%s: unrecognized option '%c%s'\n"
-msgstr "%s: valget «%c%s» er ukjent\n"
-
-#: lib/getopt.c:835 lib/getopt.c:838
+#: lib/getopt.c:621
 #, c-format
 msgid "%s: invalid option -- '%c'\n"
 msgstr "%s: valget -- «%c» er ugyldig\n"
 
-#: lib/getopt.c:891 lib/getopt.c:908 lib/getopt.c:1118 lib/getopt.c:1136
+#: lib/getopt.c:636 lib/getopt.c:682
 #, c-format
 msgid "%s: option requires an argument -- '%c'\n"
 msgstr "%s: valget -- «%c» krever et argument\n"
 
-#: lib/getopt.c:964 lib/getopt.c:980
-#, c-format
-msgid "%s: option '-W %s' is ambiguous\n"
-msgstr "%s: valget «-W %s» er flertydig\n"
-
-#: lib/getopt.c:1004 lib/getopt.c:1022
-#, c-format
-msgid "%s: option '-W %s' doesn't allow an argument\n"
-msgstr "%s: valget «-W %s» tillater ikke argumenter\n"
-
-#: lib/getopt.c:1043 lib/getopt.c:1061
-#, c-format
-msgid "%s: option '-W %s' requires an argument\n"
-msgstr "%s: valget «-W %s» krever et argument\n"
-
 #: lib/obstack.c:338 lib/obstack.c:340 lib/xalloc-die.c:34
-#: src/pcresearch.c:338
-#, c-format
+#: src/pcresearch.c:313
 msgid "memory exhausted"
 msgstr "minnet er oppbrukt"
 
@@ -118,6 +135,11 @@ msgstr "klarte ikke å hente gjeldende arbeidsmappe"
 #, c-format
 msgid "failed to return to initial working directory"
 msgstr "klarte ikke å gå tilbake til opprinnelig arbeidsmappe"
+
+#: lib/xbinary-io.c:37
+#, c-format
+msgid "failed to set file descriptor text/binary mode"
+msgstr "klarte ikke å endre fildeskriptor for tekst-/binærmodus"
 
 #. TRANSLATORS:
 #. Get translations for open and closing quotation marks.
@@ -138,13 +160,13 @@ msgstr "klarte ikke å gå tilbake til opprinnelig arbeidsmappe"
 #. for your locale.
 #.
 #. If you don't know what to put here, please see
-#. <http://en.wikipedia.org/wiki/Quotation_marks_in_other_languages>
+#. <https://en.wikipedia.org/wiki/Quotation_marks_in_other_languages>
 #. and use glyphs suitable for your language.
-#: lib/quotearg.c:347
+#: lib/quotearg.c:362
 msgid "`"
 msgstr "«"
 
-#: lib/quotearg.c:348
+#: lib/quotearg.c:363
 msgid "'"
 msgstr "»"
 
@@ -216,7 +238,7 @@ msgstr "Regulært uttrykk er for stort"
 msgid "Unmatched ) or \\)"
 msgstr "Ingen treff på «)» eller «\\)»"
 
-#: lib/regcomp.c:687
+#: lib/regcomp.c:688
 msgid "No previous regular expression"
 msgstr "Intet tidligere regulært uttrykk"
 
@@ -240,7 +262,7 @@ msgstr "(C)"
 #: lib/version-etc.c:86
 msgid ""
 "\n"
-"License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.\n"
+"License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.\n"
 "This is free software: you are free to change and redistribute it.\n"
 "There is NO WARRANTY, to the extent permitted by law.\n"
 "\n"
@@ -248,7 +270,7 @@ msgstr ""
 "\n"
 "Lisens GPLv3+: GNU GPL versjon 3 eller nyere <http://gnu.org/licenses/gpl.html>.\n"
 "Dette er fri programvare. Du kan endre og dele den videre så mye du vil.\n"
-"Det stilles imidlertid INGEN GARANTI, i den grad gjeldende lovverk tillater det.\n"
+"Utgiveren stiller INGEN GARANTI, i den grad gjeldende lovverk tillater det.\n"
 "\n"
 
 #. TRANSLATORS: %s denotes an author name.
@@ -384,12 +406,12 @@ msgstr "Nettside for %s: <%s>\n"
 
 #: lib/version-etc.c:253
 #, c-format
-msgid "%s home page: <http://www.gnu.org/software/%s/>\n"
+msgid "%s home page: <https://www.gnu.org/software/%s/>\n"
 msgstr "Nettside for %s: <http://www.gnu.org/software/%s/>\n"
 
 #: lib/version-etc.c:256
-msgid "General help using GNU software: <http://www.gnu.org/gethelp/>\n"
-msgstr "Generell hjelp til å bruke GNU-programvare: <http://www.gnu.org/gethelp/>\n"
+msgid "General help using GNU software: <https://www.gnu.org/gethelp/>\n"
+msgstr "Generell hjelp til bruk av GNU-programvare: <http://www.gnu.org/gethelp/>\n"
 
 #: lib/xstrtol-error.c:63
 #, c-format
@@ -406,141 +428,95 @@ msgstr "ugyldig suffiks i %s%s-argument «%s»"
 msgid "%s%s argument '%s' too large"
 msgstr "%s%s-argumentet «%s» er for stort/langt"
 
-#: src/dfa.c:1005 src/dfa.c:1008 src/dfa.c:1027 src/dfa.c:1037 src/dfa.c:1049
-#: src/dfa.c:1076 src/dfa.c:1085 src/dfa.c:1088 src/dfa.c:1093 src/dfa.c:1114
-#: src/dfa.c:1117
-msgid "unbalanced ["
-msgstr "ubalansert «[»"
-
-#: src/dfa.c:1061
-msgid "invalid character class"
-msgstr "ugyldig tegnklasse"
-
-#: src/dfa.c:1183
-msgid "character class syntax is [[:space:]], not [:space:]"
-msgstr "gjeldende tegnklasse-syntaks er [[:space:]], ikke [:space:]"
-
-#: src/dfa.c:1245
-msgid "unfinished \\ escape"
-msgstr "ufullstendig \\-skiftetegn"
-
-#: src/dfa.c:1392
-msgid "invalid content of \\{\\}"
-msgstr "ugyldig innhold i \\{\\}"
-
-#: src/dfa.c:1395
-msgid "regular expression too big"
-msgstr "regulært uttrykk er for stort"
-
-#: src/dfa.c:1811
-msgid "unbalanced ("
-msgstr "ubalansert «(»"
-
-#: src/dfa.c:1937
-msgid "no syntax specified"
-msgstr "ingen syntaks er valgt"
-
-#: src/dfa.c:1945
-msgid "unbalanced )"
-msgstr "ubalansert «)»"
-
 #. This is a proper name. See the gettext manual, section Names.
-#: src/grep.c:57
+#: src/grep.c:60
 msgid "Mike Haertel"
 msgstr "Mike Haertel"
 
-#: src/grep.c:58
-msgid "others, see <http://git.sv.gnu.org/cgit/grep.git/tree/AUTHORS>"
-msgstr "andre (se <http://git.sv.gnu.org/cgit/grep.git/tree/AUTHORS>)"
+#: src/grep.c:61
+msgid "others, see <https://git.sv.gnu.org/cgit/grep.git/tree/AUTHORS>"
+msgstr "andre: se <http://git.sv.gnu.org/cgit/grep.git/tree/AUTHORS>"
 
-#: src/grep.c:648
+#: src/grep.c:586
+msgid "(standard input)"
+msgstr "(standard inndata)"
+
+#: src/grep.c:766
 msgid "invalid context length argument"
 msgstr "ugyldig kontekstlengde"
 
-#: src/grep.c:712
-#, c-format
+#: src/grep.c:831
 msgid "input is too large to count"
 msgstr "for mye inndata å telle"
 
-#: src/grep.c:754
-msgid "lseek failed"
-msgstr "lseek mislyktes"
-
-#: src/grep.c:1501
+#: src/grep.c:1582
 #, c-format
 msgid "Binary file %s matches\n"
 msgstr "Binærfil %s samsvarer\n"
 
-#: src/grep.c:1550
+#: src/grep.c:1630
 #, c-format
 msgid "warning: %s: %s"
 msgstr "advarsel: %s. %s"
 
-#: src/grep.c:1551
+#: src/grep.c:1631
 msgid "recursive directory loop"
 msgstr "rekursiv mappeløkke"
 
-#: src/grep.c:1720
+#: src/grep.c:1847
 #, c-format
 msgid "input file %s is also the output"
 msgstr "inndatafil %s er også brukt som utdata"
 
-#: src/grep.c:1782
-msgid "(standard input)"
-msgstr "(standard inndata)"
-
-#: src/grep.c:1798 src/grep.c:1805
+#: src/grep.c:1910 src/grep.c:1917
 #, c-format
-msgid "Usage: %s [OPTION]... PATTERN [FILE]...\n"
+msgid "Usage: %s [OPTION]... PATTERNS [FILE]...\n"
 msgstr "Bruk: %s [VALG] … MØNSTER [FIL] …\n"
 
-#: src/grep.c:1800
+#: src/grep.c:1912
 #, c-format
 msgid "Try '%s --help' for more information.\n"
 msgstr "Prøv å skrive «%s --help» for mer informasjon.\n"
 
-#: src/grep.c:1806
+#: src/grep.c:1918
 #, c-format
-msgid "Search for PATTERN in each FILE or standard input.\n"
-msgstr "Søk etter valgt MØNSTER i valgt(e) FIL(er) eller standard inndata.\n"
+msgid "Search for PATTERNS in each FILE.\n"
+msgstr "Søk etter MØNSTER i valgt(e) FIL(er).\n"
 
-#: src/grep.c:1807
-#, c-format
-msgid "PATTERN is, by default, a basic regular expression (BRE).\n"
-msgstr "MØNSTER er et enkelt regulært uttrykk (BRE) som standard. \n"
-
-#: src/grep.c:1808
+#: src/grep.c:1919
 #, c-format
 msgid ""
 "Example: %s -i 'hello world' menu.h main.c\n"
+"PATTERNS can contain multiple patterns separated by newlines.\n"
 "\n"
-"Regexp selection and interpretation:\n"
+"Pattern selection and interpretation:\n"
 msgstr ""
 "Eksempel: %s -i 'hei verden' menu.h main.c\n"
+"MØNSTER kan inneholde flere mønstre adskilt med linjeskift.\n"
 "\n"
 "Reg.uttrykksutvalg og tolkning:\n"
 
-#: src/grep.c:1812
+#: src/grep.c:1924
 #, c-format
 msgid ""
-"  -E, --extended-regexp     PATTERN is an extended regular expression (ERE)\n"
-"  -F, --fixed-strings       PATTERN is a set of newline-separated strings\n"
-"  -G, --basic-regexp        PATTERN is a basic regular expression (BRE)\n"
-"  -P, --perl-regexp         PATTERN is a Perl regular expression\n"
+"  -E, --extended-regexp     PATTERNS are extended regular expressions\n"
+"  -F, --fixed-strings       PATTERNS are strings\n"
+"  -G, --basic-regexp        PATTERNS are basic regular expressions\n"
+"  -P, --perl-regexp         PATTERNS are Perl regular expressions\n"
 msgstr ""
-"  -E, --extended-regexp     MØNSTER er et utvidet regulært uttrykk (ERE)\n"
+"  -E, --extended-regexp     MØNSTER er et utvidet regulært uttrykk\n"
 "  -F, --fixed-strings       MØNSTER er flere linje-adskilte strenger\n"
-"  -G, --basic-regexp        MØNSTER er et enkelt regulært uttrykk (BRE)\n"
-"  -P, --perl-regexp         MØNSTER er et regulært uttrykk i Perl-format\n"
+"  -G, --basic-regexp        MØNSTER er et enkelt regulært uttrykk\n"
+"  -P, --perl-regexp         MØNSTER er et Perl-uttrykk\n"
 
-#: src/grep.c:1818
+#: src/grep.c:1930
 #, c-format
 msgid ""
-"  -e, --regexp=PATTERN      use PATTERN for matching\n"
-"  -f, --file=FILE           obtain PATTERN from FILE\n"
+"  -e, --regexp=PATTERNS     use PATTERNS for matching\n"
+"  -f, --file=FILE           take PATTERNS from FILE\n"
 "  -i, --ignore-case         ignore case distinctions\n"
-"  -w, --word-regexp         force PATTERN to match only whole words\n"
-"  -x, --line-regexp         force PATTERN to match only whole lines\n"
+"  -w, --word-regexp         match only whole words\n"
+"  -x, --line-regexp         match only whole lines\n"
 "  -z, --null-data           a data line ends in 0 byte, not newline\n"
 msgstr ""
 "  -e, --regexp=MØNSTER      bruk MØNSTER for utvalg\n"
@@ -550,7 +526,7 @@ msgstr ""
 "  -x, --line-regexp         MØNSTER må stemme med hele linjer\n"
 "  -z, --null-data           datalinjer slutter med tomme byte, i stedet for linjeskift\n"
 
-#: src/grep.c:1825
+#: src/grep.c:1937
 #, c-format
 msgid ""
 "\n"
@@ -567,16 +543,16 @@ msgstr ""
 "  -V, --version             vis versjon og avslutt\n"
 "      --help                vis denne helpeteksten og avslutt\n"
 
-#: src/grep.c:1832
+#: src/grep.c:1944
 #, c-format
 msgid ""
 "\n"
 "Output control:\n"
-"  -m, --max-count=NUM       stop after NUM matches\n"
+"  -m, --max-count=NUM       stop after NUM selected lines\n"
 "  -b, --byte-offset         print the byte offset with output lines\n"
 "  -n, --line-number         print line number with output lines\n"
 "      --line-buffered       flush output on every line\n"
-"  -H, --with-filename       print the file name for each match\n"
+"  -H, --with-filename       print file name with output lines\n"
 "  -h, --no-filename         suppress the file name prefix on output\n"
 "      --label=LABEL         use LABEL as the standard input file name prefix\n"
 msgstr ""
@@ -586,14 +562,14 @@ msgstr ""
 "  -b, --byte-offset         skriv ut hvor søkeuttrykket ga treff per utdatalinje\n"
 "  -n, --line-number         skriv ut linjenummmer per utdatalinje\n"
 "      --line-buffered       tøm utdata på hver linje\n"
-"  -H, --with-filename       skriv ut filnavn per søketreff\n"
+"  -H, --with-filename       ta med filnavn på søketreff-linjer\n"
 "  -h, --no-filename         ikke ta med filnavn-prefiks i utdata\n"
-"      --label=ETTIKETT         bruk valgt ETIKETT som prefiks på standard inndata-filnavn\n"
+"      --label=ETIKETT         bruk valgt ETIKETT som prefiks på standard inndata-filnavn\n"
 
-#: src/grep.c:1843
+#: src/grep.c:1955
 #, c-format
 msgid ""
-"  -o, --only-matching       show only the part of a line matching PATTERN\n"
+"  -o, --only-matching       show only nonempty parts of lines that match\n"
 "  -q, --quiet, --silent     suppress all normal output\n"
 "      --binary-files=TYPE   assume that binary files are TYPE;\n"
 "                            TYPE is 'binary', 'text', or 'without-match'\n"
@@ -605,7 +581,7 @@ msgstr ""
 "                            TYPE er «binary» (binær), «text» (tekst) eller «without-match» (uten treff)\n"
 "  -a, --text                tilsvarer «--binary-files=text»\n"
 
-#: src/grep.c:1850
+#: src/grep.c:1962
 #, c-format
 msgid ""
 "  -I                        equivalent to --binary-files=without-match\n"
@@ -624,25 +600,25 @@ msgstr ""
 "  -r, --recursive           tilsvarer «--directories=recurse»\n"
 "  -R, --dereference-recursive  likner «-r», men følger symbolske lenker\n"
 
-#: src/grep.c:1859
+#: src/grep.c:1971
 #, c-format
 msgid ""
-"      --include=FILE_PATTERN  search only files that match FILE_PATTERN\n"
-"      --exclude=FILE_PATTERN  skip files and directories matching FILE_PATTERN\n"
+"      --include=GLOB        search only files that match GLOB (a file pattern)\n"
+"      --exclude=GLOB        skip files and directories matching GLOB\n"
 "      --exclude-from=FILE   skip files matching any file pattern from FILE\n"
-"      --exclude-dir=PATTERN  directories that match PATTERN will be skipped.\n"
+"      --exclude-dir=GLOB    skip directories that match GLOB\n"
 msgstr ""
-"      --include=FILMØNSTER  bare søk gjennom filer som samsvarer med FILMØNSTER\n"
-"      --exclude=FILMØNSTER  hopp over filer og mapper som samsvarer med FILMØNSTER\n"
+"      --include=MØNSTER  bare søk gjennom filer som samsvarer med MØNSTER\n"
+"      --exclude=MØNSTER  hopp over filer og mapper som samsvarer med MØNSTER\n"
 "      --exclude-from=FIL   hopp over filer som samsvarer med mønstre nevnt i FIL\n"
 "      --exclude-dir=MØNSTER  hopp over mapper som samsvarer med MØNSTER.\n"
 
-#: src/grep.c:1866
+#: src/grep.c:1978
 #, c-format
 msgid ""
-"  -L, --files-without-match  print only names of FILEs containing no match\n"
-"  -l, --files-with-matches  print only names of FILEs containing matches\n"
-"  -c, --count               print only a count of matching lines per FILE\n"
+"  -L, --files-without-match  print only names of FILEs with no selected lines\n"
+"  -l, --files-with-matches  print only names of FILEs with selected lines\n"
+"  -c, --count               print only a count of selected lines per FILE\n"
 "  -T, --initial-tab         make tabs line up (if needed)\n"
 "  -Z, --null                print 0 byte after FILE name\n"
 msgstr ""
@@ -650,9 +626,9 @@ msgstr ""
 "  -l, --files-with-matches  bare skriv ut FILnavn som inneholder søketreff\n"
 "  -c, --count               bare skriv ut antall samsvarende linjer per FIL\n"
 "  -T, --initial-tab         still opp tabulatorer (hvis nødvendig)\n"
-"  -Z, --null                skriv ut tom byte etter FILnavn\n"
+"  -Z, --null                skriv ut 0-byte etter FILnavn\n"
 
-#: src/grep.c:1872
+#: src/grep.c:1984
 #, c-format
 msgid ""
 "\n"
@@ -667,7 +643,7 @@ msgstr ""
 "  -A, --after-context=ANT   skriv ut valgt ANTall linjer med avsluttende kontekst\n"
 "  -C, --context=ANT         skriv ut valgt ANTall linjer med utdata-kontekst\n"
 
-#: src/grep.c:1879
+#: src/grep.c:1991
 #, c-format
 msgid ""
 "  -NUM                      same as --context=NUM\n"
@@ -675,8 +651,6 @@ msgid ""
 "      --colour[=WHEN]       use markers to highlight the matching strings;\n"
 "                            WHEN is 'always', 'never', or 'auto'\n"
 "  -U, --binary              do not strip CR characters at EOL (MSDOS/Windows)\n"
-"  -u, --unix-byte-offsets   report offsets as if CRs were not there\n"
-"                            (MSDOS/Windows)\n"
 "\n"
 msgstr ""
 "  -NUM                      tilsvarer «--context=NUM»\n"
@@ -684,115 +658,118 @@ msgstr ""
 "      --colour[=NÅR]       bruk markører for å fremheve strenger som samsvarer\n"
 "                            NÅR er enten «always» (alltid) , «never» (aldri), eller «auto»\n"
 "  -U, --binary              ikke fjern CR-tegn ved EOL (MSDOS/Windows)\n"
-"  -u, --unix-byte-offsets   rapporter posisjoner som om CR-tegn ikke var tilstede\n"
-"                            (MSDOS/Windows)\n"
 "\n"
 
-#: src/grep.c:1888
+#: src/grep.c:1998
 #, c-format
 msgid ""
-"'egrep' means 'grep -E'.  'fgrep' means 'grep -F'.\n"
-"Direct invocation as either 'egrep' or 'fgrep' is deprecated.\n"
-msgstr ""
-"«egrep» betyr «grep -E».  «fgrep» betyr «grep -F».\n"
-"Direkte kjøring som «egrep» eller «fgrep» er foreldet.\n"
-
-#: src/grep.c:1891
-#, c-format
-msgid ""
-"When FILE is -, read standard input.  With no FILE, read . if a command-line\n"
-"-r is given, - otherwise.  If fewer than two FILEs are given, assume -h.\n"
-"Exit status is 0 if any line is selected, 1 otherwise;\n"
+"When FILE is '-', read standard input.  With no FILE, read '.' if\n"
+"recursive, '-' otherwise.  With fewer than two FILEs, assume -h.\n"
+"Exit status is 0 if any line (or file if -L) is selected, 1 otherwise;\n"
 "if any error occurs and -q is not given, the exit status is 2.\n"
 msgstr ""
-"Programmet leser standard inndata når FIL er «-».  Når FIL ikke er valgt, leses «.» hvis\n"
-"valget «-r» er tatt, og ellers «-». Valget «-h» gjelder implisitt hvis færre enn to FILer er valgt.\n"
-"Avsluttende statuskode er 0 hvis linje(r) er valgt, og ellers 1.\n"
-"Hvis det oppstår feil og «-q» ikke er valgt, gjelder statuskode 2.\n"
+"Programmet leser standard inndata når FIL er «-».  Når FIL ikke er valgt, leses «.» i\n"
+"rekursiv modus, og ellers «-». Valget «-h» gjelder implisitt hvis færre enn to FILer er valgt.\n"
+"Avsluttende statuskode er 0 når søket gir treff, og ellers 1.\n"
+"Hvis det oppstår feil og «-q» ikke er valgt, avslutter programmet med statuskode 2.\n"
 
-#: src/grep.c:1958
-#, c-format
+#: src/grep.c:2038
 msgid "conflicting matchers specified"
 msgstr "søkeuttrykkene er i konflikt med hverandre"
 
-#: src/grep.c:1969
+#: src/grep.c:2042
 #, c-format
 msgid "invalid matcher %s"
 msgstr "«%s» er et ugyldig søkeuttrykk"
 
-#: src/grep.c:2252
+#: src/grep.c:2463
 #, c-format
 msgid "warning: GREP_OPTIONS is deprecated; please use an alias or script"
 msgstr "advarsel: GREP_OPTIONS er utdatert. Bruk et alias eller skript"
 
-#: src/grep.c:2282
-#, c-format
+#: src/grep.c:2490
 msgid "unknown devices method"
 msgstr "ukjent enhetsmetode"
 
-#: src/grep.c:2409
-#, c-format
+#: src/grep.c:2634
 msgid "invalid max count"
 msgstr "ugyldig maksantall"
 
-#: src/grep.c:2466
-#, c-format
+#: src/grep.c:2692
 msgid "unknown binary-files type"
 msgstr "ukjent binærfiltype"
 
-#: src/pcresearch.c:71
-#, c-format
+#: src/pcresearch.c:86
 msgid "failed to allocate memory for the PCRE JIT stack"
 msgstr "klarte ikke å tildele minne til PCRE JIT-stabelen"
 
-#: src/pcresearch.c:96
+#: src/pcresearch.c:118
 msgid "support for the -P option is not compiled into this --disable-perl-regexp binary"
 msgstr "denne distribusjonen av grep er installert med valget «--disable-perl-regexp», og valget «-P» er ikke tilgjengelig"
 
-#: src/pcresearch.c:119
-#, c-format
+#: src/pcresearch.c:140
 msgid "-P supports only unibyte and UTF-8 locales"
 msgstr "-P støtter bare regioner i unibyte- og UTF-8"
 
-#: src/pcresearch.c:126
-#, c-format
+#: src/pcresearch.c:146
 msgid "the -P option only supports a single pattern"
 msgstr "valget «-P» støtter bare ett mønster"
 
-#: src/pcresearch.c:138
-#, c-format
-msgid "unescaped ^ or $ not supported with -Pz"
-msgstr "ingen treff på «^», eller «$» støttes ikke med «-Pz»"
-
-#: src/pcresearch.c:182
-#, c-format
+#: src/pcresearch.c:189
 msgid "internal error (should never happen)"
 msgstr "intern feil (dette skal aldri skje)"
 
-#: src/pcresearch.c:204
-#, c-format
+#: src/pcresearch.c:214
 msgid "internal error"
 msgstr "intern feil"
 
-#: src/pcresearch.c:248
-#, c-format
+#: src/pcresearch.c:237
 msgid "exceeded PCRE's line length limit"
 msgstr "grensa for PCRE-linjelengde er overskredet"
 
-#: src/pcresearch.c:342
-#, c-format
+#: src/pcresearch.c:317
 msgid "exhausted PCRE JIT stack"
 msgstr "PCRE JIT-stabel er oppbrukt"
 
-#: src/pcresearch.c:346
-#, c-format
+#: src/pcresearch.c:321
 msgid "exceeded PCRE's backtracking limit"
 msgstr "grensa for PCRE-tilbakegang er overskredet"
 
-#: src/pcresearch.c:353
+#: src/pcresearch.c:328
 #, c-format
 msgid "internal PCRE error: %d"
 msgstr "intern PCRE-feil: %d"
+
+#~ msgid "%s: option '--%s' doesn't allow an argument\n"
+#~ msgstr "%s: valget «--%s» tillater ikke argumenter\n"
+
+#~ msgid "%s: unrecognized option '--%s'\n"
+#~ msgstr "%s: valget «--%s» er ukjent\n"
+
+#~ msgid "%s: option '-W %s' is ambiguous\n"
+#~ msgstr "%s: valget «-W %s» er flertydig\n"
+
+#~ msgid "%s: option '-W %s' doesn't allow an argument\n"
+#~ msgstr "%s: valget «-W %s» tillater ikke argumenter\n"
+
+#~ msgid "%s: option '-W %s' requires an argument\n"
+#~ msgstr "%s: valget «-W %s» krever et argument\n"
+
+#~ msgid "lseek failed"
+#~ msgstr "lseek mislyktes"
+
+#~ msgid "PATTERN is, by default, a basic regular expression (BRE).\n"
+#~ msgstr "MØNSTER er et enkelt regulært uttrykk (BRE) som standard. \n"
+
+#~ msgid ""
+#~ "'egrep' means 'grep -E'.  'fgrep' means 'grep -F'.\n"
+#~ "Direct invocation as either 'egrep' or 'fgrep' is deprecated.\n"
+#~ msgstr ""
+#~ "«egrep» betyr «grep -E».  «fgrep» betyr «grep -F».\n"
+#~ "Direkte kjøring som «egrep» eller «fgrep» er foreldet.\n"
+
+#~ msgid "unescaped ^ or $ not supported with -Pz"
+#~ msgstr "ingen treff på «^», eller «$» støttes ikke med «-Pz»"
 
 #~ msgid "GNU Grep home page: <%s>\n"
 #~ msgstr "Nettside for GNU Grep: <%s>\n"
