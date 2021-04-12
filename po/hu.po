@@ -1,24 +1,24 @@
-# Hungarian translation of grep.
+# Hungarian translation for grep.
+# Copyright (C) 2002, 2009, 2010, 2014, 2015, 2016, 2017, 2019 Free Software Foundation, Inc.
 # This file is distributed under the same license as the grep package.
-# Copyright (C) 2002, 2009, 2010, 2014, 2015, 2016, 2017 Free Software Foundation, Inc.
 #
 # Emese Kovács <emese@instantweb.hu>, 2002, 2010.
 # Gabor Kelemen <kelemeng@gnome.hu>, 2009, 2010, 2014, 2016, 2017.
-# Balázs Úr <urbalazs@gmail.com>, 2014, 2015.
+# Balázs Úr <ur.balazs@fsf.hu>, 2014, 2015, 2019.
 msgid ""
 msgstr ""
-"Project-Id-Version: grep 3.0.23-b00\n"
+"Project-Id-Version: grep 3.1.48\n"
 "Report-Msgid-Bugs-To: bug-grep@gnu.org\n"
-"POT-Creation-Date: 2017-06-24 20:05-0700\n"
-"PO-Revision-Date: 2017-06-25 21:30+0200\n"
-"Last-Translator: Gabor Kelemen <kelemeng@gnome.hu>\n"
+"POT-Creation-Date: 2018-12-15 18:40-0800\n"
+"PO-Revision-Date: 2019-11-23 22:33+0100\n"
+"Last-Translator: Balázs Úr <ur.balazs@fsf.hu>\n"
 "Language-Team: Hungarian <translation-team-hu@lists.sourceforge.net>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Lokalize 19.04.3\n"
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
 #: lib/argmatch.c:134
@@ -35,43 +35,51 @@ msgstr "a(z) „%s” argumentum nem egyértelmű a következőhöz: „%s”"
 msgid "Valid arguments are:"
 msgstr "Az érvényes argumentumok a következők:"
 
-#: lib/closeout.c:122 src/grep.c:1274
+#: lib/c-stack.c:208 lib/c-stack.c:301
+msgid "program error"
+msgstr "programhiba"
+
+#: lib/c-stack.c:209 lib/c-stack.c:302
+msgid "stack overflow"
+msgstr "verem túlcsordulás"
+
+#: lib/closeout.c:122 src/grep.c:1277
 msgid "write error"
 msgstr "íráshiba"
 
-#: lib/dfa.c:958
+#: lib/dfa.c:970
 msgid "unbalanced ["
 msgstr "kiegyensúlyozatlan ["
 
-#: lib/dfa.c:1079
+#: lib/dfa.c:1091
 msgid "invalid character class"
 msgstr "érvénytelen karakterosztály"
 
-#: lib/dfa.c:1205
+#: lib/dfa.c:1217
 msgid "character class syntax is [[:space:]], not [:space:]"
 msgstr "a karakterosztály szintaxisa [[:space:]], nem [:space:]"
 
-#: lib/dfa.c:1272
+#: lib/dfa.c:1284
 msgid "unfinished \\ escape"
 msgstr "befejezetlen \\ escape"
 
-#: lib/dfa.c:1433
+#: lib/dfa.c:1445
 msgid "invalid content of \\{\\}"
 msgstr "a \\{\\} tartalma érvénytelen"
 
-#: lib/dfa.c:1436
+#: lib/dfa.c:1448
 msgid "regular expression too big"
 msgstr "a reguláris kifejezés túl nagy"
 
-#: lib/dfa.c:1850
+#: lib/dfa.c:1863
 msgid "unbalanced ("
 msgstr "kiegyensúlyozatlan ("
 
-#: lib/dfa.c:1968
+#: lib/dfa.c:1981
 msgid "no syntax specified"
 msgstr "nincs szintaxis megadva"
 
-#: lib/dfa.c:1976
+#: lib/dfa.c:1992
 msgid "unbalanced )"
 msgstr "kiegyensúlyozatlan )"
 
@@ -115,7 +123,7 @@ msgid "%s: option requires an argument -- '%c'\n"
 msgstr "%s: a kapcsoló egy argumentumot igényel -- „%c”\n"
 
 #: lib/obstack.c:338 lib/obstack.c:340 lib/xalloc-die.c:34
-#: src/pcresearch.c:291
+#: src/pcresearch.c:313
 msgid "memory exhausted"
 msgstr "elfogyott a memória"
 
@@ -153,7 +161,7 @@ msgstr "nem sikerült beállítani a fájlleíró szöveges/bináris módját"
 #. for your locale.
 #.
 #. If you don't know what to put here, please see
-#. <http://en.wikipedia.org/wiki/Quotation_marks_in_other_languages>
+#. <https://en.wikipedia.org/wiki/Quotation_marks_in_other_languages>
 #. and use glyphs suitable for your language.
 #: lib/quotearg.c:362
 msgid "`"
@@ -231,7 +239,7 @@ msgstr "A reguláris kifejezés túl nagy"
 msgid "Unmatched ) or \\)"
 msgstr "Pár nélküli ) vagy \\)"
 
-#: lib/regcomp.c:687
+#: lib/regcomp.c:688
 msgid "No previous regular expression"
 msgstr "Nincs megelőző reguláris kifejezés"
 
@@ -255,13 +263,13 @@ msgstr "©"
 #: lib/version-etc.c:86
 msgid ""
 "\n"
-"License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.\n"
+"License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.\n"
 "This is free software: you are free to change and redistribute it.\n"
 "There is NO WARRANTY, to the extent permitted by law.\n"
 "\n"
 msgstr ""
 "\n"
-"A licenc GPLv3+: a GNU GPL 3. vagy újabb változata <http://gnu.org/licenses/gpl.html>\n"
+"A licenc GPLv3+: a GNU GPL 3. vagy újabb változata <https://gnu.org/licenses/gpl.html>\n"
 "Ez egy szabad szoftver, terjesztheti és/vagy módosíthatja.\n"
 "NINCS GARANCIA, a törvény által engedélyezett mértékig.\n"
 "\n"
@@ -399,12 +407,12 @@ msgstr "A(z) %s honlapja: <%s>\n"
 
 #: lib/version-etc.c:253
 #, c-format
-msgid "%s home page: <http://www.gnu.org/software/%s/>\n"
-msgstr "A %s honlapja: <http://www.gnu.org/software/%s/>\n"
+msgid "%s home page: <https://www.gnu.org/software/%s/>\n"
+msgstr "A %s honlapja: <https://www.gnu.org/software/%s/>\n"
 
 #: lib/version-etc.c:256
-msgid "General help using GNU software: <http://www.gnu.org/gethelp/>\n"
-msgstr "Általános segítség a GNU szoftverek használatához: <http://www.gnu.org/gethelp/>\n"
+msgid "General help using GNU software: <https://www.gnu.org/gethelp/>\n"
+msgstr "Általános segítség a GNU szoftverek használatához: <https://www.gnu.org/gethelp/>\n"
 
 #: lib/xstrtol-error.c:63
 #, c-format
@@ -422,103 +430,104 @@ msgid "%s%s argument '%s' too large"
 msgstr "%s%s: a(z) „%s” argumentum túl nagy"
 
 #. This is a proper name. See the gettext manual, section Names.
-#: src/grep.c:59
+#: src/grep.c:60
 msgid "Mike Haertel"
 msgstr "Mike Haertel"
 
-#: src/grep.c:60
-msgid "others, see <http://git.sv.gnu.org/cgit/grep.git/tree/AUTHORS>"
-msgstr "mások, lásd: <http://git.sv.gnu.org/cgit/grep.git/tree/AUTHORS>"
+#: src/grep.c:61
+msgid "others, see <https://git.sv.gnu.org/cgit/grep.git/tree/AUTHORS>"
+msgstr "mások, lásd: <https://git.sv.gnu.org/cgit/grep.git/tree/AUTHORS>"
 
-#: src/grep.c:585
+#: src/grep.c:586
 msgid "(standard input)"
 msgstr "(szabványos bemenet)"
 
-#: src/grep.c:765
+#: src/grep.c:766
 msgid "invalid context length argument"
 msgstr "érvénytelen szövegkörnyezethossz argumentum"
 
-#: src/grep.c:828
+#: src/grep.c:831
 msgid "input is too large to count"
 msgstr "a bemenet túl nagy a megszámláláshoz"
 
-#: src/grep.c:1579
+#: src/grep.c:1582
 #, c-format
 msgid "Binary file %s matches\n"
 msgstr "%s bináris fájl illeszkedik\n"
 
-#: src/grep.c:1627
+#: src/grep.c:1630
 #, c-format
 msgid "warning: %s: %s"
 msgstr "figyelmeztetés: %s: %s"
 
-#: src/grep.c:1628
+#: src/grep.c:1631
 msgid "recursive directory loop"
 msgstr "rekurzív könyvtárhurok"
 
-#: src/grep.c:1844
+#: src/grep.c:1847
 #, c-format
 msgid "input file %s is also the output"
 msgstr "%s bemeneti fájl a kimenet is"
 
-#: src/grep.c:1907 src/grep.c:1914
+#: src/grep.c:1910 src/grep.c:1917
 #, c-format
-msgid "Usage: %s [OPTION]... PATTERN [FILE]...\n"
-msgstr "Használat: %s [KAPCSOLÓ]… MINTA [FÁJL]…\n"
+msgid "Usage: %s [OPTION]... PATTERNS [FILE]...\n"
+msgstr "Használat: %s [KAPCSOLÓ]… MINTÁK [FÁJL]…\n"
 
-#: src/grep.c:1909
+#: src/grep.c:1912
 #, c-format
 msgid "Try '%s --help' for more information.\n"
 msgstr "További információkért adja ki a(z) „%s --help” parancsot.\n"
 
-#: src/grep.c:1915
+#: src/grep.c:1918
 #, c-format
-msgid "Search for PATTERN in each FILE.\n"
-msgstr "A MINTA keresése minden FÁJLBAN.\n"
+msgid "Search for PATTERNS in each FILE.\n"
+msgstr "A MINTÁK keresése minden FÁJLBAN.\n"
 
-#: src/grep.c:1916
+#: src/grep.c:1919
 #, c-format
 msgid ""
 "Example: %s -i 'hello world' menu.h main.c\n"
+"PATTERNS can contain multiple patterns separated by newlines.\n"
 "\n"
 "Pattern selection and interpretation:\n"
 msgstr ""
 "Példa: %s -i 'szia világ' menu.h main.c\n"
+"A MINTÁK tartalmazhat több mintát új sorokkal elválasztva.\n"
 "\n"
 "Minta kiválasztása és értelmezése:\n"
 
-#: src/grep.c:1920
+#: src/grep.c:1924
 #, c-format
 msgid ""
-"  -E, --extended-regexp     PATTERN is an extended regular expression\n"
-"  -F, --fixed-strings       PATTERN is a set of newline-separated strings\n"
-"  -G, --basic-regexp        PATTERN is a basic regular expression (default)\n"
-"  -P, --perl-regexp         PATTERN is a Perl regular expression\n"
+"  -E, --extended-regexp     PATTERNS are extended regular expressions\n"
+"  -F, --fixed-strings       PATTERNS are strings\n"
+"  -G, --basic-regexp        PATTERNS are basic regular expressions\n"
+"  -P, --perl-regexp         PATTERNS are Perl regular expressions\n"
 msgstr ""
-"  -E, --extended-regexp     a MINTA kiterjesztett reguláris kifejezés\n"
-"  -F, --fixed-strings       a MINTA új sorokkal elválasztott karakterláncok\n"
-"                              halmaza\n"
-"  -G, --basic-regexp        a MINTA alapvető reguláris kifejezés (alapeset)\n"
-"  -P, --perl-regexp         a MINTA Perl reguláris kifejezés\n"
+"  -E, --extended-regexp     a MINTÁK kiterjesztett reguláris kifejezések\n"
+"  -F, --fixed-strings       a MINTÁK karakterláncok\n"
+"  -G, --basic-regexp        a MINTÁK alapvető reguláris kifejezések\n"
+"  -P, --perl-regexp         a MINTÁK Perl reguláris kifejezések\n"
 
-#: src/grep.c:1926
+#: src/grep.c:1930
 #, c-format
 msgid ""
-"  -e, --regexp=PATTERN      use PATTERN for matching\n"
-"  -f, --file=FILE           obtain PATTERN from FILE\n"
+"  -e, --regexp=PATTERNS     use PATTERNS for matching\n"
+"  -f, --file=FILE           take PATTERNS from FILE\n"
 "  -i, --ignore-case         ignore case distinctions\n"
-"  -w, --word-regexp         force PATTERN to match only whole words\n"
-"  -x, --line-regexp         force PATTERN to match only whole lines\n"
+"  -w, --word-regexp         match only whole words\n"
+"  -x, --line-regexp         match only whole lines\n"
 "  -z, --null-data           a data line ends in 0 byte, not newline\n"
 msgstr ""
-"  -e, --regexp=MINTA        a MINTA használata illesztésre\n"
-"  -f, --file=FÁJL           a MINTA beolvasása a FÁJLBÓL\n"
+"  -e, --regexp=MINTÁK       a MINTÁK használata illesztésre\n"
+"  -f, --file=FÁJL           a MINTÁK beolvasása a FÁJLBÓL\n"
 "  -i, --ignore-case         a kis- és nagybetűk megegyeznek\n"
-"  -w, --word-regexp         a MINTA csak egész szóra illeszkedik\n"
-"  -x, --line-regexp         a MINTA csak egész sorra illeszkedik\n"
+"  -w, --word-regexp         csak egész szavakra illesztés\n"
+"  -x, --line-regexp         csak egész sorokra illesztés\n"
 "  -z, --null-data           az adat sorai 0 bájtra végződnek, nem újsorra\n"
 
-#: src/grep.c:1933
+#: src/grep.c:1937
 #, c-format
 msgid ""
 "\n"
@@ -535,7 +544,7 @@ msgstr ""
 "  -V, --version             verzióinformációk kiírása és kilépés\n"
 "      --help                ezen súgó kiírása és kilépés\n"
 
-#: src/grep.c:1940
+#: src/grep.c:1944
 #, c-format
 msgid ""
 "\n"
@@ -559,22 +568,23 @@ msgstr ""
 "      --label=CÍMKE         a CÍMKE kiírása fájlnévként a szabványos bemenet\n"
 "                              használatakor\n"
 
-#: src/grep.c:1951
+#: src/grep.c:1955
 #, c-format
 msgid ""
-"  -o, --only-matching       show only the part of a line matching PATTERN\n"
+"  -o, --only-matching       show only nonempty parts of lines that match\n"
 "  -q, --quiet, --silent     suppress all normal output\n"
 "      --binary-files=TYPE   assume that binary files are TYPE;\n"
 "                            TYPE is 'binary', 'text', or 'without-match'\n"
 "  -a, --text                equivalent to --binary-files=text\n"
 msgstr ""
-"  -o, --only-matching       a sornak csak a MINTÁRA illeszkedő részét írja ki\n"
+"  -o, --only-matching       az illeszkedő soroknak csak a nem üres részeit\n"
+"                              jelenítse meg\n"
 "  -q, --quiet, --silent     minden szokványos kimenet elhagyása\n"
 "      --binary-files=TÍPUS  a bináris fájlokat adott TÍPUSÚNAK veszi, a TÍPUS\n"
 "                              a „binary”, „text” vagy „without-match” egyike\n"
 "  -a, --text                ugyanaz, mint a --binary-files=text\n"
 
-#: src/grep.c:1958
+#: src/grep.c:1962
 #, c-format
 msgid ""
 "  -I                        equivalent to --binary-files=without-match\n"
@@ -594,21 +604,24 @@ msgstr ""
 "  -r, --recursive           ugyanaz, mint a --directories=recurse\n"
 "  -R, --dereference-recursive hasonló, de követi az összes szimlinket\n"
 
-#: src/grep.c:1967
+#: src/grep.c:1971
 #, c-format
 msgid ""
-"      --include=FILE_PATTERN  search only files that match FILE_PATTERN\n"
-"      --exclude=FILE_PATTERN  skip files and directories matching FILE_PATTERN\n"
+"      --include=GLOB        search only files that match GLOB (a file pattern)\n"
+"      --exclude=GLOB        skip files and directories matching GLOB\n"
 "      --exclude-from=FILE   skip files matching any file pattern from FILE\n"
-"      --exclude-dir=PATTERN  directories that match PATTERN will be skipped.\n"
+"      --exclude-dir=GLOB    skip directories that match GLOB\n"
 msgstr ""
-"      --include=FÁJLMINTA   csak a FÁJLMINTÁRA illeszkedő fájlokat vizsgálja\n"
-"      --exclude=FÁJLMINTA   a FÁJLMINTÁRA illeszkedő fájlok kihagyása\n"
-"      --exclude-from=FÁJL   a FÁJLBAN található mintákra illeszkedő\n"
-"                              fájlok kihagyása.\n"
-"      --exclude-dir=MINTA   a MINTÁRA illeszkedő könyvtárak kihagyása\n"
+"      --include=GLOB        csak a GLOBRA (fájlmintára) illeszkedő fájlok\n"
+"                              keresése\n"
+"      --exclude=GLOB        a GLOBRA (fájlmintára) illeszkedő fájlok és\n"
+"                              könyvtárak kihagyása\n"
+"      --exclude-from=FÁJL   a FÁJLBAN található fájlmintákra illeszkedő\n"
+"                              fájlok kihagyása\n"
+"      --exclude-dir=GLOB    a GLOBRA (fájlmintára) illeszkedő könyvtárak\n"
+"                              kihagyása\n"
 
-#: src/grep.c:1974
+#: src/grep.c:1978
 #, c-format
 msgid ""
 "  -L, --files-without-match  print only names of FILEs with no selected lines\n"
@@ -624,7 +637,7 @@ msgstr ""
 "  -T, --initial-tab         sorok feltöltése tabokkal (ha szükséges)\n"
 "  -Z, --null                0 bájt írása a FÁJLNÉV után\n"
 
-#: src/grep.c:1980
+#: src/grep.c:1984
 #, c-format
 msgid ""
 "\n"
@@ -639,7 +652,7 @@ msgstr ""
 "  -A, --after-context=SZÁM  SZÁM db. sor kiírása a találat utáni környezetből\n"
 "  -C, -- context=SZÁM       SZÁM darab sor kiírása a környezetből\n"
 
-#: src/grep.c:1987
+#: src/grep.c:1991
 #, c-format
 msgid ""
 "  -NUM                      same as --context=NUM\n"
@@ -657,82 +670,83 @@ msgstr ""
 "                              (MSDOS/Windows)\n"
 "\n"
 
-#: src/grep.c:1994
+#: src/grep.c:1998
 #, c-format
 msgid ""
 "When FILE is '-', read standard input.  With no FILE, read '.' if\n"
 "recursive, '-' otherwise.  With fewer than two FILEs, assume -h.\n"
-"Exit status is 0 if any line is selected, 1 otherwise;\n"
+"Exit status is 0 if any line (or file if -L) is selected, 1 otherwise;\n"
 "if any error occurs and -q is not given, the exit status is 2.\n"
 msgstr ""
-"Ha a FÁJL a '-', akkor a szabványos bemenetről olvas. Ha nincs megadva FÁJL,\n"
-"rekurzív működéskor a '.' egyébként a '-' olvasása. Kettőnél kevesebb\n"
-"FÁJL megadásakor a -h kapcsolót feltételezi. A kilépési érték:\n"
-"0, ha van találat, egyébként 1; ha hiba történt és a -q nincs megadva: 2\n"
+"Ha a FÁJL a „-”, akkor a szabványos bemenetről olvas. Ha nincs megadva FÁJL,\n"
+"rekurzív működéskor a „.” egyébként a „-” olvasása. Kettőnél kevesebb FÁJL\n"
+"megadásakor a -h kapcsolót feltételezi. A kilépési állapot 0, ha bármely sor\n"
+"(vagy fájl a -L kapcsolónál) kiválasztásra kerül, egyébként 1. Ha hiba\n"
+"történt és a -q nincs megadva, akkor a kilépési állapot 2.\n"
 
-#: src/grep.c:2034
+#: src/grep.c:2038
 msgid "conflicting matchers specified"
 msgstr "ütköző illesztők lettek megadva"
 
-#: src/grep.c:2038
+#: src/grep.c:2042
 #, c-format
 msgid "invalid matcher %s"
 msgstr "érvénytelen illesztő: %s"
 
-#: src/grep.c:2458
+#: src/grep.c:2463
 #, c-format
 msgid "warning: GREP_OPTIONS is deprecated; please use an alias or script"
 msgstr "figyelem: a GREP_OPTIONS elavult; használjon álnevet vagy parancsfájlt"
 
-#: src/grep.c:2485
+#: src/grep.c:2490
 msgid "unknown devices method"
 msgstr "ismeretlen eszközmódszer"
 
-#: src/grep.c:2629
+#: src/grep.c:2634
 msgid "invalid max count"
 msgstr "érvénytelen maximális szám"
 
-#: src/grep.c:2687
+#: src/grep.c:2692
 msgid "unknown binary-files type"
 msgstr "ismeretlen bináris fájl típus"
 
-#: src/pcresearch.c:80
+#: src/pcresearch.c:86
 msgid "failed to allocate memory for the PCRE JIT stack"
 msgstr "nem sikerült memóriát foglalni a PCRE JIT veremnek"
 
-#: src/pcresearch.c:97
+#: src/pcresearch.c:118
 msgid "support for the -P option is not compiled into this --disable-perl-regexp binary"
 msgstr "a -P kapcsoló támogatása nincs belefordítva ebbe a --disable-perl-regexp binárisba"
 
-#: src/pcresearch.c:119
+#: src/pcresearch.c:140
 msgid "-P supports only unibyte and UTF-8 locales"
 msgstr "a -P csak unibyte és UTF-8 területi beállításokat támogat"
 
-#: src/pcresearch.c:125
+#: src/pcresearch.c:146
 msgid "the -P option only supports a single pattern"
 msgstr "a -P kapcsoló csak egy mintát támogat"
 
-#: src/pcresearch.c:167
+#: src/pcresearch.c:189
 msgid "internal error (should never happen)"
 msgstr "belső hiba (soha nem szabadna előfordulnia)"
 
-#: src/pcresearch.c:192
+#: src/pcresearch.c:214
 msgid "internal error"
 msgstr "belső hiba"
 
-#: src/pcresearch.c:215
+#: src/pcresearch.c:237
 msgid "exceeded PCRE's line length limit"
 msgstr "a PCRE sorhossza túllépve"
 
-#: src/pcresearch.c:295
+#: src/pcresearch.c:317
 msgid "exhausted PCRE JIT stack"
 msgstr "kifogyott a PCRE JIT verem"
 
-#: src/pcresearch.c:299
+#: src/pcresearch.c:321
 msgid "exceeded PCRE's backtracking limit"
 msgstr "a PCRE visszakövetési korlátja túllépve"
 
-#: src/pcresearch.c:306
+#: src/pcresearch.c:328
 #, c-format
 msgid "internal PCRE error: %d"
 msgstr "belső PCRE hiba: %d"

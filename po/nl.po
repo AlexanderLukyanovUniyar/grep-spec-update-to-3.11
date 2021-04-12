@@ -1,20 +1,21 @@
 # Dutch translations for GNU grep.
-# Copyright (C) 2018 Free Software Foundation, Inc.
+# Copyright (C) 2020 Free Software Foundation, Inc.
 # This file is distributed under the same license as the grep package.
 #
-# "To je zaista najmanje fer igra od svih koje postoje na svijetu."
+# "Keep your religious feelings to yourself."
 #
-# Benno Schulenberg <benno@vertaalt.nl>, 2005, 2007, 2008, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2018.
+# Benno Schulenberg <benno@vertaalt.nl>, 2005, 2007, 2008, 2010, 2011, 2012.
+# Benno Schulenberg <benno@vertaalt.nl>, 2013, 2014, 2015, 2016, 2018, 2019, 2020.
 # Erwin Poeze <erwin.poeze@gmail.com>, 2009.
 # Taco Witte <tcwitte@cs.uu.nl>, 2004.
 # Ivo Timmermans <itimmermans@bigfoot.com>, 2000.
 # Erick Branderhorst <branderh@debian.org>, 1996.
 msgid ""
 msgstr ""
-"Project-Id-Version: grep-3.1.48\n"
+"Project-Id-Version: grep-3.5.16\n"
 "Report-Msgid-Bugs-To: bug-grep@gnu.org\n"
-"POT-Creation-Date: 2018-12-15 18:40-0800\n"
-"PO-Revision-Date: 2018-12-19 09:35+0100\n"
+"POT-Creation-Date: 2020-11-03 23:21-0800\n"
+"PO-Revision-Date: 2020-11-07 20:01+0100\n"
 "Last-Translator: Benno Schulenberg <vertaling@coevern.nl>\n"
 "Language-Team: Dutch <vertaling@vrijschrift.org>\n"
 "Language: nl\n"
@@ -24,65 +25,65 @@ msgstr ""
 "X-Bugs: Report translation errors to the Language-Team address.\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: lib/argmatch.c:134
+#: lib/argmatch.c:132
 #, c-format
 msgid "invalid argument %s for %s"
 msgstr "ongeldig argument %s van %s"
 
-#: lib/argmatch.c:135
+#: lib/argmatch.c:133
 #, c-format
 msgid "ambiguous argument %s for %s"
 msgstr "argument %s van %s is niet eenduidig"
 
-#: lib/argmatch.c:154
+#: lib/argmatch.c:152 lib/argmatch.h:223
 msgid "Valid arguments are:"
 msgstr "Geldige argumenten zijn:"
 
-#: lib/c-stack.c:208 lib/c-stack.c:301
+#: lib/c-stack.c:225 lib/c-stack.c:338
 msgid "program error"
 msgstr "programmafout"
 
-#: lib/c-stack.c:209 lib/c-stack.c:302
+#: lib/c-stack.c:226 lib/c-stack.c:339
 msgid "stack overflow"
 msgstr "stack-overloop"
 
-#: lib/closeout.c:122 src/grep.c:1277
+#: lib/closeout.c:122 src/grep.c:1341
 msgid "write error"
 msgstr "schrijffout"
 
-#: lib/dfa.c:970
+#: lib/dfa.c:954
 msgid "unbalanced ["
 msgstr "ongepaarde ["
 
-#: lib/dfa.c:1091
+#: lib/dfa.c:1075
 msgid "invalid character class"
 msgstr "ongeldige tekenklasse"
 
-#: lib/dfa.c:1217
+#: lib/dfa.c:1201
 msgid "character class syntax is [[:space:]], not [:space:]"
 msgstr "syntax van tekenklasse is [[:space:]], niet [:space:]"
 
-#: lib/dfa.c:1284
+#: lib/dfa.c:1268
 msgid "unfinished \\ escape"
 msgstr "onafgemaakte \\-stuurcode"
 
-#: lib/dfa.c:1445
+#: lib/dfa.c:1429
 msgid "invalid content of \\{\\}"
 msgstr "ongeldige inhoud van \\{\\}"
 
-#: lib/dfa.c:1448
+#: lib/dfa.c:1432
 msgid "regular expression too big"
 msgstr "reguliere expressie is te groot"
 
-#: lib/dfa.c:1863
+#: lib/dfa.c:1916
 msgid "unbalanced ("
 msgstr "ongepaarde ("
 
-#: lib/dfa.c:1981
+#: lib/dfa.c:2033
 msgid "no syntax specified"
 msgstr "geen syntax opgegeven"
 
-#: lib/dfa.c:1992
+#: lib/dfa.c:2044
 msgid "unbalanced )"
 msgstr "ongepaarde )"
 
@@ -126,7 +127,6 @@ msgid "%s: option requires an argument -- '%c'\n"
 msgstr "%s: optie vereist een argument -- '%c'\n"
 
 #: lib/obstack.c:338 lib/obstack.c:340 lib/xalloc-die.c:34
-#: src/pcresearch.c:313
 msgid "memory exhausted"
 msgstr "onvoldoende geheugen beschikbaar"
 
@@ -166,11 +166,11 @@ msgstr "kan modus van bestandsdescriptor niet instellen op tekst of binair"
 #. If you don't know what to put here, please see
 #. <https://en.wikipedia.org/wiki/Quotation_marks_in_other_languages>
 #. and use glyphs suitable for your language.
-#: lib/quotearg.c:362
+#: lib/quotearg.c:355
 msgid "`"
 msgstr "‘"
 
-#: lib/quotearg.c:363
+#: lib/quotearg.c:356
 msgid "'"
 msgstr "’"
 
@@ -243,16 +243,16 @@ msgstr "Reguliere expressie is te groot"
 msgid "Unmatched ) or \\)"
 msgstr "Ongepaarde ) of \\)"
 
-#: lib/regcomp.c:688
+#: lib/regcomp.c:676
 msgid "No previous regular expression"
 msgstr "Geen eerdere reguliere expressie"
 
-#: lib/version-etc.c:74
+#: lib/version-etc.c:73
 #, c-format
 msgid "Packaged by %s (%s)\n"
 msgstr "In pakketvorm gebracht door %s (%s)\n"
 
-#: lib/version-etc.c:77
+#: lib/version-etc.c:76
 #, c-format
 msgid "Packaged by %s\n"
 msgstr "In pakketvorm gebracht door %s\n"
@@ -260,39 +260,38 @@ msgstr "In pakketvorm gebracht door %s\n"
 #. TRANSLATORS: Translate "(C)" to the copyright symbol
 #. (C-in-a-circle), if this symbol is available in the user's
 #. locale.  Otherwise, do not translate "(C)"; leave it as-is.
-#: lib/version-etc.c:84
+#: lib/version-etc.c:83
 msgid "(C)"
 msgstr "©"
 
-#: lib/version-etc.c:86
+#. TRANSLATORS: The %s placeholder is the web address of the GPL license.
+#: lib/version-etc.c:88
+#, c-format
 msgid ""
-"\n"
-"License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.\n"
+"License GPLv3+: GNU GPL version 3 or later <%s>.\n"
 "This is free software: you are free to change and redistribute it.\n"
 "There is NO WARRANTY, to the extent permitted by law.\n"
-"\n"
 msgstr ""
-"\n"
 "Dit is vrije software: u mag het vrijelijk wijzigen en verder verspreiden.\n"
 "De precieze licentie is GPL-3+: GNU General Public License versie 3 of later.\n"
-"Zie https://gnu.org/licenses/gpl.html voor de volledige (Engelse) tekst.\n"
+"Zie <%s> voor de volledige (Engelse) tekst.\n"
 "Deze software kent GEEN GARANTIE, voor zover de wet dit toestaat.\n"
 "\n"
 
 #. TRANSLATORS: %s denotes an author name.
-#: lib/version-etc.c:102
+#: lib/version-etc.c:105
 #, c-format
 msgid "Written by %s.\n"
 msgstr "Geschreven door %s.\n"
 
 #. TRANSLATORS: Each %s denotes an author name.
-#: lib/version-etc.c:106
+#: lib/version-etc.c:109
 #, c-format
 msgid "Written by %s and %s.\n"
 msgstr "Geschreven door %s en %s.\n"
 
 #. TRANSLATORS: Each %s denotes an author name.
-#: lib/version-etc.c:110
+#: lib/version-etc.c:113
 #, c-format
 msgid "Written by %s, %s, and %s.\n"
 msgstr "Geschreven door %s, %s en %s.\n"
@@ -300,7 +299,7 @@ msgstr "Geschreven door %s, %s en %s.\n"
 #. TRANSLATORS: Each %s denotes an author name.
 #. You can use line breaks, estimating that each author name occupies
 #. ca. 16 screen columns and that a screen line has ca. 80 columns.
-#: lib/version-etc.c:117
+#: lib/version-etc.c:120
 #, c-format
 msgid ""
 "Written by %s, %s, %s,\n"
@@ -312,7 +311,7 @@ msgstr ""
 #. TRANSLATORS: Each %s denotes an author name.
 #. You can use line breaks, estimating that each author name occupies
 #. ca. 16 screen columns and that a screen line has ca. 80 columns.
-#: lib/version-etc.c:124
+#: lib/version-etc.c:127
 #, c-format
 msgid ""
 "Written by %s, %s, %s,\n"
@@ -324,7 +323,7 @@ msgstr ""
 #. TRANSLATORS: Each %s denotes an author name.
 #. You can use line breaks, estimating that each author name occupies
 #. ca. 16 screen columns and that a screen line has ca. 80 columns.
-#: lib/version-etc.c:131
+#: lib/version-etc.c:134
 #, c-format
 msgid ""
 "Written by %s, %s, %s,\n"
@@ -336,7 +335,7 @@ msgstr ""
 #. TRANSLATORS: Each %s denotes an author name.
 #. You can use line breaks, estimating that each author name occupies
 #. ca. 16 screen columns and that a screen line has ca. 80 columns.
-#: lib/version-etc.c:139
+#: lib/version-etc.c:142
 #, c-format
 msgid ""
 "Written by %s, %s, %s,\n"
@@ -348,7 +347,7 @@ msgstr ""
 #. TRANSLATORS: Each %s denotes an author name.
 #. You can use line breaks, estimating that each author name occupies
 #. ca. 16 screen columns and that a screen line has ca. 80 columns.
-#: lib/version-etc.c:147
+#: lib/version-etc.c:150
 #, c-format
 msgid ""
 "Written by %s, %s, %s,\n"
@@ -362,7 +361,7 @@ msgstr ""
 #. TRANSLATORS: Each %s denotes an author name.
 #. You can use line breaks, estimating that each author name occupies
 #. ca. 16 screen columns and that a screen line has ca. 80 columns.
-#: lib/version-etc.c:156
+#: lib/version-etc.c:159
 #, c-format
 msgid ""
 "Written by %s, %s, %s,\n"
@@ -376,7 +375,7 @@ msgstr ""
 #. TRANSLATORS: Each %s denotes an author name.
 #. You can use line breaks, estimating that each author name occupies
 #. ca. 16 screen columns and that a screen line has ca. 80 columns.
-#: lib/version-etc.c:167
+#: lib/version-etc.c:170
 #, c-format
 msgid ""
 "Written by %s, %s, %s,\n"
@@ -391,110 +390,75 @@ msgstr ""
 #. for this package.  Please add _another line_ saying
 #. "Report translation bugs to <...>\n" with the address for translation
 #. bugs (typically your translation team's web or email address).
-#: lib/version-etc.c:245
+#: lib/version-etc.c:249
 #, c-format
-msgid ""
-"\n"
-"Report bugs to: %s\n"
+msgid "Report bugs to: %s\n"
 msgstr ""
-"\n"
-"Rapporteer gebreken in het programma aan <%s>;\n"
+"Rapporteer gebreken in het programma aan %s;\n"
 "meld fouten in de vertaling aan <vertaling@vrijschrift.org>.\n"
 
-#: lib/version-etc.c:247
+#: lib/version-etc.c:251
 #, c-format
 msgid "Report %s bugs to: %s\n"
 msgstr ""
 "Rapporteer gebreken in het programma '%s' aan <%s>;\n"
 "meld fouten in de vertaling aan <vertaling@vrijschrift.org>.\n"
 
-#: lib/version-etc.c:251
+#: lib/version-etc.c:255 lib/version-etc.c:257
 #, c-format
 msgid "%s home page: <%s>\n"
 msgstr "Webpagina van %s: <%s>\n"
 
-#: lib/version-etc.c:253
+#: lib/version-etc.c:260
 #, c-format
-msgid "%s home page: <https://www.gnu.org/software/%s/>\n"
-msgstr "Webpagina van '%s': <https://www.gnu.org/software/%s/>\n"
+msgid "General help using GNU software: <%s>\n"
+msgstr "Algemene hulp bij gebruik van GNU-software: <%s>\n"
 
-#: lib/version-etc.c:256
-msgid "General help using GNU software: <https://www.gnu.org/gethelp/>\n"
-msgstr "Algemene hulp bij gebruik van GNU-software: <https://www.gnu.org/gethelp/>\n"
-
-#: lib/xstrtol-error.c:63
-#, c-format
-msgid "invalid %s%s argument '%s'"
-msgstr "ongeldig argument '%3$s' van %1$s%2$s"
-
-#: lib/xstrtol-error.c:68
-#, c-format
-msgid "invalid suffix in %s%s argument '%s'"
-msgstr "ongeldig achtervoegsel in argument '%3$s' van %1$s%2$s"
-
-#: lib/xstrtol-error.c:72
-#, c-format
-msgid "%s%s argument '%s' too large"
-msgstr "argument '%3$s' van %1$s%2$s is te groot"
-
-#. This is a proper name. See the gettext manual, section Names.
-#: src/grep.c:60
-msgid "Mike Haertel"
-msgstr "Mike Haertel"
-
-#: src/grep.c:61
-msgid "others, see <https://git.sv.gnu.org/cgit/grep.git/tree/AUTHORS>"
-msgstr "anderen, zie <https://git.sv.gnu.org/cgit/grep.git/tree/AUTHORS>"
-
-#: src/grep.c:586
+#: src/grep.c:648
 msgid "(standard input)"
 msgstr "(standaardinvoer)"
 
-#: src/grep.c:766
+#: src/grep.c:828
 msgid "invalid context length argument"
 msgstr "ongeldig argument voor contextlengte"
 
-#: src/grep.c:831
+#: src/grep.c:893
 msgid "input is too large to count"
 msgstr "invoer is te groot om te kunnen tellen"
 
-#: src/grep.c:1582
+#: src/grep.c:1646
 #, c-format
-msgid "Binary file %s matches\n"
-msgstr "Binair bestand %s bevat de gezochte tekst.\n"
+msgid "%s: binary file matches"
+msgstr "%s: binair bestand bevat de gezochte tekst"
 
-#: src/grep.c:1630
+#: src/grep.c:1684
 #, c-format
-msgid "warning: %s: %s"
-msgstr "waarschuwing: %s: %s"
+msgid "%s: warning: recursive directory loop"
+msgstr "%s: waarschuwing: recursieve lus in de mappen"
 
-#: src/grep.c:1631
-msgid "recursive directory loop"
-msgstr "oneindige lus in de mappen"
-
-#: src/grep.c:1847
+#: src/grep.c:1904
 #, c-format
-msgid "input file %s is also the output"
-msgstr "invoerbestand %s is gelijk aan het uitvoerbestand"
+msgid "%s: input file is also the output"
+msgstr "%s: invoerbestand is gelijk aan het uitvoerbestand"
 
-#: src/grep.c:1910 src/grep.c:1917
+#: src/grep.c:1966 src/grep.c:1973
 #, c-format
 msgid "Usage: %s [OPTION]... PATTERNS [FILE]...\n"
 msgstr "Gebruik:  %s [OPTIE...] PATRONEN [BESTAND...]\n"
 
-#: src/grep.c:1912
+#: src/grep.c:1968
 #, c-format
 msgid "Try '%s --help' for more information.\n"
 msgstr "Typ '%s --help' voor meer informatie.\n"
 
-#: src/grep.c:1918
+#: src/grep.c:1974
 #, c-format
 msgid "Search for PATTERNS in each FILE.\n"
 msgstr ""
 "  \n"
 "Zoekt naar PATRONEN in ieder gegeven BESTAND.\n"
 
-#: src/grep.c:1919
+#: src/grep.c:1975
 #, c-format
 msgid ""
 "Example: %s -i 'hello world' menu.h main.c\n"
@@ -509,7 +473,7 @@ msgstr ""
 "\n"
 "Keuze en interpretatie van PATRONEN:\n"
 
-#: src/grep.c:1924
+#: src/grep.c:1980
 #, c-format
 msgid ""
 "  -E, --extended-regexp     PATTERNS are extended regular expressions\n"
@@ -522,12 +486,13 @@ msgstr ""
 "  -G, --basic-regexp        PATRONEN zijn gewone reguliere expressies\n"
 "  -P, --perl-regexp         PATRONEN zijn reguliere Perl-expressies\n"
 
-#: src/grep.c:1930
+#: src/grep.c:1986
 #, c-format
 msgid ""
 "  -e, --regexp=PATTERNS     use PATTERNS for matching\n"
 "  -f, --file=FILE           take PATTERNS from FILE\n"
-"  -i, --ignore-case         ignore case distinctions\n"
+"  -i, --ignore-case         ignore case distinctions in patterns and data\n"
+"      --no-ignore-case      do not ignore case distinctions (default)\n"
 "  -w, --word-regexp         match only whole words\n"
 "  -x, --line-regexp         match only whole lines\n"
 "  -z, --null-data           a data line ends in 0 byte, not newline\n"
@@ -535,11 +500,13 @@ msgstr ""
 "  -e, --regexp=PATRONEN     deze PATRONEN gebruiken bij het zoeken\n"
 "  -f, --file=BESTAND        patronen uit dit BESTAND halen\n"
 "  -i, --ignore-case         verschil tussen hoofd- en kleine letters negeren\n"
+"                              in de patronen en in de gegevens\n"
+"      --no-ignore-case      hoofd- van kleine letters onderscheiden (standaard)\n"
 "  -w, --word-regexp         patronen komen alleen overeen met een heel woord\n"
 "  -x, --line-regexp         patronen komen alleen overeen met een hele regel\n"
 "  -z, --null-data           regels eindigen op 0-byte, niet op LF-teken\n"
 
-#: src/grep.c:1937
+#: src/grep.c:1994
 #, c-format
 msgid ""
 "\n"
@@ -556,7 +523,7 @@ msgstr ""
 "  -V, --version             programmaversie tonen en stoppen\n"
 "      --help                deze hulptekst tonen en stoppen\n"
 
-#: src/grep.c:1944
+#: src/grep.c:2001
 #, c-format
 msgid ""
 "\n"
@@ -579,7 +546,7 @@ msgstr ""
 "  -h, --no-filename         nooit de bestandsnaam tonen\n"
 "      --label=LABEL         dit LABEL als naam voor standaardinvoer gebruiken\n"
 
-#: src/grep.c:1955
+#: src/grep.c:2012
 #, c-format
 msgid ""
 "  -o, --only-matching       show only nonempty parts of lines that match\n"
@@ -595,7 +562,7 @@ msgstr ""
 "                              of 'without-match' (alsof geen overeenkomsten)\n"
 "  -a, --text                hetzelfde als '--binary-files=text'\n"
 
-#: src/grep.c:1962
+#: src/grep.c:2019
 #, c-format
 msgid ""
 "  -I                        equivalent to --binary-files=without-match\n"
@@ -615,23 +582,23 @@ msgstr ""
 "  -r, --recursive           afdalen in submappen (ofwel '--directories=recurse')\n"
 "  -R, --dereference-recursive   idem, maar alle symbolische koppelingen volgen\n"
 
-#: src/grep.c:1971
+#: src/grep.c:2028
 #, c-format
 msgid ""
 "      --include=GLOB        search only files that match GLOB (a file pattern)\n"
-"      --exclude=GLOB        skip files and directories matching GLOB\n"
-"      --exclude-from=FILE   skip files matching any file pattern from FILE\n"
+"      --exclude=GLOB        skip files that match GLOB\n"
+"      --exclude-from=FILE   skip files that match any file pattern from FILE\n"
 "      --exclude-dir=GLOB    skip directories that match GLOB\n"
 msgstr ""
 "      --include=BESTANDSPATROON  alleen bestanden doorzoeken die aan\n"
 "                                   BESTANDSPATROON voldoen\n"
-"      --exclude=BESTANDSPATROON  bestanden en mappen overslaan die aan\n"
-"                                   BESTANDSPATROON voldoen\n"
-"      --exclude-from=BESTAND     bestanden overslaan die aan een patroon in\n"
-"                                   BESTAND voldoen\n"
+"      --exclude=BESTANDSPATROON  bestanden overslaan die aan BESTANDSPATROON\n"
+"                                   voldoen\n"
+"      --exclude-from=BESTAND     bestanden overslaan die aan een\n"
+"                                   bestandspatroon in BESTAND voldoen\n"
 "      --exclude-dir=BSTNDSPTRN   mappen overslaan die aan BSTNDSPTRN voldoen\n"
 
-#: src/grep.c:1978
+#: src/grep.c:2035
 #, c-format
 msgid ""
 "  -L, --files-without-match  print only names of FILEs with no selected lines\n"
@@ -646,7 +613,7 @@ msgstr ""
 "  -T, --initial-tab         tabs uitlijnen (eventueel een tab-teken invoegen)\n"
 "  -Z, --null                een 0-byte invoegen na iedere bestandsnaam\n"
 
-#: src/grep.c:1984
+#: src/grep.c:2041
 #, c-format
 msgid ""
 "\n"
@@ -661,7 +628,7 @@ msgstr ""
 "  -A, --after-context=AANTAL    dit AANTAL regels nakomende context tonen\n"
 "  -C, --context=AANTAL          dit AANTAL regels context tonen\n"
 
-#: src/grep.c:1991
+#: src/grep.c:2048
 #, c-format
 msgid ""
 "  -NUM                      same as --context=NUM\n"
@@ -679,88 +646,122 @@ msgstr ""
 "  -U, --binary              geen CR-tekens weghalen bij regeleinde (MSDOS/Windows)\n"
 "\n"
 
-#: src/grep.c:1998
+#: src/grep.c:2055
 #, c-format
 msgid ""
 "When FILE is '-', read standard input.  With no FILE, read '.' if\n"
 "recursive, '-' otherwise.  With fewer than two FILEs, assume -h.\n"
-"Exit status is 0 if any line (or file if -L) is selected, 1 otherwise;\n"
+"Exit status is 0 if any line is selected, 1 otherwise;\n"
 "if any error occurs and -q is not given, the exit status is 2.\n"
 msgstr ""
 "Indien BESTAND '-' is, wordt standaardinvoer gelezen.  Zonder een BESTAND\n"
 "wordt '.' gelezen indien in recursieve modus, anders wordt '-' gelezen.\n"
 "Bij minder dan twee BESTANDen wordt '-h' aangenomen.\n"
 "\n"
-"De afsluitwaarde is 0 wanneer enige regel (of bestand bij '-L') geselecteerd\n"
-"werd, anders 1; als er een fout optreedt en '-q' is niet gegeven, dan is de\n"
-"afsluitwaarde 2.\n"
+"De afsluitwaarde is 0 in geval van overeenkomsten, anders 1; als er\n"
+"een fout optreedt en '-q' is niet gegeven, dan is de afsluitwaarde 2.\n"
 
-#: src/grep.c:2038
+#: src/grep.c:2097
 msgid "conflicting matchers specified"
 msgstr "conflicterende expressiesoorten"
 
-#: src/grep.c:2042
+#: src/grep.c:2104
+msgid "Perl matching not supported in a --disable-perl-regexp build"
+msgstr "Perl-expressies worden door deze programmaversie niet ondersteund"
+
+#: src/grep.c:2106
 #, c-format
 msgid "invalid matcher %s"
 msgstr "ongeldige expressiesoort '%s'"
 
-#: src/grep.c:2463
-#, c-format
-msgid "warning: GREP_OPTIONS is deprecated; please use an alias or script"
-msgstr "waarschuwing: GREP_OPTIONS is verouderd; gebruik een alias of een script"
-
-#: src/grep.c:2490
+#: src/grep.c:2541
 msgid "unknown devices method"
 msgstr "onbekende apparaten-actie"
 
-#: src/grep.c:2634
+#: src/grep.c:2689
 msgid "invalid max count"
 msgstr "ongeldig maximum aantal"
 
-#: src/grep.c:2692
+#: src/grep.c:2747
 msgid "unknown binary-files type"
 msgstr "onbekend binair bestandstype"
 
-#: src/pcresearch.c:86
+#: src/grep.c:2832
+msgid ""
+"Written by Mike Haertel and others; see\n"
+"<https://git.sv.gnu.org/cgit/grep.git/tree/AUTHORS>."
+msgstr ""
+"Geschreven door Mike Haertel en anderen; zie\n"
+"<https://git.sv.gnu.org/cgit/grep.git/tree/AUTHORS>."
+
+#: src/pcresearch.c:85
 msgid "failed to allocate memory for the PCRE JIT stack"
 msgstr "onvoldoende geheugen beschikbaar voor de PCRE-JIT-stack"
 
-#: src/pcresearch.c:118
-msgid "support for the -P option is not compiled into this --disable-perl-regexp binary"
-msgstr "ondersteuning voor de optie '-P' is in deze programmaversie niet opgenomen"
-
-#: src/pcresearch.c:140
+#: src/pcresearch.c:137
 msgid "-P supports only unibyte and UTF-8 locales"
 msgstr "optie '-P' ondersteunt alleen enkelbytes- en UTF-8-taalregio's"
 
-#: src/pcresearch.c:146
+#: src/pcresearch.c:143
 msgid "the -P option only supports a single pattern"
 msgstr "optie '-P' accepteert slechts één patroon"
 
-#: src/pcresearch.c:189
+#: src/pcresearch.c:187
 msgid "internal error (should never happen)"
 msgstr "**interne programmafout** (zou nooit mogen gebeuren)"
 
-#: src/pcresearch.c:214
-msgid "internal error"
-msgstr "**interne programmafout**"
-
-#: src/pcresearch.c:237
+#: src/pcresearch.c:230
 msgid "exceeded PCRE's line length limit"
 msgstr "de regellengtegrens van PCRE is overschreden"
 
-#: src/pcresearch.c:317
-msgid "exhausted PCRE JIT stack"
-msgstr "de PCRE-JIT-stack is volledig gebruikt"
-
-#: src/pcresearch.c:321
-msgid "exceeded PCRE's backtracking limit"
-msgstr "de terugverwijzingsgrens van PCRE is overschreden"
-
-#: src/pcresearch.c:328
+#: src/pcresearch.c:306
 #, c-format
-msgid "internal PCRE error: %d"
-msgstr "**interne programmafout** in PCRE: %d"
+msgid "%s: memory exhausted"
+msgstr "%s: onvoldoende geheugen beschikbaar"
+
+#: src/pcresearch.c:310
+#, c-format
+msgid "%s: exhausted PCRE JIT stack"
+msgstr "%s: de PCRE-JIT-stack is volledig gebruikt"
+
+#: src/pcresearch.c:315
+#, c-format
+msgid "%s: exceeded PCRE's backtracking limit"
+msgstr "%s: de terugverwijzingengrens van PCRE is overschreden"
+
+#: src/pcresearch.c:319
+#, c-format
+msgid "%s: exceeded PCRE's recursion limit"
+msgstr "%s: de recursiegrens van PCRE is overschreden"
+
+#: src/pcresearch.c:327
+#, c-format
+msgid "%s: internal PCRE error: %d"
+msgstr "%s: **interne programmafout** in PCRE: %d"
+
+#~ msgid "warning: GREP_OPTIONS is deprecated; please use an alias or script"
+#~ msgstr "waarschuwing: GREP_OPTIONS is verouderd; gebruik een alias of een script"
+
+#~ msgid "warning: %s: %s"
+#~ msgstr "waarschuwing: %s: %s"
+
+#~ msgid "%s home page: <https://www.gnu.org/software/%s/>\n"
+#~ msgstr "Webpagina van '%s': <https://www.gnu.org/software/%s/>\n"
+
+#~ msgid "invalid %s%s argument '%s'"
+#~ msgstr "ongeldig argument '%3$s' van %1$s%2$s"
+
+#~ msgid "invalid suffix in %s%s argument '%s'"
+#~ msgstr "ongeldig achtervoegsel in argument '%3$s' van %1$s%2$s"
+
+#~ msgid "%s%s argument '%s' too large"
+#~ msgstr "argument '%3$s' van %1$s%2$s is te groot"
+
+#~ msgid "Mike Haertel"
+#~ msgstr "Mike Haertel"
+
+#~ msgid "internal error"
+#~ msgstr "**interne programmafout**"
 
 #~ msgid "%s: option '--%s' doesn't allow an argument\n"
 #~ msgstr "%s: optie '--%s' staat geen argument toe\n"
