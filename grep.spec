@@ -22,7 +22,7 @@ Requires: libpcre3 >= 0:6.4-alt2
 Provides: pcre-grep, pgrep
 Obsoletes: pcre-grep, pgrep
 
-BuildRequires: makeinfo, gnulib >= 0.1.2305.95c96
+BuildRequires: makeinfo, gnulib >= 0.1.4279.bb6ec
 # due to build from git
 BuildRequires: gperf
 # due to --perl-regexp
