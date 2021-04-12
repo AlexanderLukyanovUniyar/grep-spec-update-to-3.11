@@ -1,5 +1,5 @@
 Name: grep
-Version: 3.3.0.16.268ca
+Version: 3.6.0.18.70517
 Release: alt1
 
 Summary: The GNU versions of grep pattern matching utilities
@@ -93,6 +93,11 @@ ulimit -s 32768
 %doc AUTHORS NEWS README TODO
 
 %changelog
+* Mon Apr 12 2021 Dmitry V. Levin <ldv@altlinux.org> 3.6.0.18.70517-alt1
+- grep: v3.3-16-g268cae4 -> v3.6-18-g7051705.
+- gnulib BR: v0.1-2305-g95c96b6dd -> v0.1-4279-gbb6ecf327.
+- Updated translations from translationproject.org.
+
 * Sun Oct 13 2019 Dmitry V. Levin <ldv@altlinux.org> 3.3.0.16.268ca-alt1
 - grep: v3.3 -> v3.3-16-g268cae4.
 
