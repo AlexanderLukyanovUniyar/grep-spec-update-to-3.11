@@ -75,6 +75,10 @@ install -pm644 %_sourcedir/GREP_COLORS \
 
 %find_lang %name
 
+%define _unpackaged_files_terminate_build 1
+%define _stripped_files_terminate_build 1
+%set_verify_elf_method strict
+
 %check
 # pcre-jitstack needs more stack space
 ulimit -s 32768
