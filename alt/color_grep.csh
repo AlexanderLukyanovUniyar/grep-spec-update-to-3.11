@@ -9,7 +9,7 @@ foreach color_grep ($HOME/.grep_colors.$TERM $HOME/.grep_colors \
 		continue
 	endif
 
-	egrep -iqs '^COLOR(=|[[:space:]]+)none[[:space:]]*$' $color_grep
+	grep -Eiqs '^COLOR(=|[[:space:]]+)none[[:space:]]*$' $color_grep
 	if ($? == 0) then
 		break
 	endif
