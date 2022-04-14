@@ -1,402 +1,725 @@
 # Turkish translations for GNU grep messages.
+# This file is distributed under the same license as the grep package.
 # Copyright (C) 2005 Free Software Foundation, Inc.
 # Nilgün Belma Bugüner <nilgun@superonline.com>, 2001, ..., 2005
+# Emir SARI <emir_sari@icloud.com>, 2022
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: grep 2.5.1a\n"
-"POT-Creation-Date: 2002-03-26 16:38+0100\n"
-"PO-Revision-Date: 2005-03-04 16:37+0300\n"
-"Last-Translator: Nilgün Belma Bugüner <nilgun@superonline.com>\n"
-"Language-Team: Turkish <gnu-tr-u12a@lists.sourceforge.net>\n"
-"X-Bugs: Report translation errors to the Language-Team address.\n"
+"Project-Id-Version: grep-3.6.27\n"
+"Report-Msgid-Bugs-To: bug-grep@gnu.org\n"
+"POT-Creation-Date: 2021-08-08 09:59-0700\n"
+"PO-Revision-Date: 2022-04-04 12:00+0300\n"
+"Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
+"Language-Team: Turkish <gnome-turk@gnome.org>\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
 "X-Generator: KBabel 1.0\n"
 
-#: src/dfa.c:136 src/dfa.c:147 src/dfa.c:158 src/search.c:689
-msgid "Memory exhausted"
-msgstr "Bellek tükendi"
+#: lib/argmatch.c:132
+#, c-format
+msgid "invalid argument %s for %s"
+msgstr "%2$s için %1$s argümanı geçersiz"
 
-#: src/dfa.c:489 src/dfa.c:492 src/dfa.c:510 src/dfa.c:521 src/dfa.c:545
-#: src/dfa.c:604 src/dfa.c:609 src/dfa.c:622 src/dfa.c:623 src/dfa.c:1001
-#: src/dfa.c:1004 src/dfa.c:1028 src/dfa.c:1032 src/dfa.c:1033 src/dfa.c:1036
-#: src/dfa.c:1048 src/dfa.c:1049
-msgid "Unbalanced ["
-msgstr "Karşılıksız ["
+#: lib/argmatch.c:133
+#, c-format
+msgid "ambiguous argument %s for %s"
+msgstr "`%2$s' için %1$s argümanı belirsiz"
 
-#: src/dfa.c:741
-msgid "Unfinished \\ escape"
-msgstr "Tamamlanmamış \\ öncelemi"
+#: lib/argmatch.c:152 lib/argmatch.h:223
+msgid "Valid arguments are:"
+msgstr "Geçerli argümanlar:"
 
-#. Cases:
-#. {M} - exact count
-#. {M,} - minimum count, maximum is infinity
-#. {M,N} - M through N
-#: src/dfa.c:874 src/dfa.c:880 src/dfa.c:890 src/dfa.c:898 src/dfa.c:913
-msgid "unfinished repeat count"
-msgstr "Tamamlanmamış tekrar sayısı"
+#: lib/c-stack.c:187
+msgid "program error"
+msgstr "program hatası"
 
-#: src/dfa.c:887 src/dfa.c:904 src/dfa.c:912 src/dfa.c:916
-msgid "malformed repeat count"
-msgstr "Tekrar sayısı hatalı"
+#: lib/c-stack.c:188
+msgid "stack overflow"
+msgstr "yığın taşması"
 
-#: src/dfa.c:1253
-msgid "Unbalanced ("
-msgstr "Karşılıksız ("
+#: lib/closeout.c:122 src/grep.c:1342
+msgid "write error"
+msgstr "yazma hatası"
 
-#: src/dfa.c:1378
-msgid "No syntax specified"
-msgstr "Sözdizimi belirtilmemiş"
+#: lib/dfa.c:896
+msgid "unbalanced ["
+msgstr "karşılıksız ["
 
-#: src/dfa.c:1386
-msgid "Unbalanced )"
-msgstr "Karşılıksız )"
+#: lib/dfa.c:1017
+msgid "invalid character class"
+msgstr "geçersiz karakter sınıfı"
 
-#: src/dfa.c:2956
-msgid "out of memory"
-msgstr "bellek yetersiz"
+#: lib/dfa.c:1143
+msgid "character class syntax is [[:space:]], not [:space:]"
+msgstr "karakter sınıfı sözdizimi [[:boşluk:]], [:boşluk] değil"
 
-#: src/kwset.c:171 src/kwset.c:177 src/search.c:103 src/search.c:209
-#: src/search.c:293 lib/obstack.c:471
+#: lib/dfa.c:1210
+msgid "unfinished \\ escape"
+msgstr "tamamlanmamış \\ kaçışı"
+
+#: lib/dfa.c:1371
+msgid "invalid content of \\{\\}"
+msgstr "geçersiz \\{\\} içeriği"
+
+#: lib/dfa.c:1374
+msgid "regular expression too big"
+msgstr "düzenli ifade pek büyük"
+
+#: lib/dfa.c:1858
+msgid "unbalanced ("
+msgstr "karşılıksız ("
+
+#: lib/dfa.c:1975
+msgid "no syntax specified"
+msgstr "sözdizim belirtilmemiş"
+
+#: lib/dfa.c:1986
+msgid "unbalanced )"
+msgstr "karşılıksız )"
+
+#: lib/error.c:195
+msgid "Unknown system error"
+msgstr "Bilinmeyen sistem hatası"
+
+#: lib/getopt.c:278
+#, c-format
+msgid "%s: option '%s%s' is ambiguous\n"
+msgstr "%s: '%s%s' seçeneği belirsiz\n"
+
+#: lib/getopt.c:284
+#, c-format
+msgid "%s: option '%s%s' is ambiguous; possibilities:"
+msgstr "%s: '%s%s' seçeneği belirsiz; olasılıklar:"
+
+#: lib/getopt.c:319
+#, c-format
+msgid "%s: unrecognized option '%s%s'\n"
+msgstr "%s: '%s%s' seçeneği tanımlanamıyor\n"
+
+#: lib/getopt.c:345
+#, c-format
+msgid "%s: option '%s%s' doesn't allow an argument\n"
+msgstr "%s: '%s%s' seçeneği argümana izin vermiyor\n"
+
+#: lib/getopt.c:360
+#, c-format
+msgid "%s: option '%s%s' requires an argument\n"
+msgstr "%s: '%s%s' seçeneği bir argüman gerektiriyor\n"
+
+#: lib/getopt.c:621
+#, c-format
+msgid "%s: invalid option -- '%c'\n"
+msgstr "%s: Geçersiz seçenek -- '%c'\n"
+
+#: lib/getopt.c:636 lib/getopt.c:682
+#, c-format
+msgid "%s: option requires an argument -- '%c'\n"
+msgstr "%s: Seçenek bir argüman gerektiriyor -- '%c'\n"
+
+#: lib/obstack.c:337 lib/obstack.c:339 lib/xalloc-die.c:34
 msgid "memory exhausted"
 msgstr "bellek tükendi"
 
-#: src/grep.c:205
-msgid "invalid context length argument"
-msgstr "bağlam uzunluk değeri geçersiz"
-
-#: src/grep.c:479
-msgid "input is too large to count"
-msgstr "girdi sayılamayacak kadar büyük"
-
-#: src/grep.c:605
-msgid "writing output"
-msgstr "çıktıyı yazıyor"
-
-#: src/grep.c:878
+#: lib/openat-die.c:38
 #, c-format
-msgid "Binary file %s matches\n"
-msgstr "İkilik dosya %s eşleşir\n"
+msgid "unable to record current working directory"
+msgstr "geçerli çalışma dizini kaydedilemiyor"
 
-#: src/grep.c:892
+#: lib/openat-die.c:57
+#, c-format
+msgid "failed to return to initial working directory"
+msgstr "başlangıç çalışma dizinine dönülemedi"
+
+#: lib/xbinary-io.c:37
+#, c-format
+msgid "failed to set file descriptor text/binary mode"
+msgstr "dosya tanımlayıcısı metin/ikili kipi ayarlanamadı"
+
+#. TRANSLATORS:
+#. Get translations for open and closing quotation marks.
+#. The message catalog should translate "`" to a left
+#. quotation mark suitable for the locale, and similarly for
+#. "'".  For example, a French Unicode local should translate
+#. these to U+00AB (LEFT-POINTING DOUBLE ANGLE
+#. QUOTATION MARK), and U+00BB (RIGHT-POINTING DOUBLE ANGLE
+#. QUOTATION MARK), respectively.
+#.
+#. If the catalog has no translation, we will try to
+#. use Unicode U+2018 (LEFT SINGLE QUOTATION MARK) and
+#. Unicode U+2019 (RIGHT SINGLE QUOTATION MARK).  If the
+#. current locale is not Unicode, locale_quoting_style
+#. will quote 'like this', and clocale_quoting_style will
+#. quote "like this".  You should always include translations
+#. for "`" and "'" even if U+2018 and U+2019 are appropriate
+#. for your locale.
+#.
+#. If you don't know what to put here, please see
+#. <https://en.wikipedia.org/wiki/Quotation_marks_in_other_languages>
+#. and use glyphs suitable for your language.
+#: lib/quotearg.c:355
+msgid "`"
+msgstr "`"
+
+#: lib/quotearg.c:356
+msgid "'"
+msgstr "'"
+
+#: lib/regcomp.c:135
+msgid "Success"
+msgstr "Başarılı"
+
+#: lib/regcomp.c:138
+msgid "No match"
+msgstr "Eşleşme yok"
+
+#: lib/regcomp.c:141
+msgid "Invalid regular expression"
+msgstr "Geçersiz düzenli ifade"
+
+#: lib/regcomp.c:144
+msgid "Invalid collation character"
+msgstr "Geçersiz birleştirme karakteri"
+
+#: lib/regcomp.c:147
+msgid "Invalid character class name"
+msgstr "Geçersiz karakter sınıfı adı"
+
+#: lib/regcomp.c:150
+msgid "Trailing backslash"
+msgstr "İzleyen ters eğik çizgi"
+
+#: lib/regcomp.c:153
+msgid "Invalid back reference"
+msgstr "Geçersiz geri başvuru"
+
+#: lib/regcomp.c:156
+msgid "Unmatched [, [^, [:, [., or [="
+msgstr "Eşleşmemiş [, [^, [:, [. veya [="
+
+#: lib/regcomp.c:159
+msgid "Unmatched ( or \\("
+msgstr "Eşleşmemiş ( veya \\("
+
+#: lib/regcomp.c:162
+msgid "Unmatched \\{"
+msgstr "Eşleşmemiş \\{"
+
+#: lib/regcomp.c:165
+msgid "Invalid content of \\{\\}"
+msgstr "Geçersiz \\{\\} içeriği"
+
+#: lib/regcomp.c:168
+msgid "Invalid range end"
+msgstr "Geçersiz erim sonu"
+
+#: lib/regcomp.c:171
+msgid "Memory exhausted"
+msgstr "Bellek tükendi"
+
+#: lib/regcomp.c:174
+msgid "Invalid preceding regular expression"
+msgstr "Önceki düzenli ifade geçersiz"
+
+#: lib/regcomp.c:177
+msgid "Premature end of regular expression"
+msgstr "Düzenli ifade erken sonlandı"
+
+#: lib/regcomp.c:180
+msgid "Regular expression too big"
+msgstr "Düzenli ifade pek büyük"
+
+#: lib/regcomp.c:183
+msgid "Unmatched ) or \\)"
+msgstr "Eşleşmemiş ) veya \\)"
+
+#: lib/regcomp.c:676
+msgid "No previous regular expression"
+msgstr "Öncesinde düzenli ifade yok"
+
+#: lib/version-etc.c:73
+#, c-format
+msgid "Packaged by %s (%s)\n"
+msgstr "%s tarafından paketlendi (%s)\n"
+
+#: lib/version-etc.c:76
+#, c-format
+msgid "Packaged by %s\n"
+msgstr "%s tarafından paketlendi\n"
+
+#. TRANSLATORS: Translate "(C)" to the copyright symbol
+#. (C-in-a-circle), if this symbol is available in the user's
+#. locale.  Otherwise, do not translate "(C)"; leave it as-is.
+#: lib/version-etc.c:83
+msgid "(C)"
+msgstr "(C)"
+
+#. TRANSLATORS: The %s placeholder is the web address of the GPL license.
+#: lib/version-etc.c:88
+#, c-format
+msgid ""
+"License GPLv3+: GNU GPL version 3 or later <%s>.\n"
+"This is free software: you are free to change and redistribute it.\n"
+"There is NO WARRANTY, to the extent permitted by law.\n"
+msgstr ""
+"GPLv3+ lisansı: GNU GPL sürüm 3 veya sonrası <%s>.\n"
+"Bu özgür yazılımdır; değiştirmekte ve yeniden dağıtmakta özgürsünüz.\n"
+"Yasaların izin verdiği ölçüde herhangi bir GARANTİ verilmez.\n"
+
+#. TRANSLATORS: %s denotes an author name.
+#: lib/version-etc.c:105
+#, c-format
+msgid "Written by %s.\n"
+msgstr "%s tarafından yazıldı.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#: lib/version-etc.c:109
+#, c-format
+msgid "Written by %s and %s.\n"
+msgstr "%s ve %s tarafından yazıldı.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#: lib/version-etc.c:113
+#, c-format
+msgid "Written by %s, %s, and %s.\n"
+msgstr "%s, %s ve %s tarafından yazıldı.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:120
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"and %s.\n"
+msgstr ""
+"%s, %s, %s\n"
+"ve %s tarafından yazıldı.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:127
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, and %s.\n"
+msgstr ""
+"%s, %s, %s,\n"
+"%s ve %s tarafından yazıldı.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:134
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, and %s.\n"
+msgstr ""
+"%s, %s, %s,\n"
+"%s, %s ve %s tarafından yazıldı.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:142
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, and %s.\n"
+msgstr ""
+"%s, %s, %s,\n"
+"%s, %s, %s ve %s tarafından yazıldı.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:150
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"and %s.\n"
+msgstr ""
+"%s, %s, %s, %s,\n"
+"%s, %s, %s ve %s\n"
+"tarafından yazıldı.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:159
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s, and %s.\n"
+msgstr ""
+"%s, %s, %s, %s, %s, %s,\n"
+"%s, %s ve %s tarafından\n"
+"yazıldı.\n"
+
+#. TRANSLATORS: Each %s denotes an author name.
+#. You can use line breaks, estimating that each author name occupies
+#. ca. 16 screen columns and that a screen line has ca. 80 columns.
+#: lib/version-etc.c:170
+#, c-format
+msgid ""
+"Written by %s, %s, %s,\n"
+"%s, %s, %s, %s,\n"
+"%s, %s, and others.\n"
+msgstr ""
+"%s, %s, %s, %s, %s, %s,\n"
+"%s, %s, %s ve diğerleri\n"
+"tarafından yazıldı.\n"
+
+#. TRANSLATORS: The placeholder indicates the bug-reporting address
+#. for this package.  Please add _another line_ saying
+#. "Report translation bugs to <...>\n" with the address for translation
+#. bugs (typically your translation team's web or email address).
+#: lib/version-etc.c:249
+#, c-format
+msgid "Report bugs to: %s\n"
+msgstr "Hataları şuraya bildirin: %s\n"
+
+#: lib/version-etc.c:251
+#, c-format
+msgid "Report %s bugs to: %s\n"
+msgstr "%s hatalarını şuraya bildirin: %s\n"
+
+#: lib/version-etc.c:255 lib/version-etc.c:257
+#, c-format
+msgid "%s home page: <%s>\n"
+msgstr "%s ana sayfası: <%s>\n"
+
+#: lib/version-etc.c:260
+#, c-format
+msgid "General help using GNU software: <%s>\n"
+msgstr "GNU yazılımı kullanımı genel yardımı: <%s>\n"
+
+#: src/grep.c:649
 msgid "(standard input)"
 msgstr "(standart girdi)"
 
-#: src/grep.c:997
+#: src/grep.c:829
+msgid "invalid context length argument"
+msgstr "geçersiz bağlam uzunluk değeri"
+
+#: src/grep.c:894
+msgid "input is too large to count"
+msgstr "girdi sayılamayacak kadar büyük"
+
+#: src/grep.c:1647
 #, c-format
-msgid "warning: %s: %s\n"
-msgstr "uyarı: %s: %s\n"
+msgid "%s: binary file matches"
+msgstr "%s: İkili dosya eşleşiyor"
 
-#: src/grep.c:998
-msgid "recursive directory loop"
-msgstr "ardışık dizin çevrimi"
-
-#: src/grep.c:1046
+#: src/grep.c:1685
 #, c-format
-msgid "Usage: %s [OPTION]... PATTERN [FILE]...\n"
-msgstr "Kullanımı: %s [SEÇENEK]... MASKE [DOSYA]...\n"
+msgid "%s: warning: recursive directory loop"
+msgstr "%s: Uyarı: Özyineli dizin döngüsü"
 
-#: src/grep.c:1048
+#: src/grep.c:1905
 #, c-format
-msgid "Try `%s --help' for more information.\n"
-msgstr "Daha fazla bilgi için `%s --help' yazın.\n"
+msgid "%s: input file is also the output"
+msgstr "%s: Girdi dosyası aynı zamanda çıkış"
 
-#: src/grep.c:1053
+#: src/grep.c:1967 src/grep.c:1974
 #, c-format
-msgid "Usage: %s [OPTION]... PATTERN [FILE] ...\n"
-msgstr "Kullanımı: %s [SEÇENEK]... KALIP [DOSYA] ...\n"
+msgid "Usage: %s [OPTION]... PATTERNS [FILE]...\n"
+msgstr "Kullanım: %s [SEÇENEK]... DİZGİLER [DOSYA]...\n"
 
-#: src/grep.c:1054
+#: src/grep.c:1969
+#, c-format
+msgid "Try '%s --help' for more information.\n"
+msgstr "Daha fazla bilgi için '%s --help' deneyin.\n"
+
+#: src/grep.c:1975
+#, c-format
+msgid "Search for PATTERNS in each FILE.\n"
+msgstr "Her DOSYA'da DİZGİLER ara.\n"
+
+#: src/grep.c:1976
 #, c-format
 msgid ""
-"Search for PATTERN in each FILE or standard input.\n"
 "Example: %s -i 'hello world' menu.h main.c\n"
+"PATTERNS can contain multiple patterns separated by newlines.\n"
 "\n"
-"Regexp selection and interpretation:\n"
+"Pattern selection and interpretation:\n"
 msgstr ""
-"Standart girdi ya da her DOSYA içinde KALIP için arama yapar.\n"
-"Örneğin: %s -i 'merhaba dunya' menu.h main.c\n"
+"Örnek: %s -i 'merhaba dünya' menu.h main.c\n"
+"DİZGİLER, yenisatır ile ayrılan birden çok dizgi içerebilir.\n"
 "\n"
-"Düzenli ifade seçimi ve yorumlanması:\n"
+"Dizgi seçimi ve yorumlanması:\n"
 
-#: src/grep.c:1059
+#: src/grep.c:1981
+#, c-format
 msgid ""
-"  -E, --extended-regexp     PATTERN is an extended regular expression\n"
-"  -F, --fixed-strings       PATTERN is a set of newline-separated strings\n"
-"  -G, --basic-regexp        PATTERN is a basic regular expression\n"
-"  -P, --perl-regexp         PATTERN is a Perl regular expression\n"
+"  -E, --extended-regexp     PATTERNS are extended regular expressions\n"
+"  -F, --fixed-strings       PATTERNS are strings\n"
+"  -G, --basic-regexp        PATTERNS are basic regular expressions\n"
+"  -P, --perl-regexp         PATTERNS are Perl regular expressions\n"
 msgstr ""
-"  -E, --extended-regexp     KALIP bir genişletilmiş düzenli ifadedir\n"
-"  -F, --fixed-strings       KALIP satır satır ayrılmış bir dizgedir\n"
-"  -G, --basic-regexp        KALIP bir temel düzenli ifadedir\n"
-"  -P, --perl-regexp         KALIP bir Perl düzenli ifadesidir\n"
+"  -E, --extended-regexp     DİZGİLER, genişletilmiş düzenli ifadedir\n"
+"  -F, --fixed-strings       DİZGİLER, dizilerdir\n"
+"  -G, --basic-regexp        DİZGİLER, yalın düzenli ifadelerdir\n"
+"  -P, --perl-regexp         DİZGİLER, Perl düzenli ifadeleridir\n"
 
-#: src/grep.c:1064
+#: src/grep.c:1987
+#, c-format
 msgid ""
-"  -e, --regexp=PATTERN      use PATTERN as a regular expression\n"
-"  -f, --file=FILE           obtain PATTERN from FILE\n"
-"  -i, --ignore-case         ignore case distinctions\n"
-"  -w, --word-regexp         force PATTERN to match only whole words\n"
-"  -x, --line-regexp         force PATTERN to match only whole lines\n"
+"  -e, --regexp=PATTERNS     use PATTERNS for matching\n"
+"  -f, --file=FILE           take PATTERNS from FILE\n"
+"  -i, --ignore-case         ignore case distinctions in patterns and data\n"
+"      --no-ignore-case      do not ignore case distinctions (default)\n"
+"  -w, --word-regexp         match only whole words\n"
+"  -x, --line-regexp         match only whole lines\n"
 "  -z, --null-data           a data line ends in 0 byte, not newline\n"
 msgstr ""
-"  -e, --regexp=KALIP     KALIP bir düzenli ifade olarak kullanılır\n"
-"  -f, --file=DOSYA       KALIP DOSYA dan alınır\n"
-"  -i, --ignore-case      harf büyüklüklerini bir ayrım olarak görmez\n"
-"  -w, --word-regexp      KALIP bir deyim olarak ele alınır\n"
-"  -x, --line-regexp      KALIP bir bütün satır olarak ele alınır\n"
-"  -z, --null-data        satır sonu içermeyen 0 baytlık satır\n"
+"  -e, --regexp=DİZGİLER     eşleştirme için DİZGİLER kullan\n"
+"  -f, --file=DOSYA          DİZGİLER'i DOSYA'dan al\n"
+"  -i, --ignore-case         dizgilerde/veride BÜY./küçük harf ayrımını yok say\n"
+"      --no-ignore-case      BÜYÜK/küçük harf ayrımını yok sayma (öntanımlı)\n"
+"  -w, --word-regexp         yalnızca tam sözcükleri eşleştir\n"
+"  -x, --line-regexp         yalnızca tam satırları eşleştir\n"
+"  -z, --null-data           bir veri satırı yenisatır yerine 0 bayt ile biter\n"
 
-#: src/grep.c:1071
+#: src/grep.c:1995
+#, c-format
 msgid ""
 "\n"
 "Miscellaneous:\n"
 "  -s, --no-messages         suppress error messages\n"
 "  -v, --invert-match        select non-matching lines\n"
-"  -V, --version             print version information and exit\n"
-"      --help                display this help and exit\n"
-"      --mmap                use memory-mapped input if possible\n"
+"  -V, --version             display version information and exit\n"
+"      --help                display this help text and exit\n"
 msgstr ""
 "\n"
 "Çeşitli:\n"
-"  -s, --no-messages         hata iletileri gösterilmez\n"
-"  -v, --invert-match        eşleşmeyen satırlar seçilir\n"
-"  -V, --version             sürümü gösterir ve çıkar\n"
-"      --help                bu iletileri gösterir ve çıkar\n"
-"      --mmap                mümkünse bellek-eşlemli girdi kullanılır\n"
+"  -s, --no-messages         hata iletilerini sustur\n"
+"  -v, --invert-match        eşleşmeyen satırları seç\n"
+"  -V, --version             sürüm bilgisini görüntüle ve çık\n"
+"      --help                bu yardım metnini görüntüle ve çık\n"
 
-#: src/grep.c:1079
+#: src/grep.c:2002
+#, c-format
 msgid ""
 "\n"
 "Output control:\n"
-"  -m, --max-count=NUM       stop after NUM matches\n"
+"  -m, --max-count=NUM       stop after NUM selected lines\n"
 "  -b, --byte-offset         print the byte offset with output lines\n"
 "  -n, --line-number         print line number with output lines\n"
 "      --line-buffered       flush output on every line\n"
-"  -H, --with-filename       print the filename for each match\n"
-"  -h, --no-filename         suppress the prefixing filename on output\n"
-"      --label=LABEL         print LABEL as filename for standard input\n"
-"  -o, --only-matching       show only the part of a line matching PATTERN\n"
-"  -q, --quiet, --silent     suppress all normal output\n"
-"      --binary-files=TYPE   assume that binary files are TYPE\n"
-"                            TYPE is 'binary', 'text', or 'without-match'\n"
-"  -a, --text                equivalent to --binary-files=text\n"
-"  -I                        equivalent to --binary-files=without-match\n"
-"  -d, --directories=ACTION  how to handle directories\n"
-"                            ACTION is 'read', 'recurse', or 'skip'\n"
-"  -D, --devices=ACTION      how to handle devices, FIFOs and sockets\n"
-"                            ACTION is 'read' or 'skip'\n"
-"  -R, -r, --recursive       equivalent to --directories=recurse\n"
-"      --include=PATTERN     files that match PATTERN will be examined\n"
-"      --exclude=PATTERN     files that match PATTERN will be skipped.\n"
-"      --exclude-from=FILE   files that match PATTERN in FILE will be skipped.\n"
-"  -L, --files-without-match only print FILE names containing no match\n"
-"  -l, --files-with-matches  only print FILE names containing matches\n"
-"  -c, --count               only print a count of matching lines per FILE\n"
-"  -Z, --null                print 0 byte after FILE name\n"
+"  -H, --with-filename       print file name with output lines\n"
+"  -h, --no-filename         suppress the file name prefix on output\n"
+"      --label=LABEL         use LABEL as the standard input file name prefix\n"
 msgstr ""
 "\n"
-"Çıktı denetimi:\n"
-"  -m, --max-count=SAYI      SAYI eşleşmeden sonra durur\n"
-"  -b, --byte-offset         çıktı satırlarında bayt adresi de gösterilir\n"
-"  -n, --line-number         çıktı satırlarında satır no.ları da gösterilir\n"
-"      --line-buffered       her satırda tüm çıktı gösterilir\n"
-"  -H, --with-filename       her eşleşmede dosya ismi de gösterilir\n"
-"  -h, --no-filename         dosya ismi gösterilmez\n"
-"      --label=ETİKET        standar girdi dosyası olarak ETİKET gösterirlir\n"
-"  -o, --only-matching       sadece satırın KALIPla eşleşen bölümü gösterilir\n"
-"  -q, --quiet, --silent     çıktı verilmez\n"
-"      --binary-files=TÜR    ikilik dosyalar TÜR türünde varsayılır\n"
-"                            TÜR: 'binary', 'text', ya da 'without-match'\n"
-"  -a, --text                --binary-files=text ile aynı\n"
-"  -I                        --binary-files=without-match ile aynı\n"
-"  -d, --directories=EYLEM   dizinlerin ele alınma şekli\n"
-"                            EYLEM: 'read', 'recurse', ya da 'skip'\n"
-"  -D, --devices=EYLEM       aygıtların ele alınma şekli, FIFO ve soketler\n"
-"                            için EYLEM: 'read' ya da 'skip'\n"
-"  -R, -r, --recursive       --directories=recurse ile aynı (ardışık)\n"
-"      --include=KALIP       KALIP ile eşleşen dosyalar gösterilir\n"
-"      --exclude=KALIP       KALIP ile eşleşen dosyalar atlanır\n"
-"      --exclude-from=DOSYA  DOSYA içindeki dosyalardan KALIP ile eşleşenler atlanır.\n"
-"  -L, --files-without-match sadece eşleşmeyen DOSYA isimleri gösterilir\n"
-"  -l, --files-with-matches  sadece eşleşen DOSYA isimleri gösterilir\n"
-"  -c, --count               her DOSYAdaki eşleşen satır sayısı gösterilir\n"
-"  -Z, --null                DOSYA isminin arkasına null ekler\n"
+"Çıktı denetimi::\n"
+"  -m, --max-count=NUM       NUM seçili satırdan sonra dur\n"
+"  -b, --byte-offset         bayt ofsetini çıktı satırlarıyla yazdır\n"
+"  -n, --line-number         çıktı satırlarıyla satır numarasını yazdır\n"
+"      --line-buffered       her satırda çıktıyı boşalt\n"
+"  -H, --with-filename       çıktı satırlarıyla dosya adını yazdır\n"
+"  -h, --no-filename         çıktıda dosya adı önekini sustur\n"
+"      --label=ETİKET        standart çıktı dosya adı önekinde ETİKET kullan\n"
 
-#: src/grep.c:1107
+#: src/grep.c:2013
+#, c-format
+msgid ""
+"  -o, --only-matching       show only nonempty parts of lines that match\n"
+"  -q, --quiet, --silent     suppress all normal output\n"
+"      --binary-files=TYPE   assume that binary files are TYPE;\n"
+"                            TYPE is 'binary', 'text', or 'without-match'\n"
+"  -a, --text                equivalent to --binary-files=text\n"
+msgstr ""
+"  -o, --only-matching       yalnızca satırların eşli dolu kısımlarını göster\n"
+"  -q, --quiet, --silent     tüm olağan çıktıyı sustur\n"
+"      --binary-files=TÜR    ikili dosyaların TÜR olduğunu varsay; TÜR,\n"
+"                            'binary', 'text' veya 'without-match'\n"
+"  -a, --text                --binary-files=text eşdeğeri\n"
+
+#: src/grep.c:2020
+#, c-format
+msgid ""
+"  -I                        equivalent to --binary-files=without-match\n"
+"  -d, --directories=ACTION  how to handle directories;\n"
+"                            ACTION is 'read', 'recurse', or 'skip'\n"
+"  -D, --devices=ACTION      how to handle devices, FIFOs and sockets;\n"
+"                            ACTION is 'read' or 'skip'\n"
+"  -r, --recursive           like --directories=recurse\n"
+"  -R, --dereference-recursive  likewise, but follow all symlinks\n"
+msgstr ""
+"  -I                        --binary-files=without-match eşdeğeri\n"
+"  -d, --directories=EYLEM   dizinlerin nasıl işleneceği; EYLEM, 'read',\n"
+"                            'recurse' veya 'skip'\n"
+"  -D, --devices=EYLEM       aygıtların, FIFO'ların ve soketlerin nasıl\n"
+"                              işleneceği; EYLEM, 'read' veya 'skip'\n"
+"  -r, --recursive           --directories=recurse gibi\n"
+"  -R, --dereference-recursive  benzer; ancak tüm sembolik bağları izle\n"
+
+#: src/grep.c:2029
+#, c-format
+msgid ""
+"      --include=GLOB        search only files that match GLOB (a file pattern)\n"
+"      --exclude=GLOB        skip files that match GLOB\n"
+"      --exclude-from=FILE   skip files that match any file pattern from FILE\n"
+"      --exclude-dir=GLOB    skip directories that match GLOB\n"
+msgstr ""
+"      --include=GLOB        yalnızca GLOB ile eşleşen dosyaları ara (dizgi)\n"
+"      --exclude=GLOB        GLOB ile eşleşen dosyaları atla\n"
+"      --exclude-from=DOSYA  DOSYA'dan herhangi bir dizgiyle eşleşen dosyaları\n"
+"                              atla\n"
+"      --exclude-dir=GLOB    GLOB ile eşleşen dizinleri atla\n"
+
+#: src/grep.c:2036
+#, c-format
+msgid ""
+"  -L, --files-without-match  print only names of FILEs with no selected lines\n"
+"  -l, --files-with-matches  print only names of FILEs with selected lines\n"
+"  -c, --count               print only a count of selected lines per FILE\n"
+"  -T, --initial-tab         make tabs line up (if needed)\n"
+"  -Z, --null                print 0 byte after FILE name\n"
+msgstr ""
+"  -L, --files-without-match seçili satır olmayan DOSYA'ların adlarını yazdır\n"
+"  -l, --files-with-matches  seçili satır olan DOSYA'ların adlarını yazdır\n"
+"  -c, --count               DOSYA başına seçili satır sayısını yazdır\n"
+"  -T, --initial-tab         sekmelerin hizalanması sağla (gerekirse)\n"
+"  -Z, --null                DOSYA adından sonra 0 bayt yazdır\n"
+
+#: src/grep.c:2042
+#, c-format
 msgid ""
 "\n"
 "Context control:\n"
 "  -B, --before-context=NUM  print NUM lines of leading context\n"
 "  -A, --after-context=NUM   print NUM lines of trailing context\n"
 "  -C, --context=NUM         print NUM lines of output context\n"
-"  -NUM                      same as --context=NUM\n"
-"      --color[=WHEN],\n"
-"      --colour[=WHEN]       use markers to distinguish the matching string\n"
-"                            WHEN may be `always', `never' or `auto'.\n"
-"  -U, --binary              do not strip CR characters at EOL (MSDOS)\n"
-"  -u, --unix-byte-offsets   report offsets as if CRs were not there (MSDOS)\n"
-"\n"
-"`egrep' means `grep -E'.  `fgrep' means `grep -F'.\n"
-"With no FILE, or when FILE is -, read standard input.  If less than\n"
-"two FILEs given, assume -h.  Exit status is 0 if match, 1 if no match,\n"
-"and 2 if trouble.\n"
 msgstr ""
 "\n"
-"Bağlamsal denetim:\n"
-"  -B, --before-context=SAYI bağlamdan önceki SAYI satır gösterilir\n"
-"  -A, --after-context=SAYI  bağlamdan sonraki SAYI satır gösterilir\n"
-"  -C, --context=SAYI        çıktı olarak SAYI satır gösterilir\n"
-"  -SAYI                     --context=SAYI ile aynı\n"
-"      --color[=SÜREÇ],\n"
-"      --colour[=SÜREÇ]      eşleşen dizgeleri ayırt etmede renk kullanılır\n"
-"                            SÜREÇ: daima 'always', hiç 'never', 'auto'  -U, --binary              satır sonlarındaki satırbaşı (CR) karakterlerini\n"
-"                            kaldırmaz\n"
-"  -u, --unix-byte-offsets   satırbaşı karakterlerine bakmaz\n"
-"\n"
-"`egrep' ile `grep -E',  `fgrep' ile `grep -F' aynı işi yapar.\n"
-"DOSYA verilmeksizin ya da yerine - verilirse standart girdi okunur.\n"
-"İki DOSYAdan az verilmişse -h varsayılır.\n"
-"Çıkışta durum eşleşme varsa 0, yoksa 1, belirsizlik varsa 2 dir.\n"
+"Bağlam denetimi:\n"
+"  -B, --before-context=NUM  öncü NUM satır bağlam yazdır\n"
+"  -A, --after-context=NUM   izleyen NUM satır bağlam yazdır\n"
+"  -C, --context=NUM         NUM satır çıktı bağlamı yazdır\n"
 
-#: src/grep.c:1124
+#: src/grep.c:2049
+#, c-format
 msgid ""
+"  -NUM                      same as --context=NUM\n"
+"      --group-separator=SEP  print SEP on line between matches with context\n"
+"      --no-group-separator  do not print separator for matches with context\n"
+"      --color[=WHEN],\n"
+"      --colour[=WHEN]       use markers to highlight the matching strings;\n"
+"                            WHEN is 'always', 'never', or 'auto'\n"
+"  -U, --binary              do not strip CR characters at EOL (MSDOS/Windows)\n"
 "\n"
-"Report bugs to <bug-grep@gnu.org>.\n"
 msgstr ""
+"  -NUM                      --context=NUM ile aynı\n"
+"      --group-separator=AYI AYI'yı eşleşme-bağlam arasındaki satıra getir\n"
+"      --no-group-separator  bağlamlı eşleşmeler için ayırıcı yazdırma\n"
+"      --color[=NEZAMAN],\n"
+"      --colour[=NEZAMAN]    eşleşen dizileri vurgulamak için imleyiciler\n"
+"                              kullan; NEZAMAN, 'always', 'never' veya 'auto'\n"
+"  -U, --binary              satır sonundayken satır başı karakterlerini soyma\n"
+"                              (MS-DOS/Windows)\n"
 "\n"
-"Yazılım hatalarını <bug-grep@gnu.org> adresine,\n"
-"çeviri hatalarını <gnu-tr-u12a@lists.sourceforge.net> adresine bildirin.\n"
 
-#: src/grep.c:1134
+#: src/grep.c:2058
+#, c-format
+msgid ""
+"When FILE is '-', read standard input.  With no FILE, read '.' if\n"
+"recursive, '-' otherwise.  With fewer than two FILEs, assume -h.\n"
+"Exit status is 0 if any line is selected, 1 otherwise;\n"
+"if any error occurs and -q is not given, the exit status is 2.\n"
+msgstr ""
+"DOSYA '-' iken, standart girdiyi oku. DOSYA olmadan, özyineliyse '.', değilse\n"
+"'-' oku. İkiden daha az DOSYA ile, -h varsay. Herhangi bir satır seçiliyse\n"
+"çıkış kodu 0, değilse 1'dir; bir hata oluştur ve -q verilmemişse çıkış\n"
+"kodu 2'dir.\n"
+
+#: src/grep.c:2100
 msgid "conflicting matchers specified"
 msgstr "birbiriyle çatışan eşleştiriciler belirtildi"
 
-#: src/grep.c:1376
+#: src/grep.c:2107
+msgid "Perl matching not supported in a --disable-perl-regexp build"
+msgstr "Bir --disable-perl-regexp yapısında Perl eşleşmesi desteklenmiyor"
+
+#: src/grep.c:2109
+#, c-format
+msgid "invalid matcher %s"
+msgstr "geçersiz eşleştirici %s"
+
+#: src/grep.c:2544
 msgid "unknown devices method"
 msgstr "bilinmeyen aygıt yöntemi"
 
-#: src/grep.c:1443
-msgid "unknown directories method"
-msgstr "bilinmeyen dizin yöntemi"
+#: src/grep.c:2586
+#, c-format
+msgid "warning: --unix-byte-offsets (-u) is obsolete"
+msgstr "uyarı: --unix-byte-offsets (-u) artık kullanılmıyor"
 
-#: src/grep.c:1510
+#: src/grep.c:2692
 msgid "invalid max count"
-msgstr "en çok miktarı geçersiz"
+msgstr "en çok sayısı geçersiz"
 
-#: src/grep.c:1565
+#: src/grep.c:2750
 msgid "unknown binary-files type"
-msgstr "bilinmeyen ikilik dosya türü"
+msgstr "bilinmeyen ikili dosya türü"
 
-#: src/grep.c:1660
-#, c-format
-msgid "%s (GNU grep) %s\n"
-msgstr "%s (GNU grep) %s\n"
-
-#: src/grep.c:1662
-msgid "Copyright 1988, 1992-1999, 2000, 2001 Free Software Foundation, Inc.\n"
-msgstr "Telif Hakkı 1988, 1992-1999, 2000, 2001 Free Software Foundation, Inc.\n"
-
-#: src/grep.c:1664
+#: src/grep.c:2835
 msgid ""
-"This is free software; see the source for copying conditions. There is NO\n"
-"warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
+"Written by Mike Haertel and others; see\n"
+"<https://git.sv.gnu.org/cgit/grep.git/tree/AUTHORS>."
 msgstr ""
-"Bu serbest yazılımdır; kopyalama koşulları için kaynak koduna bakınız.\n"
-"Hiçbir garantisi yoktur; hatta SATILABİLİRLİĞİ veya ŞAHSİ KULLANIMINIZA\n"
-"UYGUNLUĞU için bile garanti verilmez.\n"
+"Mike Haertel ve diğerleri tarafından yazılmıştır; bkz.\n"
+"<https://git.sv.gnu.org/cgit/grep.git/tree/AUTHORS>."
 
-#: src/search.c:606
-msgid "The -P option is not supported"
-msgstr "-P seçeneği desteklenmiyor"
+#: src/pcresearch.c:85
+msgid "failed to allocate memory for the PCRE JIT stack"
+msgstr "PCRE JIT yığını için bellek ayrılamadı"
 
-#: src/search.c:619
-msgid "The -P and -z options cannot be combined"
-msgstr "-P ve -z seçenekleri birlikte olamaz"
+#: src/pcresearch.c:137
+msgid "-P supports only unibyte and UTF-8 locales"
+msgstr "-P yalnızca unibyte ve UTF-8 yerellerini destekler"
 
-#: lib/error.c:117
-msgid "Unknown system error"
-msgstr "Bilinmeyen sistem hatası"
+#: src/pcresearch.c:143
+msgid "the -P option only supports a single pattern"
+msgstr "-P seçeneği yalnızca tek bir dizgiyi destekler"
 
-#: lib/getopt.c:675
+#: src/pcresearch.c:187
+msgid "internal error (should never happen)"
+msgstr "iç hata (bu hiç olmamalıydı)"
+
+#: src/pcresearch.c:230
+msgid "exceeded PCRE's line length limit"
+msgstr "PCRE's satır uzunluğu limiti aşıldı"
+
+#: src/pcresearch.c:306
 #, c-format
-msgid "%s: option `%s' is ambiguous\n"
-msgstr "%s: `%s' seçeneği belirsiz\n"
+msgid "%s: memory exhausted"
+msgstr "%s: Bellek tükendi"
 
-#: lib/getopt.c:700
+#: src/pcresearch.c:310
 #, c-format
-msgid "%s: option `--%s' doesn't allow an argument\n"
-msgstr "%s: `--%s' seçeneği argümansız kullanılır\n"
+msgid "%s: exhausted PCRE JIT stack"
+msgstr "%s: PCRE JIT yığını tükendi"
 
-#: lib/getopt.c:705
+#: src/pcresearch.c:315
 #, c-format
-msgid "%s: option `%c%s' doesn't allow an argument\n"
-msgstr "%s: seçenek `%c%s' argümansız kullanılır\n"
+msgid "%s: exceeded PCRE's backtracking limit"
+msgstr "%s: PCRE'nin geri izleme limiti aşıldı"
 
-#: lib/getopt.c:723 lib/getopt.c:896
+#: src/pcresearch.c:319
 #, c-format
-msgid "%s: option `%s' requires an argument\n"
-msgstr "%s: `%s' seçeneği bir argümanla kullanılır\n"
+msgid "%s: exceeded PCRE's recursion limit"
+msgstr "%s: PCRE'nin özyineleme limiti aşıldı"
 
-#. --option
-#: lib/getopt.c:752
+#: src/pcresearch.c:327
 #, c-format
-msgid "%s: unrecognized option `--%s'\n"
-msgstr "%s: `--%s' seçeneği bilinmiyor\n"
-
-#. +option or -option
-#: lib/getopt.c:756
-#, c-format
-msgid "%s: unrecognized option `%c%s'\n"
-msgstr "%s: `%c%s' seçeneği bilinmiyor\n"
-
-#. 1003.2 specifies the format of this message.
-#: lib/getopt.c:782
-#, c-format
-msgid "%s: illegal option -- %c\n"
-msgstr "%s: kuraldışı seçenek -- %c\n"
-
-#: lib/getopt.c:785
-#, c-format
-msgid "%s: invalid option -- %c\n"
-msgstr "%s: geçersiz seçenek -- %c\n"
-
-#. 1003.2 specifies the format of this message.
-#: lib/getopt.c:815 lib/getopt.c:945
-#, c-format
-msgid "%s: option requires an argument -- %c\n"
-msgstr "%s: seçenek bir argümanla kullanılır -- %c\n"
-
-#: lib/getopt.c:862
-#, c-format
-msgid "%s: option `-W %s' is ambiguous\n"
-msgstr "%s: `-W %s' seçeneği belirsiz\n"
-
-#: lib/getopt.c:880
-#, c-format
-msgid "%s: option `-W %s' doesn't allow an argument\n"
-msgstr "%s: `-W %s' seçeneği argümansız kullanılır\n"
-
-#. Get translations for open and closing quotation marks.
-#.
-#. The message catalog should translate "`" to a left
-#. quotation mark suitable for the locale, and similarly for
-#. "'".  If the catalog has no translation,
-#. locale_quoting_style quotes `like this', and
-#. clocale_quoting_style quotes "like this".
-#.
-#. For example, an American English Unicode locale should
-#. translate "`" to U+201C (LEFT DOUBLE QUOTATION MARK), and
-#. should translate "'" to U+201D (RIGHT DOUBLE QUOTATION
-#. MARK).  A British English Unicode locale should instead
-#. translate these to U+2018 (LEFT SINGLE QUOTATION MARK) and
-#. U+2019 (RIGHT SINGLE QUOTATION MARK), respectively.
-#: lib/quotearg.c:259
-msgid "`"
-msgstr "`"
-
-#: lib/quotearg.c:260
-msgid "'"
-msgstr "'"
+msgid "%s: internal PCRE error: %d"
+msgstr "%s: İç PCRE hatası: %d"

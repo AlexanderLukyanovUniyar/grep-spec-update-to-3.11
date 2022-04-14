@@ -1,14 +1,14 @@
 # Bulgarian translation of GNU grep po-file.
-# Copyright (C) 2002, 2015, 2016, 2017, 2018, 2019, 2020 Free Software Foundation, Inc.
+# Copyright (C) 2002, 2015, 2016, 2017, 2018, 2019, 2020, 2021 Free Software Foundation, Inc.
 # This file is distributed under the same license as the grep package.
 # Pavel Mihaylov <avatarbg@bulgaria.com>, 2002.
-# Alexander Shopov <ash@kambanaria.org>, 2015, 2016, 2017, 2018, 2019, 2020.
+# Alexander Shopov <ash@kambanaria.org>, 2015, 2016, 2017, 2018, 2019, 2020, 2021.
 msgid ""
 msgstr ""
-"Project-Id-Version: grep 3.5.16\n"
+"Project-Id-Version: grep 3.6.27\n"
 "Report-Msgid-Bugs-To: bug-grep@gnu.org\n"
-"POT-Creation-Date: 2020-11-03 23:21-0800\n"
-"PO-Revision-Date: 2020-11-04 14:01+0100\n"
+"POT-Creation-Date: 2021-08-08 09:59-0700\n"
+"PO-Revision-Date: 2021-08-09 16:17+0300\n"
 "Last-Translator: Alexander Shopov <ash@kambanaria.org>\n"
 "Language-Team: Bulgarian <dict@ludost.net>\n"
 "Language: bg\n"
@@ -32,51 +32,51 @@ msgstr "аргументът „%s“ на опцията „%s“ не е ед�
 msgid "Valid arguments are:"
 msgstr "Възможните аргументи са:"
 
-#: lib/c-stack.c:225 lib/c-stack.c:338
+#: lib/c-stack.c:187
 msgid "program error"
 msgstr "програмна грешка"
 
-#: lib/c-stack.c:226 lib/c-stack.c:339
+#: lib/c-stack.c:188
 msgid "stack overflow"
 msgstr "препълване на стека"
 
-#: lib/closeout.c:122 src/grep.c:1341
+#: lib/closeout.c:122 src/grep.c:1342
 msgid "write error"
 msgstr "грешка при запис"
 
-#: lib/dfa.c:954
+#: lib/dfa.c:896
 msgid "unbalanced ["
 msgstr "„[“ без еш"
 
-#: lib/dfa.c:1075
+#: lib/dfa.c:1017
 msgid "invalid character class"
 msgstr "неправилен клас знаци"
 
-#: lib/dfa.c:1201
+#: lib/dfa.c:1143
 msgid "character class syntax is [[:space:]], not [:space:]"
 msgstr "клас знаци се указва чрез „[[:ИМЕ:]]“, а не „[:ИМЕ:]“"
 
-#: lib/dfa.c:1268
+#: lib/dfa.c:1210
 msgid "unfinished \\ escape"
 msgstr "незавършена екранираща последователност чрез „\\“"
 
-#: lib/dfa.c:1429
+#: lib/dfa.c:1371
 msgid "invalid content of \\{\\}"
 msgstr "неправилно съдържание в „\\{\\}“"
 
-#: lib/dfa.c:1432
+#: lib/dfa.c:1374
 msgid "regular expression too big"
 msgstr "прекалено голям регулярен израз"
 
-#: lib/dfa.c:1916
+#: lib/dfa.c:1858
 msgid "unbalanced ("
 msgstr "„(“ без еш"
 
-#: lib/dfa.c:2033
+#: lib/dfa.c:1975
 msgid "no syntax specified"
 msgstr "не е зададен синтаксис"
 
-#: lib/dfa.c:2044
+#: lib/dfa.c:1986
 msgid "unbalanced )"
 msgstr "„)“ без еш"
 
@@ -119,7 +119,7 @@ msgstr "%s: неправилна опция — „%c“\n"
 msgid "%s: option requires an argument -- '%c'\n"
 msgstr "%s: опцията изисква аргумент — „%c“\n"
 
-#: lib/obstack.c:338 lib/obstack.c:340 lib/xalloc-die.c:34
+#: lib/obstack.c:337 lib/obstack.c:339 lib/xalloc-die.c:34
 msgid "memory exhausted"
 msgstr "паметта е изчерпана"
 
@@ -404,49 +404,49 @@ msgstr "Уеб страница на „%s“: <%s>\n"
 msgid "General help using GNU software: <%s>\n"
 msgstr "Обща помощ за програмите на GNU: <%s>\n"
 
-#: src/grep.c:648
+#: src/grep.c:649
 msgid "(standard input)"
 msgstr "(стандартен вход)"
 
-#: src/grep.c:828
+#: src/grep.c:829
 msgid "invalid context length argument"
 msgstr "неправилен размер на контекста"
 
-#: src/grep.c:893
+#: src/grep.c:894
 msgid "input is too large to count"
 msgstr "входните данни са прекалено големи, за да бъдат преброени"
 
-#: src/grep.c:1646
+#: src/grep.c:1647
 #, c-format
 msgid "%s: binary file matches"
 msgstr "„%s“: двоичният файл напасва"
 
-#: src/grep.c:1684
+#: src/grep.c:1685
 #, c-format
 msgid "%s: warning: recursive directory loop"
 msgstr "„%s“: зацикляне при рекурсивна обработка на директориите"
 
-#: src/grep.c:1904
+#: src/grep.c:1905
 #, c-format
 msgid "%s: input file is also the output"
 msgstr "„%s“: входният файл е и изходен"
 
-#: src/grep.c:1966 src/grep.c:1973
+#: src/grep.c:1967 src/grep.c:1974
 #, c-format
 msgid "Usage: %s [OPTION]... PATTERNS [FILE]...\n"
 msgstr "Употреба: %s [ОПЦИЯ]… ШАБЛОН… [ФАЙЛ]…\n"
 
-#: src/grep.c:1968
+#: src/grep.c:1969
 #, c-format
 msgid "Try '%s --help' for more information.\n"
 msgstr "За повече информация изпълнете „%s --help“.\n"
 
-#: src/grep.c:1974
+#: src/grep.c:1975
 #, c-format
 msgid "Search for PATTERNS in each FILE.\n"
 msgstr "Търсене на текст, напасващ с ШАБЛОНите във всеки зададен ФАЙЛ.\n"
 
-#: src/grep.c:1975
+#: src/grep.c:1976
 #, c-format
 msgid ""
 "Example: %s -i 'hello world' menu.h main.c\n"
@@ -459,7 +459,7 @@ msgstr ""
 "\n"
 "Избор на шаблона и интерпретация:\n"
 
-#: src/grep.c:1980
+#: src/grep.c:1981
 #, c-format
 msgid ""
 "  -E, --extended-regexp     PATTERNS are extended regular expressions\n"
@@ -472,7 +472,7 @@ msgstr ""
 "  -G, --basic-regexp        ШАБЛОНите са основни регулярни изрази (стандартно)\n"
 "  -P, --perl-regexp         ШАБЛОНите са регулярни изрази на Perl\n"
 
-#: src/grep.c:1986
+#: src/grep.c:1987
 #, c-format
 msgid ""
 "  -e, --regexp=PATTERNS     use PATTERNS for matching\n"
@@ -491,7 +491,7 @@ msgstr ""
 "  -x, --line-regexp         съвпадане само с цели редове\n"
 "  -z, --null-data           редовете завършват с NULL, а не със знак за нов ред\n"
 
-#: src/grep.c:1994
+#: src/grep.c:1995
 #, c-format
 msgid ""
 "\n"
@@ -508,7 +508,7 @@ msgstr ""
 "  -V, --version             извеждане на информация за версията и изход\n"
 "      --help                извеждане на помощна информация и изход\n"
 
-#: src/grep.c:2001
+#: src/grep.c:2002
 #, c-format
 msgid ""
 "\n"
@@ -531,7 +531,7 @@ msgstr ""
 "  -h, --no-filename         без извеждане на името на файла за всяко съвпадение\n"
 "      --label=ЕТИКЕТ        използване на ЕТИКЕТ като име за стандартния вход\n"
 
-#: src/grep.c:2012
+#: src/grep.c:2013
 #, c-format
 msgid ""
 "  -o, --only-matching       show only nonempty parts of lines that match\n"
@@ -547,7 +547,7 @@ msgstr ""
 "                            или „without-match“ (без съвпадение).\n"
 "  -a, --text                същото като „--binary-files=text“\n"
 
-#: src/grep.c:2019
+#: src/grep.c:2020
 #, c-format
 msgid ""
 "  -I                        equivalent to --binary-files=without-match\n"
@@ -568,7 +568,7 @@ msgstr ""
 "                            „skip“ (пропускане)\n"
 "  -R, -r, --recursive       същото като „--directories=recurse“\n"
 
-#: src/grep.c:2028
+#: src/grep.c:2029
 #, c-format
 msgid ""
 "      --include=GLOB        search only files that match GLOB (a file pattern)\n"
@@ -588,7 +588,7 @@ msgstr ""
 "                            пропускане на директории с имена, напасващи\n"
 "                            ШАБЛОНа_ЗА_ИМЕ\n"
 
-#: src/grep.c:2035
+#: src/grep.c:2036
 #, c-format
 msgid ""
 "  -L, --files-without-match  print only names of FILEs with no selected lines\n"
@@ -603,7 +603,7 @@ msgstr ""
 "  -T, --initial-tab         подравняване на табулациите при необходимост\n"
 "  -Z, --null                извеждане на знак NULL след всяко име на файл\n"
 
-#: src/grep.c:2041
+#: src/grep.c:2042
 #, c-format
 msgid ""
 "\n"
@@ -619,10 +619,12 @@ msgstr ""
 "  -C, --context=БРОЙ        извеждане на този БРОЙ предхождащи и следващи\n"
 "                            редове\n"
 
-#: src/grep.c:2048
+#: src/grep.c:2049
 #, c-format
 msgid ""
 "  -NUM                      same as --context=NUM\n"
+"      --group-separator=SEP  print SEP on line between matches with context\n"
+"      --no-group-separator  do not print separator for matches with context\n"
 "      --color[=WHEN],\n"
 "      --colour[=WHEN]       use markers to highlight the matching strings;\n"
 "                            WHEN is 'always', 'never', or 'auto'\n"
@@ -630,13 +632,17 @@ msgid ""
 "\n"
 msgstr ""
 "  -БРОЙ                     същото като --context=БРОЙ\n"
+"      --group-separator=РАЗД\n"
+"                            извеждане на този РАЗДелител на отделен ред между\n"
+"                            съвпаденията с контекст\n"
+"      --no-group-separator  без извеждане на този РАЗДелител между съвпаденията\n"
 "      --color[=КОГА]\n"
 "      --colour[=КОГА]       оцветяване на съвпадащите низове. КОГА е „always“\n"
 "                            (винаги), „never“ (никога) или „auto“ (автоматично)\n"
 "  -U, --binary              знаците „CR“ в края на реда да се запазват\n"
 "                            (DOS/Windows)\n"
 
-#: src/grep.c:2055
+#: src/grep.c:2058
 #, c-format
 msgid ""
 "When FILE is '-', read standard input.  With no FILE, read '.' if\n"
@@ -649,34 +655,39 @@ msgstr ""
 "Изходният код на grep е 0 при поне един напаснат ред и 1 във всички останали\n"
 "случаи.  Ако не е зададена опцията „-q“ и възникне грешка, изходният код е 2.\n"
 
-#: src/grep.c:2097
+#: src/grep.c:2100
 msgid "conflicting matchers specified"
 msgstr "зададените изрази за съвпадение са в конфликт"
 
-#: src/grep.c:2104
+#: src/grep.c:2107
 msgid "Perl matching not supported in a --disable-perl-regexp build"
 msgstr ""
 "Липсва поддръжка на шаблони по Perl — текущата команда е компилирана с\n"
 "опцията „--disable-perl-regexp“."
 
-#: src/grep.c:2106
+#: src/grep.c:2109
 #, c-format
 msgid "invalid matcher %s"
 msgstr "неправилен израз „%s“"
 
-#: src/grep.c:2541
+#: src/grep.c:2544
 msgid "unknown devices method"
 msgstr "неизвестен метод за обработка на специалните файлове"
 
-#: src/grep.c:2689
+#: src/grep.c:2586
+#, c-format
+msgid "warning: --unix-byte-offsets (-u) is obsolete"
+msgstr "ПРЕДУПРЕЖДЕНИЕ: опцията „--unix-byte-offsets“ („-u“) е остаряла"
+
+#: src/grep.c:2692
 msgid "invalid max count"
 msgstr "неправилен максимален брой"
 
-#: src/grep.c:2747
+#: src/grep.c:2750
 msgid "unknown binary-files type"
 msgstr "непознат вид двоичен файл"
 
-#: src/grep.c:2832
+#: src/grep.c:2835
 msgid ""
 "Written by Mike Haertel and others; see\n"
 "<https://git.sv.gnu.org/cgit/grep.git/tree/AUTHORS>."
