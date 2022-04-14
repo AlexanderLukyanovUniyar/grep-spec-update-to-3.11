@@ -69,6 +69,10 @@ export gl_cv_warn_c__fanalyzer=no
 %install
 %makeinstall_std bindir=/bin
 
+# Re-introduce symlinks for egrep and fgrep manpages.
+ln -s grep.1 %buildroot%_man1dir/egrep.1
+ln -s grep.1 %buildroot%_man1dir/fgrep.1
+
 # Use symlinks for pcregrep
 ln -s grep %buildroot/bin/pcregrep
 ln -s grep.1 %buildroot%_man1dir/pcregrep.1
