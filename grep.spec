@@ -1,5 +1,5 @@
 Name: grep
-Version: 3.7.0.61.561c
+Version: 3.11
 Release: alt1
 
 Summary: The GNU versions of grep pattern matching utilities
@@ -40,12 +40,6 @@ echo -n %version > .tarball-version
 
 # Generate LINGUAS file.
 ls po/*.po | sed 's|.*/||; s|\.po$||' > po/LINGUAS
-
-# git and rsync aren't needed for build.
-sed -i '/^\(git\|rsync\)[[:space:]]/d' bootstrap.conf
-
-%build
-./bootstrap --skip-po --gnulib-srcdir=%_datadir/gnulib
 
 # Unset the variable gl_printf_safe to indicate that we do not need
 # a safe handling of non-IEEE-754 'long double' values.
@@ -109,6 +103,9 @@ ulimit -s 32768
 %doc AUTHORS NEWS README TODO
 
 %changelog
+* Tue Jun 13 2023 Alexander Lukyanov <a.lukyanov@stud.uniyar.ac.ru> 3.11-alt1
+- grep: v3.7-61-g561cf64 -> v3.11
+
 * Fri Apr 29 2022 Dmitry V. Levin <ldv@altlinux.org> 3.7.0.61.561c-alt1
 - grep: v3.6-18-g7051705 -> v3.7-61-g561cf64.
 - gnulib BR: v0.1-4960-g50d64b72f2 -> v0.1-5193-g8fa9898afa.
